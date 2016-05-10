@@ -1,0 +1,4 @@
+/test-cmsis-rtos-valid-debug/
+/test-cmsis-rtos-valid-release/
+/test-stress-sema-debug/
+/test-stress-sema-release/
