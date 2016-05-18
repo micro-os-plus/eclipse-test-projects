@@ -16,7 +16,7 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="elf" artifactName="${ConfigName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.macosx.exe.debug.662410388" name="test-cmsis-rtos-valid-gcc-debug" parent="cdt.managedbuild.config.gnu.macosx.exe.debug">
+				<configuration artifactExtension="" artifactName="${ConfigName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.macosx.exe.debug.662410388" name="test-cmsis-rtos-valid-gcc-debug" parent="cdt.managedbuild.config.gnu.macosx.exe.debug">
 					<folderInfo id="cdt.managedbuild.config.gnu.macosx.exe.debug.662410388." name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.gnu.macosx.exe.debug.945229764" name="MacOSX GCC" superClass="cdt.managedbuild.toolchain.gnu.macosx.exe.debug">
 							<targetPlatform id="cdt.managedbuild.target.gnu.platform.macosx.exe.debug.1431535294" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.macosx.exe.debug"/>
@@ -110,9 +110,9 @@
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/cmsis-plus/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/cmsis-plus/diag"/>
-						<entry excluding="chrono.cpp|new.cpp|thread.cpp|mutex.cpp|condition-variable.cpp|cxx.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/cmsis-plus/libcpp"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/cmsis-plus/rtos"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/diag"/>
+						<entry excluding="chrono.cpp|thread.cpp|mutex.cpp|condition-variable.cpp|cxx.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/libcpp"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/rtos"/>
 						<entry excluding="diag/trace-posix-stdout.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/src"/>
 					</sourceEntries>
 				</configuration>
@@ -132,7 +132,7 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="elf" artifactName="${ConfigName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.macosx.exe.debug.662410388.1578659566" name="test-cmsis-rtos-valid-gcc-release" parent="cdt.managedbuild.config.gnu.macosx.exe.debug">
+				<configuration artifactExtension="" artifactName="${ConfigName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.macosx.exe.debug.662410388.1578659566" name="test-cmsis-rtos-valid-gcc-release" parent="cdt.managedbuild.config.gnu.macosx.exe.debug">
 					<folderInfo id="cdt.managedbuild.config.gnu.macosx.exe.debug.662410388.1578659566." name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.gnu.macosx.exe.debug.501674645" name="MacOSX GCC" superClass="cdt.managedbuild.toolchain.gnu.macosx.exe.debug">
 							<targetPlatform id="cdt.managedbuild.target.gnu.platform.macosx.exe.debug.1007448455" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.macosx.exe.debug"/>
@@ -218,9 +218,9 @@
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/cmsis-plus/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/cmsis-plus/diag"/>
-						<entry excluding="chrono.cpp|new.cpp|thread.cpp|mutex.cpp|condition-variable.cpp|cxx.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/cmsis-plus/libcpp"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/cmsis-plus/rtos"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/diag"/>
+						<entry excluding="chrono.cpp|thread.cpp|mutex.cpp|condition-variable.cpp|cxx.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/libcpp"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/rtos"/>
 						<entry excluding="diag/trace-posix-stdout.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/src"/>
 					</sourceEntries>
 				</configuration>
@@ -240,7 +240,7 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="elf" artifactName="${ConfigName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864" name="test-cmsis-rtos-valid-clang-debug" parent="cdt.managedbuild.config.llvm.clang.macosx.exe.debug">
+				<configuration artifactExtension="" artifactName="${ConfigName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864" name="test-cmsis-rtos-valid-clang-debug" parent="cdt.managedbuild.config.llvm.clang.macosx.exe.debug">
 					<folderInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864." name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.llvm.clang.macosx.exe.debug.798724996" name="LLVM with Clang (MacOSX)" superClass="cdt.managedbuild.toolchain.llvm.clang.macosx.exe.debug">
 							<targetPlatform archList="all" id="cdt.managedbuild.target.llvm.clang.macosx.platform.exe.debug.1736079061" name="Debug Platform" osList="macosx" superClass="cdt.managedbuild.target.llvm.clang.macosx.platform.exe.debug"/>
@@ -326,9 +326,9 @@
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/cmsis-plus/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/cmsis-plus/diag"/>
-						<entry excluding="chrono.cpp|new.cpp|thread.cpp|mutex.cpp|condition-variable.cpp|cxx.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/cmsis-plus/libcpp"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/cmsis-plus/rtos"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/diag"/>
+						<entry excluding="chrono.cpp|thread.cpp|mutex.cpp|condition-variable.cpp|cxx.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/libcpp"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/rtos"/>
 						<entry excluding="diag/trace-posix-stdout.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/src"/>
 					</sourceEntries>
 				</configuration>
@@ -349,7 +349,7 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="elf" artifactName="${ConfigName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.1019147538" name="test-cmsis-rtos-valid-clang-release" parent="cdt.managedbuild.config.llvm.clang.macosx.exe.debug">
+				<configuration artifactExtension="" artifactName="${ConfigName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.1019147538" name="test-cmsis-rtos-valid-clang-release" parent="cdt.managedbuild.config.llvm.clang.macosx.exe.debug">
 					<folderInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.1019147538." name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.llvm.clang.macosx.exe.debug.1277124245" name="LLVM with Clang (MacOSX)" superClass="cdt.managedbuild.toolchain.llvm.clang.macosx.exe.debug">
 							<targetPlatform archList="all" id="cdt.managedbuild.target.llvm.clang.macosx.platform.exe.debug.727182360" name="Debug Platform" osList="macosx" superClass="cdt.managedbuild.target.llvm.clang.macosx.platform.exe.debug"/>
@@ -426,9 +426,439 @@
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/cmsis-plus/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/cmsis-plus/diag"/>
-						<entry excluding="chrono.cpp|new.cpp|thread.cpp|mutex.cpp|condition-variable.cpp|cxx.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/cmsis-plus/libcpp"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/cmsis-plus/rtos"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/diag"/>
+						<entry excluding="chrono.cpp|thread.cpp|mutex.cpp|condition-variable.cpp|cxx.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/libcpp"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/rtos"/>
+						<entry excluding="diag/trace-posix-stdout.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="ilg.gnuarmeclipse.managedbuild.packs"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296" moduleId="org.eclipse.cdt.core.settings" name="test-mutex-stress-clang-debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.MachO64" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="" artifactName="${ConfigName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296" name="test-mutex-stress-clang-debug" parent="cdt.managedbuild.config.llvm.clang.macosx.exe.debug">
+					<folderInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.llvm.clang.macosx.exe.debug.1473252660" name="LLVM with Clang (MacOSX)" superClass="cdt.managedbuild.toolchain.llvm.clang.macosx.exe.debug">
+							<targetPlatform archList="all" id="cdt.managedbuild.target.llvm.clang.macosx.platform.exe.debug.1336451409" name="Debug Platform" osList="macosx" superClass="cdt.managedbuild.target.llvm.clang.macosx.platform.exe.debug"/>
+							<builder buildPath="${workspace_loc:/os-synthetic-posix-tests}/test-cmsis-valid-clang-debug" id="cdt.managedbuild.builder.gnu.cross.841562086" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.builder.gnu.cross"/>
+							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.assembler.exe.debug.2014115110" name="LLVM assembler" superClass="cdt.managedbuild.tool.llvm.clang.macosx.assembler.exe.debug"/>
+							<tool id="cdt.managedbuild.tool.llvm.archiver.base.201251036" name="LLVM archiver" superClass="cdt.managedbuild.tool.llvm.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug.1884469593" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug">
+								<option id="llvm.c_cpp.compiler.option.optimization.level.11570737" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.debugging.level.1901270001" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.preprocessor.def.1024430954" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="TRACE"/>
+								</option>
+								<option id="llvm.c_cpp.compiler.option.include.paths.987597548" name="Include paths (-I)" superClass="llvm.c_cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/mutex-stress}&quot;"/>
+								</option>
+								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.632898091" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.308819915" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0  -Weverything -Wno-documentation-unknown-command" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1321225242" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug.1607673975" name="LLVM Clang++" superClass="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug">
+								<option id="llvm.c_cpp.compiler.option.optimization.level.1448137554" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.debugging.level.367052266" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.preprocessor.def.1875859950" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="TRACE"/>
+								</option>
+								<option id="llvm.c_cpp.compiler.option.include.paths.1532065343" name="Include paths (-I)" superClass="llvm.c_cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/mutex-stress}&quot;"/>
+								</option>
+								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.1343549206" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.760476083" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.1895160504" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.c.linker.exe.debug.213513180" name="LLVM Clang C linker" superClass="cdt.managedbuild.tool.llvm.clang.macosx.c.linker.exe.debug">
+								<option defaultValue="false" id="llvm.c.link.option.nativeCBackEnd.2147346254" name="Create native binary (with C backend code generator)" superClass="llvm.c.link.option.nativeCBackEnd" valueType="boolean"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.cpp.linker.exe.debug.413861660" name="LLVM Clang C++ linker" superClass="cdt.managedbuild.tool.llvm.clang.macosx.cpp.linker.exe.debug">
+								<option defaultValue="false" id="llvm.c.link.option.nativeCBackEnd.639867478" name="Create native binary (with C backend code generator)" superClass="llvm.c.link.option.nativeCBackEnd" valueType="boolean"/>
+								<option id="llvm.c.link.option.native.647910956" name="Create native binary (with LLVM native code generator)" superClass="llvm.c.link.option.native" value="false" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.llvm.c.linker.input.52554666" superClass="cdt.managedbuild.tool.llvm.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source" name="/" resourcePath="micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source">
+						<toolChain id="cdt.managedbuild.toolchain.llvm.clang.macosx.exe.debug.1038382723" name="LLVM with Clang (MacOSX)" superClass="cdt.managedbuild.toolchain.llvm.clang.macosx.exe.debug" unusedChildren="">
+							<targetPlatform archList="all" id="cdt.managedbuild.target.llvm.clang.macosx.platform.exe.debug.374229700" name="Debug Platform" osList="macosx" superClass="cdt.managedbuild.target.llvm.clang.macosx.platform.exe.debug"/>
+							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.assembler.exe.debug.1284000907" name="LLVM assembler" superClass="cdt.managedbuild.tool.llvm.clang.macosx.assembler.exe.debug.2014115110"/>
+							<tool id="cdt.managedbuild.tool.llvm.archiver.base.316607517" name="LLVM archiver" superClass="cdt.managedbuild.tool.llvm.archiver.base.201251036"/>
+							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug.239892618" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug.1884469593">
+								<option id="llvm.c_cpp.compiler.option.misc.other.405028351" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0  -Weverything -Wno-reserved-id-macro -Wno-missing-prototypes -Wno-padded -Wno-sign-conversion -Wno-date-time -Wno-documentation-unknown-command -Wno-missing-variable-declarations -Wno-unused-parameter -Wno-unused-macros -Wno-undef -Wno-cast-qual -Wno-sign-compare -Wno-missing-noreturn -Wno-conversion -Wno-switch-enum -Wno-format-nonliteral -Wno-unused-function" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.optimization.level.1079764288" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.more" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.debugging.level.1148747145" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" value="llvm.c_cpp.compiler.debugging.level.default" valueType="enumerated"/>
+								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.1750647887" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" value="false" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.204215135" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug.1726528199" name="LLVM Clang++" superClass="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug.1607673975">
+								<option id="llvm.c_cpp.compiler.option.misc.other.161387120" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.optimization.level.1459128907" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.more" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.debugging.level.769757831" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" value="llvm.c_cpp.compiler.debugging.level.default" valueType="enumerated"/>
+								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.1235855099" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" value="false" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.469978569" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.c.linker.exe.debug.1696275180" name="LLVM Clang C linker" superClass="cdt.managedbuild.tool.llvm.clang.macosx.c.linker.exe.debug.213513180"/>
+							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.cpp.linker.exe.debug.41834094" name="LLVM Clang C++ linker" superClass="cdt.managedbuild.tool.llvm.clang.macosx.cpp.linker.exe.debug.413861660"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/diag"/>
+						<entry excluding="chrono.cpp|thread.cpp|mutex.cpp|condition-variable.cpp|cxx.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/libcpp"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/rtos"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/mutex-stress"/>
+						<entry excluding="diag/trace-posix-stdout.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="ilg.gnuarmeclipse.managedbuild.packs"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999" moduleId="org.eclipse.cdt.core.settings" name="test-mutex-stress-gcc-debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.MachO64" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="" artifactName="${ConfigName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999" name="test-mutex-stress-gcc-debug" parent="cdt.managedbuild.config.llvm.clang.macosx.exe.debug">
+					<folderInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.macosx.base.1034946628" name="MacOSX GCC" superClass="cdt.managedbuild.toolchain.gnu.macosx.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.MachO64" id="cdt.managedbuild.target.gnu.platform.macosx.base.1393640698" name="Debug Platform" osList="macosx" superClass="cdt.managedbuild.target.gnu.platform.macosx.base"/>
+							<builder buildPath="${workspace_loc:/os-synthetic-posix-tests}/test-mutex-stress-gcc-debug" id="cdt.managedbuild.target.gnu.builder.macosx.base.650763691" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.macosx.base"/>
+							<tool id="cdt.managedbuild.tool.macosx.c.linker.macosx.base.877609311" name="MacOS X C Linker" superClass="cdt.managedbuild.tool.macosx.c.linker.macosx.base"/>
+							<tool id="cdt.managedbuild.tool.macosx.cpp.linker.macosx.base.1645249371" name="MacOS X C++ Linker" superClass="cdt.managedbuild.tool.macosx.cpp.linker.macosx.base">
+								<inputType id="cdt.managedbuild.tool.macosx.cpp.linker.input.1032266826" superClass="cdt.managedbuild.tool.macosx.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.macosx.base.1904754371" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.macosx.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.275890919" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.macosx.base.291870046" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.macosx.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.base.573320002" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.base">
+								<option id="gnu.cpp.compiler.option.include.paths.1147588926" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/mutex-stress}&quot;"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1056704999" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="TRACE"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.optimization.level.386837682" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.1201231686" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.dialect.std.1149778816" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.warnings.extrawarn.1724037422" name="Extra warnings (-Wextra)" superClass="gnu.cpp.compiler.option.warnings.extrawarn" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.830724693" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.macosx.base.1124324618" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.macosx.base">
+								<option id="gnu.c.compiler.option.include.paths.743874171" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/mutex-stress}&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1220769976" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="TRACE"/>
+								</option>
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1000642742" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1039650298" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.dialect.std.1111683145" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.warnings.extrawarn.1843270673" name="Extra warnings (-Wextra)" superClass="gnu.c.compiler.option.warnings.extrawarn" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1119724019" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source" name="/" resourcePath="micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.macosx.base.999869983" name="MacOSX GCC" superClass="cdt.managedbuild.toolchain.gnu.macosx.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.MachO64" id="cdt.managedbuild.target.gnu.platform.macosx.base" name="Debug Platform" osList="macosx" superClass="cdt.managedbuild.target.gnu.platform.macosx.base"/>
+							<tool id="cdt.managedbuild.tool.macosx.c.linker.macosx.base.2124399696" name="MacOS X C Linker" superClass="cdt.managedbuild.tool.macosx.c.linker.macosx.base"/>
+							<tool id="cdt.managedbuild.tool.macosx.cpp.linker.macosx.base.1982599127" name="MacOS X C++ Linker" superClass="cdt.managedbuild.tool.macosx.cpp.linker.macosx.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.macosx.base.1081626312" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.macosx.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1464146445" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.macosx.base.217110548" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.macosx.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.base.1931212097" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.base">
+								<option id="gnu.cpp.compiler.option.include.paths.1218522488" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/mutex-stress}&quot;"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.944742327" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="TRACE"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.optimization.level.1955897898" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.1080920856" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.dialect.std.2141577557" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.warnings.extrawarn.749337641" name="Extra warnings (-Wextra)" superClass="gnu.cpp.compiler.option.warnings.extrawarn" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1879940821" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.macosx.base.1753267586" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.macosx.base">
+								<option id="gnu.c.compiler.option.include.paths.1966192137" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/mutex-stress}&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.729152689" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="TRACE"/>
+								</option>
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.480698925" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.875842544" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.dialect.std.2130469329" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.warnings.extrawarn.1239766091" name="Extra warnings (-Wextra)" superClass="gnu.c.compiler.option.warnings.extrawarn" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.513910909" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/diag"/>
+						<entry excluding="chrono.cpp|thread.cpp|mutex.cpp|condition-variable.cpp|cxx.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/libcpp"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/rtos"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/mutex-stress"/>
+						<entry excluding="diag/trace-posix-stdout.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="ilg.gnuarmeclipse.managedbuild.packs"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.1953885879">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.1953885879" moduleId="org.eclipse.cdt.core.settings" name="test-mutex-stress-clang-release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.MachO64" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="" artifactName="${ConfigName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.1953885879" name="test-mutex-stress-clang-release" parent="cdt.managedbuild.config.llvm.clang.macosx.exe.debug">
+					<folderInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.1953885879." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.llvm.clang.macosx.exe.debug.1033167895" name="LLVM with Clang (MacOSX)" superClass="cdt.managedbuild.toolchain.llvm.clang.macosx.exe.debug">
+							<targetPlatform archList="all" id="cdt.managedbuild.target.llvm.clang.macosx.platform.exe.debug.464287637" name="Debug Platform" osList="macosx" superClass="cdt.managedbuild.target.llvm.clang.macosx.platform.exe.debug"/>
+							<builder buildPath="${workspace_loc:/os-synthetic-posix-tests}/test-cmsis-valid-clang-debug" id="cdt.managedbuild.builder.gnu.cross.569566707" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.builder.gnu.cross"/>
+							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.assembler.exe.debug.160964924" name="LLVM assembler" superClass="cdt.managedbuild.tool.llvm.clang.macosx.assembler.exe.debug"/>
+							<tool id="cdt.managedbuild.tool.llvm.archiver.base.789639347" name="LLVM archiver" superClass="cdt.managedbuild.tool.llvm.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug.549102703" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug">
+								<option id="llvm.c_cpp.compiler.option.optimization.level.279300427" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.debugging.level.1368295349" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.preprocessor.def.1438284977" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false"/>
+								<option id="llvm.c_cpp.compiler.option.include.paths.2084233106" name="Include paths (-I)" superClass="llvm.c_cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/mutex-stress}&quot;"/>
+								</option>
+								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.359891863" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1080169901" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0  -Weverything -Wno-documentation-unknown-command" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1420935173" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug.2003502646" name="LLVM Clang++" superClass="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug">
+								<option id="llvm.c_cpp.compiler.option.optimization.level.1991106106" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.debugging.level.531851298" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.preprocessor.def.993120651" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false"/>
+								<option id="llvm.c_cpp.compiler.option.include.paths.837934447" name="Include paths (-I)" superClass="llvm.c_cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/mutex-stress}&quot;"/>
+								</option>
+								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.2027354259" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1324239600" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.1773658324" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.c.linker.exe.debug.1577473326" name="LLVM Clang C linker" superClass="cdt.managedbuild.tool.llvm.clang.macosx.c.linker.exe.debug">
+								<option defaultValue="false" id="llvm.c.link.option.nativeCBackEnd.1080960915" name="Create native binary (with C backend code generator)" superClass="llvm.c.link.option.nativeCBackEnd" valueType="boolean"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.cpp.linker.exe.debug.694222524" name="LLVM Clang C++ linker" superClass="cdt.managedbuild.tool.llvm.clang.macosx.cpp.linker.exe.debug">
+								<option defaultValue="false" id="llvm.c.link.option.nativeCBackEnd.1767007882" name="Create native binary (with C backend code generator)" superClass="llvm.c.link.option.nativeCBackEnd" valueType="boolean"/>
+								<option id="llvm.c.link.option.native.2041255248" name="Create native binary (with LLVM native code generator)" superClass="llvm.c.link.option.native" value="false" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.llvm.c.linker.input.885399682" superClass="cdt.managedbuild.tool.llvm.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.1953885879.micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source" name="/" resourcePath="micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source">
+						<toolChain id="cdt.managedbuild.toolchain.llvm.clang.macosx.exe.debug.1357395309" name="LLVM with Clang (MacOSX)" superClass="cdt.managedbuild.toolchain.llvm.clang.macosx.exe.debug" unusedChildren="">
+							<targetPlatform archList="all" id="cdt.managedbuild.target.llvm.clang.macosx.platform.exe.debug.1712507627" name="Debug Platform" osList="macosx" superClass="cdt.managedbuild.target.llvm.clang.macosx.platform.exe.debug"/>
+							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.assembler.exe.debug.454556249" name="LLVM assembler" superClass="cdt.managedbuild.tool.llvm.clang.macosx.assembler.exe.debug.160964924"/>
+							<tool id="cdt.managedbuild.tool.llvm.archiver.base.1774451556" name="LLVM archiver" superClass="cdt.managedbuild.tool.llvm.archiver.base.789639347"/>
+							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug.599056098" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug.549102703">
+								<option id="llvm.c_cpp.compiler.option.misc.other.319554231" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0  -Weverything -Wno-reserved-id-macro -Wno-missing-prototypes -Wno-padded -Wno-sign-conversion -Wno-date-time -Wno-documentation-unknown-command -Wno-missing-variable-declarations -Wno-unused-parameter -Wno-unused-macros -Wno-undef -Wno-cast-qual -Wno-sign-compare -Wno-missing-noreturn -Wno-conversion -Wno-switch-enum -Wno-format-nonliteral -Wno-unused-function" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.optimization.level.216332613" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.more" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.debugging.level.970561300" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" value="llvm.c_cpp.compiler.debugging.level.default" valueType="enumerated"/>
+								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.1392141676" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" value="false" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1706279851" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug.633473807" name="LLVM Clang++" superClass="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug.2003502646">
+								<option id="llvm.c_cpp.compiler.option.misc.other.293935326" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.optimization.level.1775624010" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.more" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.debugging.level.1170874243" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" value="llvm.c_cpp.compiler.debugging.level.default" valueType="enumerated"/>
+								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.1875233848" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" value="false" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.639573055" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.c.linker.exe.debug.216037852" name="LLVM Clang C linker" superClass="cdt.managedbuild.tool.llvm.clang.macosx.c.linker.exe.debug.1577473326"/>
+							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.cpp.linker.exe.debug.1351224151" name="LLVM Clang C++ linker" superClass="cdt.managedbuild.tool.llvm.clang.macosx.cpp.linker.exe.debug.694222524"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/diag"/>
+						<entry excluding="chrono.cpp|thread.cpp|mutex.cpp|condition-variable.cpp|cxx.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/libcpp"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/rtos"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/mutex-stress"/>
+						<entry excluding="diag/trace-posix-stdout.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="ilg.gnuarmeclipse.managedbuild.packs"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.933480961">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.933480961" moduleId="org.eclipse.cdt.core.settings" name="test-mutex-stress-gcc-release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.MachO64" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="" artifactName="${ConfigName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.933480961" name="test-mutex-stress-gcc-release" parent="cdt.managedbuild.config.llvm.clang.macosx.exe.debug">
+					<folderInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.933480961." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.macosx.base.69455457" name="MacOSX GCC" superClass="cdt.managedbuild.toolchain.gnu.macosx.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.MachO64" id="cdt.managedbuild.target.gnu.platform.macosx.base.427632572" name="Debug Platform" osList="macosx" superClass="cdt.managedbuild.target.gnu.platform.macosx.base"/>
+							<builder buildPath="${workspace_loc:/os-synthetic-posix-tests}/test-mutex-stress-gcc-debug" id="cdt.managedbuild.target.gnu.builder.macosx.base.1889105783" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.macosx.base"/>
+							<tool id="cdt.managedbuild.tool.macosx.c.linker.macosx.base.1547004149" name="MacOS X C Linker" superClass="cdt.managedbuild.tool.macosx.c.linker.macosx.base"/>
+							<tool id="cdt.managedbuild.tool.macosx.cpp.linker.macosx.base.1429416541" name="MacOS X C++ Linker" superClass="cdt.managedbuild.tool.macosx.cpp.linker.macosx.base">
+								<inputType id="cdt.managedbuild.tool.macosx.cpp.linker.input.215779352" superClass="cdt.managedbuild.tool.macosx.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.macosx.base.382989247" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.macosx.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.2024062531" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.macosx.base.1197884307" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.macosx.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.base.992927964" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.base">
+								<option id="gnu.cpp.compiler.option.include.paths.196792471" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/mutex-stress}&quot;"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1803694721" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+								<option id="gnu.cpp.compiler.option.optimization.level.690744322" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.1017364401" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.dialect.std.647356506" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.warnings.extrawarn.1374676219" name="Extra warnings (-Wextra)" superClass="gnu.cpp.compiler.option.warnings.extrawarn" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.139336701" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.macosx.base.1090406103" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.macosx.base">
+								<option id="gnu.c.compiler.option.include.paths.568187413" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/mutex-stress}&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.699559938" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.2141033712" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" value="gnu.c.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1519992858" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.dialect.std.1077228940" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.warnings.extrawarn.816348835" name="Extra warnings (-Wextra)" superClass="gnu.c.compiler.option.warnings.extrawarn" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1213203774" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.933480961.micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source" name="/" resourcePath="micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.macosx.base.1033831018" name="MacOSX GCC" superClass="cdt.managedbuild.toolchain.gnu.macosx.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.MachO64" id="cdt.managedbuild.target.gnu.platform.macosx.base.1008963031" name="Debug Platform" osList="macosx" superClass="cdt.managedbuild.target.gnu.platform.macosx.base"/>
+							<tool id="cdt.managedbuild.tool.macosx.c.linker.macosx.base.519141724" name="MacOS X C Linker" superClass="cdt.managedbuild.tool.macosx.c.linker.macosx.base"/>
+							<tool id="cdt.managedbuild.tool.macosx.cpp.linker.macosx.base.41155589" name="MacOS X C++ Linker" superClass="cdt.managedbuild.tool.macosx.cpp.linker.macosx.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.macosx.base.1864498161" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.macosx.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1075935441" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.macosx.base.118407094" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.macosx.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.base.866683846" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.base">
+								<option id="gnu.cpp.compiler.option.include.paths.170589870" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/mutex-stress}&quot;"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1050217852" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+								<option id="gnu.cpp.compiler.option.optimization.level.1983738134" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.1147490907" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.dialect.std.1385471508" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.warnings.extrawarn.373978294" name="Extra warnings (-Wextra)" superClass="gnu.cpp.compiler.option.warnings.extrawarn" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1357204125" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.macosx.base.875784280" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.macosx.base">
+								<option id="gnu.c.compiler.option.include.paths.1738340048" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/mutex-stress}&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.852694157" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.2056205901" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" value="gnu.c.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.100744237" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.dialect.std.1229488905" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.warnings.extrawarn.232325396" name="Extra warnings (-Wextra)" superClass="gnu.c.compiler.option.warnings.extrawarn" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.789784589" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/diag"/>
+						<entry excluding="chrono.cpp|thread.cpp|mutex.cpp|condition-variable.cpp|cxx.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/libcpp"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/rtos"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/mutex-stress"/>
 						<entry excluding="diag/trace-posix-stdout.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/src"/>
 					</sourceEntries>
 				</configuration>
@@ -444,16 +874,28 @@
 	</storageModule>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999;cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.;cdt.managedbuild.tool.gnu.cpp.compiler.macosx.base.573320002;cdt.managedbuild.tool.gnu.cpp.compiler.input.830724693">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.macosx.exe.debug.662410388;cdt.managedbuild.config.gnu.macosx.exe.debug.662410388.;cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.2114241274;cdt.managedbuild.tool.gnu.cpp.compiler.input.432263917">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.933480961;cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.933480961.;cdt.managedbuild.tool.gnu.c.compiler.macosx.base.1090406103;cdt.managedbuild.tool.gnu.c.compiler.input.1213203774">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.macosx.exe.debug.662410388;cdt.managedbuild.config.gnu.macosx.exe.debug.662410388.;cdt.managedbuild.tool.gnu.c.compiler.macosx.exe.debug.1727412385;cdt.managedbuild.tool.gnu.c.compiler.input.1048584398">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999;cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.;cdt.managedbuild.tool.gnu.c.compiler.macosx.base.1124324618;cdt.managedbuild.tool.gnu.c.compiler.input.1119724019">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.macosx.exe.debug.662410388.1578659566;cdt.managedbuild.config.gnu.macosx.exe.debug.662410388.1578659566.;cdt.managedbuild.tool.gnu.c.compiler.macosx.exe.debug.828327180;cdt.managedbuild.tool.gnu.c.compiler.input.2006837701">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.macosx.exe.debug.662410388.1578659566;cdt.managedbuild.config.gnu.macosx.exe.debug.662410388.1578659566.;cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.417712047;cdt.managedbuild.tool.gnu.cpp.compiler.input.123159048">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.933480961;cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.933480961.;cdt.managedbuild.tool.gnu.cpp.compiler.macosx.base.992927964;cdt.managedbuild.tool.gnu.cpp.compiler.input.139336701">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
 	</storageModule>

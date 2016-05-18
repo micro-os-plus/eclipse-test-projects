@@ -2,3 +2,5 @@
 /test-cmsis-rtos-valid-release/
 /test-stress-sema-debug/
 /test-stress-sema-release/
+/test-stress-mutex-debug/
+/test-stres-mutex-release/
