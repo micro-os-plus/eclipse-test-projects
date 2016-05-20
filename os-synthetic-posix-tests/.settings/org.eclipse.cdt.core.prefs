@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581/PATH/delimiter=\:
+environment/project/cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581/PATH/operation=replace
+environment/project/cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581/PATH/value=/opt/homebrew/bin\:/usr/bin\:/bin\:/usr/sbin\:/sbin
+environment/project/cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581/append=true
+environment/project/cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581/appendContributed=true

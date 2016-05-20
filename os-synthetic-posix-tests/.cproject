@@ -58,6 +58,7 @@
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1403340464" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.432263917" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
@@ -78,6 +79,7 @@
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1023858345" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1048584398" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
@@ -173,6 +175,7 @@
 								<option id="gnu.cpp.compiler.option.warnings.extrawarn.2046936830" name="Extra warnings (-Wextra)" superClass="gnu.cpp.compiler.option.warnings.extrawarn" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1769616561" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="NDEBUG"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.123159048" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
@@ -192,6 +195,7 @@
 								<option id="gnu.c.compiler.option.warnings.extrawarn.1270225035" name="Extra warnings (-Wextra)" superClass="gnu.c.compiler.option.warnings.extrawarn" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1966232877" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="NDEBUG"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.2006837701" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
@@ -253,6 +257,7 @@
 								<option id="llvm.c_cpp.compiler.option.preprocessor.def.644297284" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
 								</option>
 								<option id="llvm.c_cpp.compiler.option.include.paths.41330034" name="Include paths (-I)" superClass="llvm.c_cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/cmsis-plus/include}&quot;"/>
@@ -263,8 +268,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/tests/cmsis-rtos-valid}&quot;"/>
 								</option>
-								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.675464414" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.561350290" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0  -Weverything -Wno-documentation-unknown-command" valueType="string"/>
+								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.675464414" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.561350290" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0  -Weverything -Wno-documentation-unknown-command" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.426807539" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug.268322832" name="LLVM Clang++" superClass="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug">
@@ -273,6 +278,7 @@
 								<option id="llvm.c_cpp.compiler.option.preprocessor.def.509032222" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
 								</option>
 								<option id="llvm.c_cpp.compiler.option.include.paths.600684520" name="Include paths (-I)" superClass="llvm.c_cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/cmsis-plus/include}&quot;"/>
@@ -283,8 +289,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/tests/cmsis-rtos-valid}&quot;"/>
 								</option>
-								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.931921806" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.286065507" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation" valueType="string"/>
+								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.931921806" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.286065507" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.1098011226" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.c.linker.exe.debug.409048582" name="LLVM Clang C linker" superClass="cdt.managedbuild.tool.llvm.clang.macosx.c.linker.exe.debug">
@@ -361,6 +367,7 @@
 								<option id="llvm.c_cpp.compiler.option.debugging.level.1775207747" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.preprocessor.def.1214604839" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="NDEBUG"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
 								</option>
 								<option id="llvm.c_cpp.compiler.option.include.paths.129185634" name="Include paths (-I)" superClass="llvm.c_cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/cmsis-plus/include}&quot;"/>
@@ -380,6 +387,7 @@
 								<option id="llvm.c_cpp.compiler.option.debugging.level.13635296" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.preprocessor.def.1684394451" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="NDEBUG"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
 								</option>
 								<option id="llvm.c_cpp.compiler.option.include.paths.1141037894" name="Include paths (-I)" superClass="llvm.c_cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/cmsis-plus/include}&quot;"/>
@@ -462,6 +470,7 @@
 								<option id="llvm.c_cpp.compiler.option.preprocessor.def.1024430954" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
 								</option>
 								<option id="llvm.c_cpp.compiler.option.include.paths.987597548" name="Include paths (-I)" superClass="llvm.c_cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
@@ -479,6 +488,7 @@
 								<option id="llvm.c_cpp.compiler.option.preprocessor.def.1875859950" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
 								</option>
 								<option id="llvm.c_cpp.compiler.option.include.paths.1532065343" name="Include paths (-I)" superClass="llvm.c_cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
@@ -577,6 +587,7 @@
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1056704999" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.optimization.level.386837682" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.debugging.level.1201231686" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
@@ -594,6 +605,7 @@
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1220769976" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
 								</option>
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1000642742" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.1039650298" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
@@ -622,6 +634,7 @@
 								<option id="gnu.cpp.compiler.option.preprocessor.def.944742327" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.optimization.level.1955897898" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.debugging.level.1080920856" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
@@ -639,6 +652,7 @@
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.729152689" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
 								</option>
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.480698925" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.875842544" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
@@ -683,7 +697,9 @@
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug.549102703" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug">
 								<option id="llvm.c_cpp.compiler.option.optimization.level.279300427" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.debugging.level.1368295349" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.preprocessor.def.1438284977" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false"/>
+								<option id="llvm.c_cpp.compiler.option.preprocessor.def.1438284977" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
+								</option>
 								<option id="llvm.c_cpp.compiler.option.include.paths.2084233106" name="Include paths (-I)" superClass="llvm.c_cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
@@ -697,7 +713,9 @@
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug.2003502646" name="LLVM Clang++" superClass="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug">
 								<option id="llvm.c_cpp.compiler.option.optimization.level.1991106106" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.debugging.level.531851298" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.preprocessor.def.993120651" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false"/>
+								<option id="llvm.c_cpp.compiler.option.preprocessor.def.993120651" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
+								</option>
 								<option id="llvm.c_cpp.compiler.option.include.paths.837934447" name="Include paths (-I)" superClass="llvm.c_cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
@@ -792,7 +810,9 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/mutex-stress}&quot;"/>
 								</option>
-								<option id="gnu.cpp.compiler.option.preprocessor.def.1803694721" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1803694721" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
+								</option>
 								<option id="gnu.cpp.compiler.option.optimization.level.690744322" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.debugging.level.1017364401" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.dialect.std.647356506" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
@@ -806,7 +826,9 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/mutex-stress}&quot;"/>
 								</option>
-								<option id="gnu.c.compiler.option.preprocessor.def.symbols.699559938" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.699559938" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
+								</option>
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.2141033712" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" value="gnu.c.optimization.level.most" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.1519992858" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.dialect.std.1077228940" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
@@ -831,7 +853,9 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/mutex-stress}&quot;"/>
 								</option>
-								<option id="gnu.cpp.compiler.option.preprocessor.def.1050217852" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1050217852" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
+								</option>
 								<option id="gnu.cpp.compiler.option.optimization.level.1983738134" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.debugging.level.1147490907" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.dialect.std.1385471508" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
@@ -845,7 +869,9 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/mutex-stress}&quot;"/>
 								</option>
-								<option id="gnu.c.compiler.option.preprocessor.def.symbols.852694157" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.852694157" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
+								</option>
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.2056205901" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" value="gnu.c.optimization.level.most" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.100744237" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.dialect.std.1229488905" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
@@ -866,6 +892,274 @@
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
 			<storageModule moduleId="ilg.gnuarmeclipse.managedbuild.packs"/>
 		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676" moduleId="org.eclipse.cdt.core.settings" name="test-templates-gcc-debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.MachO64" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="" artifactName="${ConfigName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676" name="test-templates-gcc-debug" parent="cdt.managedbuild.config.llvm.clang.macosx.exe.debug">
+					<folderInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.macosx.base.238463061" name="MacOSX GCC" superClass="cdt.managedbuild.toolchain.gnu.macosx.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.MachO64" id="cdt.managedbuild.target.gnu.platform.macosx.base.189289907" name="Debug Platform" osList="macosx" superClass="cdt.managedbuild.target.gnu.platform.macosx.base"/>
+							<builder buildPath="${workspace_loc:/os-synthetic-posix-tests}/test-mutex-stress-gcc-debug" id="cdt.managedbuild.target.gnu.builder.macosx.base.1875232079" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.macosx.base"/>
+							<tool id="cdt.managedbuild.tool.macosx.c.linker.macosx.base.1468379091" name="MacOS X C Linker" superClass="cdt.managedbuild.tool.macosx.c.linker.macosx.base"/>
+							<tool id="cdt.managedbuild.tool.macosx.cpp.linker.macosx.base.1903241690" name="MacOS X C++ Linker" superClass="cdt.managedbuild.tool.macosx.cpp.linker.macosx.base">
+								<inputType id="cdt.managedbuild.tool.macosx.cpp.linker.input.73302208" superClass="cdt.managedbuild.tool.macosx.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.macosx.base.424545404" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.macosx.base">
+								<option id="gnu.both.asm.option.include.paths.1633454343" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/templates}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1696437708" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.macosx.base.1834775969" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.macosx.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.base.175135637" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.base">
+								<option id="gnu.cpp.compiler.option.include.paths.945987377" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/templates}&quot;"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1489863315" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="TRACE"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.optimization.level.10084297" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.511287018" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.dialect.std.470190923" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.warnings.extrawarn.1661653706" name="Extra warnings (-Wextra)" superClass="gnu.cpp.compiler.option.warnings.extrawarn" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.debugging.other.568254238" name="Other debugging flags" superClass="gnu.cpp.compiler.option.debugging.other" value="-ggdb" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.453224792" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.macosx.base.536497203" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.macosx.base">
+								<option id="gnu.c.compiler.option.include.paths.815467265" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/templates}&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.991017046" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="TRACE"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
+								</option>
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.596651472" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1008511863" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.dialect.std.1463235179" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.warnings.extrawarn.1416279186" name="Extra warnings (-Wextra)" superClass="gnu.c.compiler.option.warnings.extrawarn" value="true" valueType="boolean"/>
+								<option id="gnu.c.compiler.option.debugging.other.1043501764" name="Other debugging flags" superClass="gnu.c.compiler.option.debugging.other" value="-ggdb" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.516285854" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source" name="/" resourcePath="micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.macosx.base.2037916397" name="MacOSX GCC" superClass="cdt.managedbuild.toolchain.gnu.macosx.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.MachO64" id="cdt.managedbuild.target.gnu.platform.macosx.base.1873321848" name="Debug Platform" osList="macosx" superClass="cdt.managedbuild.target.gnu.platform.macosx.base"/>
+							<tool id="cdt.managedbuild.tool.macosx.c.linker.macosx.base.1728173748" name="MacOS X C Linker" superClass="cdt.managedbuild.tool.macosx.c.linker.macosx.base"/>
+							<tool id="cdt.managedbuild.tool.macosx.cpp.linker.macosx.base.105012661" name="MacOS X C++ Linker" superClass="cdt.managedbuild.tool.macosx.cpp.linker.macosx.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.macosx.base.982983208" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.macosx.base">
+								<option id="gnu.both.asm.option.include.paths.889840634" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/templates}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.314181856" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.macosx.base.1630533351" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.macosx.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.base.513798994" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.base">
+								<option id="gnu.cpp.compiler.option.include.paths.1520585947" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/templates}&quot;"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1277937187" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="TRACE"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.optimization.level.918957749" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.1436371774" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.dialect.std.1049155748" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.warnings.extrawarn.1465381165" name="Extra warnings (-Wextra)" superClass="gnu.cpp.compiler.option.warnings.extrawarn" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.debugging.other.1135336610" name="Other debugging flags" superClass="gnu.cpp.compiler.option.debugging.other" value="-ggdb" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1670829071" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.macosx.base.1510286073" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.macosx.base">
+								<option id="gnu.c.compiler.option.include.paths.1785516225" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/templates}&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1595050940" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="TRACE"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
+								</option>
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1967634884" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1159962735" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.dialect.std.692100820" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.warnings.extrawarn.94695529" name="Extra warnings (-Wextra)" superClass="gnu.c.compiler.option.warnings.extrawarn" value="true" valueType="boolean"/>
+								<option id="gnu.c.compiler.option.debugging.other.2147092607" name="Other debugging flags" superClass="gnu.c.compiler.option.debugging.other" value="-ggdb" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.2039925345" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/diag"/>
+						<entry excluding="chrono.cpp|thread.cpp|mutex.cpp|condition-variable.cpp|cxx.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/libcpp"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/rtos"/>
+						<entry excluding="systick.c" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/templates"/>
+						<entry excluding="diag/trace-posix-stdout.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="ilg.gnuarmeclipse.managedbuild.packs"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581" moduleId="org.eclipse.cdt.core.settings" name="test-templates-gcc5-debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="" artifactName="${ConfigName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581" name="test-templates-gcc5-debug" parent="cdt.managedbuild.config.llvm.clang.macosx.exe.debug">
+					<folderInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.741501194" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.225440284" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<builder buildPath="${workspace_loc:/os-synthetic-posix-tests}/test-templates-gcc5-debug" id="cdt.managedbuild.target.gnu.builder.base.321281481" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.787195563" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool command="g++-5" id="cdt.managedbuild.tool.gnu.cpp.compiler.base.2121450823" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+								<option id="gnu.cpp.compiler.option.include.paths.545610953" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/templates}&quot;"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1720447404" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="TRACE"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.optimization.level.1173612744" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.1535390680" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.dialect.std.658896259" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.warnings.extrawarn.1451752715" name="Extra warnings (-Wextra)" superClass="gnu.cpp.compiler.option.warnings.extrawarn" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.774762855" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool command="gcc-5" id="cdt.managedbuild.tool.gnu.c.compiler.base.1583029547" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+								<option id="gnu.c.compiler.option.include.paths.857387304" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/templates}&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.804785226" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="TRACE"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
+								</option>
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1640575624" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.574953993" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.dialect.std.1973995302" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.warnings.extrawarn.1962120960" name="Extra warnings (-Wextra)" superClass="gnu.c.compiler.option.warnings.extrawarn" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1250548688" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.1361521352" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>
+							<tool command="g++-5" id="cdt.managedbuild.tool.gnu.cpp.linker.base.673324455" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1625325007" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool command="as-5" id="cdt.managedbuild.tool.gnu.assembler.base.1845144934" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+								<option id="gnu.both.asm.option.include.paths.1499118423" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/templates}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1042533539" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581.micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source" name="/" resourcePath="micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.103813334" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.1064549803" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.1726078069" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+								<option id="gnu.cpp.compiler.option.include.paths.1517811702" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/templates}&quot;"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1544066485" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="TRACE"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.optimization.level.1870313745" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.111117391" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.dialect.std.645374462" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.warnings.extrawarn.1126497328" name="Extra warnings (-Wextra)" superClass="gnu.cpp.compiler.option.warnings.extrawarn" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.221292615" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.1776651848" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+								<option id="gnu.c.compiler.option.include.paths.378701739" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/portable/posix-io-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/templates}&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.613959587" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="TRACE"/>
+									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=600L"/>
+								</option>
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1603190842" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.340068068" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.dialect.std.1317771748" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.warnings.extrawarn.1908413082" name="Extra warnings (-Wextra)" superClass="gnu.c.compiler.option.warnings.extrawarn" value="true" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1975215839" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.786624946" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.49603476" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.1082532046" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+								<option id="gnu.both.asm.option.include.paths.198000388" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/templates}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1904558123" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/diag"/>
+						<entry excluding="chrono.cpp|thread.cpp|mutex.cpp|condition-variable.cpp|cxx.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/libcpp"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/rtos"/>
+						<entry excluding="systick.c" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/templates"/>
+						<entry excluding="diag/trace-posix-stdout.cpp" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="ilg.gnuarmeclipse.managedbuild.packs"/>
+		</cconfiguration>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="refreshScope"/>
@@ -877,13 +1171,22 @@
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999;cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.;cdt.managedbuild.tool.gnu.cpp.compiler.macosx.base.573320002;cdt.managedbuild.tool.gnu.cpp.compiler.input.830724693">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581;cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581.;cdt.managedbuild.tool.gnu.c.compiler.base.1583029547;cdt.managedbuild.tool.gnu.c.compiler.input.1250548688">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.macosx.exe.debug.662410388;cdt.managedbuild.config.gnu.macosx.exe.debug.662410388.;cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.2114241274;cdt.managedbuild.tool.gnu.cpp.compiler.input.432263917">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.933480961;cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.933480961.;cdt.managedbuild.tool.gnu.c.compiler.macosx.base.1090406103;cdt.managedbuild.tool.gnu.c.compiler.input.1213203774">
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676;cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.;cdt.managedbuild.tool.gnu.cpp.compiler.macosx.base.175135637;cdt.managedbuild.tool.gnu.cpp.compiler.input.453224792">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.macosx.exe.debug.662410388;cdt.managedbuild.config.gnu.macosx.exe.debug.662410388.;cdt.managedbuild.tool.gnu.c.compiler.macosx.exe.debug.1727412385;cdt.managedbuild.tool.gnu.c.compiler.input.1048584398">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.macosx.exe.debug.662410388.1578659566;cdt.managedbuild.config.gnu.macosx.exe.debug.662410388.1578659566.;cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.417712047;cdt.managedbuild.tool.gnu.cpp.compiler.input.123159048">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.933480961;cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.933480961.;cdt.managedbuild.tool.gnu.c.compiler.macosx.base.1090406103;cdt.managedbuild.tool.gnu.c.compiler.input.1213203774">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999;cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.;cdt.managedbuild.tool.gnu.c.compiler.macosx.base.1124324618;cdt.managedbuild.tool.gnu.c.compiler.input.1119724019">
@@ -892,10 +1195,13 @@
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.macosx.exe.debug.662410388.1578659566;cdt.managedbuild.config.gnu.macosx.exe.debug.662410388.1578659566.;cdt.managedbuild.tool.gnu.c.compiler.macosx.exe.debug.828327180;cdt.managedbuild.tool.gnu.c.compiler.input.2006837701">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.macosx.exe.debug.662410388.1578659566;cdt.managedbuild.config.gnu.macosx.exe.debug.662410388.1578659566.;cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.417712047;cdt.managedbuild.tool.gnu.cpp.compiler.input.123159048">
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676;cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.;cdt.managedbuild.tool.gnu.c.compiler.macosx.base.536497203;cdt.managedbuild.tool.gnu.c.compiler.input.516285854">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.933480961;cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.933480961.;cdt.managedbuild.tool.gnu.cpp.compiler.macosx.base.992927964;cdt.managedbuild.tool.gnu.cpp.compiler.input.139336701">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581;cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581.;cdt.managedbuild.tool.gnu.cpp.compiler.base.2121450823;cdt.managedbuild.tool.gnu.cpp.compiler.input.774762855">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
 	</storageModule>
