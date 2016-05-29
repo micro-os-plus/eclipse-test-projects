@@ -30,3 +30,15 @@ export PATH=/Applications/SEGGER/JLink_V510s:$PATH
 export PATH=/opt/homebrew/bin:$PATH
 
 ```
+
+## Warnings
+
+```
+All:
+-Wall -Wextra
+-Wunused -Wuninitialized -Wmissing-declarations -Wconversion -Wpointer-arith -Wpadded -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal
+C:
+-Wmissing-prototypes -Wstrict-prototypes -Wbad-function-cast
+C++:
+-Wabi -Wctor-dtor-privacy -Wnoexcept -Wnon-virtual-dtor -Wstrict-null-sentinel -Wsign-promo
+```

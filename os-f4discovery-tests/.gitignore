@@ -4,3 +4,6 @@
 /test-stress-sema-release/
 /test-stress-mutex-debug/
 /test-stres-mutex-release/
+/test-rtos-debug/
+/test-rtos-release/
+/test-stress-mutex-release/

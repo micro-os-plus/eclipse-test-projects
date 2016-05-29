@@ -40,7 +40,11 @@ tmp="${HOME}/tmp/cmsis-plus-tests"
 cd "${parent}"
 name="$(basename $(pwd))"
 
-list=( "test-cmsis-rtos-valid-release" "test-cmsis-rtos-valid-debug" )
+list=( \
+"test-cmsis-rtos-valid-release" \
+"test-rtos-release" \
+"test-stress-mutex-release" \
+)
 
 for f in "${list[@]}"
 do
@@ -59,7 +63,7 @@ do
 	# run executable
     qemu-system-gnuarmeclipse \
     --verbose --board STM32F4-Discovery --image $f/$f.elf  \
-    -d unimp,guest_errors --semihosting-config enable=on,target=native --semihosting-cmdline validator
+    -d unimp,guest_errors --semihosting-config enable=on,target=native --semihosting-cmdline test
   done
     
   date >>"${tmp}/${name}"
