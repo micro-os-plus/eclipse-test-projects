@@ -53,8 +53,6 @@ done
 
 rm -rf "${tmp}/${name}"
 
-#/Users/ilg/Work/qemu/build/osx/qemu/gnuarmeclipse-softmmu/qemu-system-gnuarmeclipse --verbose --board STM32F4-Discovery --mcu STM32F407VG --gdb tcp::1234 -d unimp,guest_errors --semihosting-config enable=on,target=native --semihosting-cmdline validator
-
 cnt=0
 while [ $cnt -lt $loops ]
 do
@@ -65,9 +63,9 @@ do
     --verbose --board STM32F4-Discovery --image $f/$f.elf  \
     -d unimp,guest_errors --semihosting-config enable=on,target=native --semihosting-cmdline test
   done
-    
+
   date >>"${tmp}/${name}"
-  
+
   let cnt=cnt+1
 done
 
