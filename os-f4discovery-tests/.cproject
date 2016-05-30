@@ -69,7 +69,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/cmsis-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/portable/micro-os-plus-xpack/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/portable/micro-os-plus-xpack/tests/cmsis-rtos-valid}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/tests/cmsis-rtos-valid}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs.1714348861" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -94,7 +94,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/cmsis-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/portable/micro-os-plus-xpack/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/portable/micro-os-plus-xpack/tests/cmsis-rtos-valid}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/tests/cmsis-rtos-valid}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.1533171444" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -122,7 +122,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/cmsis-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/portable/micro-os-plus-xpack/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/portable/micro-os-plus-xpack/tests/cmsis-rtos-valid}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/tests/cmsis-rtos-valid}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs.1391374372" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -736,7 +736,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/cmsis-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/portable/micro-os-plus-xpack/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/portable/micro-os-plus-xpack/tests/cmsis-rtos-valid}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/tests/cmsis-rtos-valid}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs.1272414641" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -758,7 +758,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/cmsis-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/portable/micro-os-plus-xpack/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/portable/micro-os-plus-xpack/tests/cmsis-rtos-valid}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/tests/cmsis-rtos-valid}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.816775179" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -783,7 +783,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/cmsis-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/portable/micro-os-plus-xpack/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/portable/micro-os-plus-xpack/tests/cmsis-rtos-valid}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-f4discovery-tests/micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/tests/cmsis-rtos-valid}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs.1587254844" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>

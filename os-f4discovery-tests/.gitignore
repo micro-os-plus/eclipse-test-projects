@@ -7,3 +7,4 @@
 /test-rtos-debug/
 /test-rtos-release/
 /test-stress-mutex-release/
+/test-rtos-debug-io/
