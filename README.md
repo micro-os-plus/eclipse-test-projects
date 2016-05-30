@@ -19,7 +19,14 @@ git submodule update --init --recursive
 * build the **test-cmsis-rtos-valid-{clang|gcc}-}{debug|release}** configurations
 * run the executables
 
-Note: currently only OS X is supported.
+Note 1: currently only OS X is supported.
+
+Note 2: some of the build configurations can be also used on GNU/Linux,
+directly, even if their name refers to OS X, as long as the executables
+required available. Changing toolchains is not recommended, since it
+may lead to corrupted configurations. If changing configurations
+succeeds, the language Dialect must be set again for both the C and
+the C++ tools.
 
 ## path
 
