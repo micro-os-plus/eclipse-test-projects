@@ -44,6 +44,8 @@ list=( \
 "test-cmsis-rtos-valid-release" \
 "test-rtos-release" \
 "test-stress-mutex-release" \
+"test-cmsis-rtos-valid-debug" \
+"test-rtos-debug" \
 )
 
 for f in "${list[@]}"
