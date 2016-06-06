@@ -50,6 +50,7 @@ list=( \
 
 for f in "${list[@]}"
 do
+    echo $f
     (cd $f; make all)
 done
 
@@ -58,6 +59,7 @@ rm -rf "${tmp}/${name}"
 cnt=0
 while [ $cnt -lt $loops ]
 do
+  echo $f
   for f in "${list[@]}"
   do
 	# run executable
