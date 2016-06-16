@@ -61,6 +61,7 @@ name="$(basename $(pwd))"
 
 for f in "${list[@]}"
 do
+    echo
     echo make $f
     (cd $f; make all)
 done
@@ -72,6 +73,8 @@ while [ $cnt -lt $loops ]
 do
   for f in "${list[@]}"
   do
+    echo
+    echo run $f
 	# run executable
     $f/$f
   done

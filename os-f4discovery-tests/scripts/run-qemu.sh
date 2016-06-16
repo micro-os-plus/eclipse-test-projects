@@ -50,7 +50,8 @@ list=( \
 
 for f in "${list[@]}"
 do
-    echo $f
+    echo
+    echo make $f
     (cd $f; make all)
 done
 
@@ -59,9 +60,10 @@ rm -rf "${tmp}/${name}"
 cnt=0
 while [ $cnt -lt $loops ]
 do
-  echo $f
   for f in "${list[@]}"
   do
+    echo
+    echo run $f
 	# run executable
     qemu-system-gnuarmeclipse \
     --verbose --board STM32F4-Discovery --image $f/$f.elf  \
