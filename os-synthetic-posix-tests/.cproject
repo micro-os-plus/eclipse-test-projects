@@ -1734,6 +1734,7 @@
 								<option id="gnu.cpp.compiler.option.warnings.extrawarn.1005420022" name="Extra warnings (-Wextra)" superClass="gnu.cpp.compiler.option.warnings.extrawarn" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<option id="gnu.cpp.compiler.option.other.other.565561712" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -Wunused -Wuninitialized -Wmissing-declarations -Wconversion -Wpointer-arith -Wpadded -Wshadow -Wlogical-op  -Wfloat-equal -Wabi -Wctor-dtor-privacy -Wnoexcept -Wnon-virtual-dtor -Wstrict-null-sentinel -Wsign-promo" valueType="string"/>
 								<option id="gnu.cpp.compiler.option.warnings.toerrors.838164152" name="Warnings as errors (-Werror)" superClass="gnu.cpp.compiler.option.warnings.toerrors" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.preprocess.208919659" name="Preprocess only (-E)" superClass="gnu.cpp.compiler.option.preprocessor.preprocess" useByScannerDiscovery="false" value="false" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.44965509" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool command="gcc-5" id="cdt.managedbuild.tool.gnu.c.compiler.base.1348396776" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
@@ -1777,6 +1778,42 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581.1641680966.1619641456.1948249800" name="os-core.cpp" rcbsApplicability="disable" resourcePath="micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/src/rtos/os-core.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.base.1662503240.1822395845">
+						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.1662503240.1822395845" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base.1662503240">
+							<option id="gnu.cpp.compiler.option.preprocessor.preprocess.2054940516" name="Preprocess only (-E)" superClass="gnu.cpp.compiler.option.preprocessor.preprocess" value="false" valueType="boolean"/>
+							<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.793450754" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+						</tool>
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.654135292" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.770820065" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1926968457" name="Resource Custom Build Step Output Type"/>
+						</tool>
+					</fileInfo>
+					<folderInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581.1641680966.1619641456.1930310661" name="/" resourcePath="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/rtos">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.413605164" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base" unusedChildren="">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.783927686" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base.1520253056"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.298258850" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base.1662503240">
+								<option id="gnu.cpp.compiler.option.preprocessor.preprocess.1286378063" name="Preprocess only (-E)" superClass="gnu.cpp.compiler.option.preprocessor.preprocess" value="false" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1985838325" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.1422949741" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base.1348396776">
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1899052631" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.925326770" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base.566948809"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.2113112496" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base.773931598"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.470844380" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base.1447215713">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1064773736" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581.1641680966.1619641456.749777925" name="chrono.cpp" rcbsApplicability="disable" resourcePath="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/libcpp/chrono.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.base.1662503240.1948448747">
+						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.1662503240.1948448747" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base.1662503240">
+							<option id="gnu.cpp.compiler.option.preprocessor.preprocess.143224620" name="Preprocess only (-E)" superClass="gnu.cpp.compiler.option.preprocessor.preprocess" value="false" valueType="boolean"/>
+							<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.597268225" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+						</tool>
+					</fileInfo>
 					<folderInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581.1641680966.1619641456.micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source" name="/" resourcePath="micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source">
 						<toolChain id="cdt.managedbuild.toolchain.gnu.base.498040609" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.866060588" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
@@ -1802,6 +1839,7 @@
 								<option id="gnu.cpp.compiler.option.warnings.extrawarn.995779465" name="Extra warnings (-Wextra)" superClass="gnu.cpp.compiler.option.warnings.extrawarn" value="true" valueType="boolean"/>
 								<option id="gnu.cpp.compiler.option.other.other.1920847334" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -Wunused -Wuninitialized -Wmissing-declarations -Wconversion -Wpointer-arith -Wpadded -Wshadow -Wlogical-op  -Wfloat-equal -Wabi -Wctor-dtor-privacy -Wnoexcept -Wnon-virtual-dtor -Wstrict-null-sentinel -Wsign-promo" valueType="string"/>
 								<option id="gnu.cpp.compiler.option.warnings.toerrors.1603382081" name="Warnings as errors (-Werror)" superClass="gnu.cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.preprocess.1831188884" name="Preprocess only (-E)" superClass="gnu.cpp.compiler.option.preprocessor.preprocess" value="false" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.621218685" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool command="gcc-5" id="cdt.managedbuild.tool.gnu.c.compiler.base.983840774" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
