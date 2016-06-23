@@ -10,3 +10,7 @@
 /test-rtos-debug-io/
 /f/
 /test-rtos-debug-rtt/
+/test-mutex-stress-debug/
+/test-mutex-stress-release/
+/test-sema-stress-debug/
+/test-sema-stress-release/

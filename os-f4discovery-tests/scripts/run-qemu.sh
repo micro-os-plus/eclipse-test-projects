@@ -43,7 +43,7 @@ name="$(basename $(pwd))"
 list=( \
 "test-cmsis-rtos-valid-release" \
 "test-rtos-release" \
-"test-stress-mutex-release" \
+"test-mutex-stress-release" \
 "test-cmsis-rtos-valid-debug" \
 "test-rtos-debug" \
 )
