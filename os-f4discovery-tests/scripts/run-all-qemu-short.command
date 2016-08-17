@@ -18,4 +18,4 @@ export PATH=/Applications/SEGGER/JLink_V510s:$PATH
 export PATH=/opt/homebrew/bin:$PATH
 
 # caffeinate bash "$parent/run-qemu.sh"
-caffeinate bash "$parent/run-qemu.sh" --loops 1000
+caffeinate bash "$parent/run-qemu-short.sh" --loops 1000

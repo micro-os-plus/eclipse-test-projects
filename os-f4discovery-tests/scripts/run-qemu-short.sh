@@ -51,10 +51,7 @@ name="$(basename $(pwd))".txt
 
 list=( \
 "test-cmsis-rtos-valid-release" \
-"test-rtos-release" \
-"test-mutex-stress-release" \
 "test-cmsis-rtos-valid-debug" \
-"test-rtos-debug" \
 )
 
 for f in "${list[@]}"
