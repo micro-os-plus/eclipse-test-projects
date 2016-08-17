@@ -16,7 +16,7 @@ git submodule update --init --recursive
 ## The POSIX synthetic platform tests
 
 * in Eclipse, import the **os-synthetic-posix-tests** project
-* build the **test-cmsis-rtos-valid-{clang|gcc}-}{debug|release}** configurations
+* build the **test-cmsis-rtos-valid-{clang|gcc}-{debug|release}** configurations
 * run the executables
 
 Note 1: currently only OS X is supported.
