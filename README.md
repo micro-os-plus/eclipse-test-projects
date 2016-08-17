@@ -1,4 +1,4 @@
-# Eclipse projects to build some µOS++++/CMSIS tests
+# Eclipse projects to build some µOS++/CMSIS++ tests
 
 To use this tests, you need to:
 
