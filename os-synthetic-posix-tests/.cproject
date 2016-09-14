@@ -1051,41 +1051,41 @@
 							<tool id="cdt.managedbuild.tool.llvm.assembler.base.1914200645" name="LLVM assembler" superClass="cdt.managedbuild.tool.llvm.assembler.base"/>
 							<tool id="cdt.managedbuild.tool.llvm.archiver.base.620642735" name="LLVM archiver" superClass="cdt.managedbuild.tool.llvm.archiver.base"/>
 							<tool id="cdt.managedbuild.tool.llvm.c.compiler.base.1828943114" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.c.compiler.base">
-								<option id="llvm.c_cpp.compiler.option.include.paths.942169443" name="Include paths (-I)" superClass="llvm.c_cpp.compiler.option.include.paths" valueType="includePath">
+								<option id="llvm.c_cpp.compiler.option.include.paths.942169443" name="Include paths (-I)" superClass="llvm.c_cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/rtos}&quot;"/>
 								</option>
-								<option id="llvm.c_cpp.compiler.option.preprocessor.def.89054094" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+								<option id="llvm.c_cpp.compiler.option.preprocessor.def.89054094" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
 									<listOptionValue builtIn="false" value="OS_USE_TRACE_POSIX_STDOUT"/>
 								</option>
-								<option id="llvm.c_cpp.compiler.option.optimization.level.740281397" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.none" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.debugging.level.935172093" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
-								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.276631464" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1248676878" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
-								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.1490008288" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
+								<option id="llvm.c_cpp.compiler.option.optimization.level.740281397" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.debugging.level.935172093" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.276631464" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1248676878" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.1490008288" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.908154360" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.llvm.cpp.compiler.base.700321629" name="LLVM Clang++" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.base">
-								<option id="llvm.c_cpp.compiler.option.include.paths.1494828781" name="Include paths (-I)" superClass="llvm.c_cpp.compiler.option.include.paths" valueType="includePath">
+								<option id="llvm.c_cpp.compiler.option.include.paths.1494828781" name="Include paths (-I)" superClass="llvm.c_cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/os-synthetic-posix-tests/micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/tests/rtos}&quot;"/>
 								</option>
-								<option id="llvm.c_cpp.compiler.option.preprocessor.def.1601178939" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+								<option id="llvm.c_cpp.compiler.option.preprocessor.def.1601178939" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
 									<listOptionValue builtIn="false" value="OS_USE_TRACE_POSIX_STDOUT"/>
 								</option>
-								<option id="llvm.c_cpp.compiler.option.optimization.level.1803073917" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.none" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.debugging.level.1468551364" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
-								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.1791160059" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1571302376" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
-								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.898308472" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
+								<option id="llvm.c_cpp.compiler.option.optimization.level.1803073917" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.debugging.level.1468551364" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.1791160059" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1571302376" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.898308472" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.250892621" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.llvm.c.linker.base.1267376548" name="LLVM Clang C linker" superClass="cdt.managedbuild.tool.llvm.c.linker.base">
@@ -1100,6 +1100,18 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.gnu.macosx.exe.debug.662410388.1114395684.272973379" name="os-core.cpp" rcbsApplicability="disable" resourcePath="micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/src/rtos/os-core.cpp" toolsToInvoke="cdt.managedbuild.tool.llvm.cpp.compiler.base.700321629.1898629291">
+						<tool id="cdt.managedbuild.tool.llvm.cpp.compiler.base.700321629.1898629291" name="LLVM Clang++" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.base.700321629">
+							<option id="llvm.c_cpp.compiler.option.preprocessor.preprocess.1555433514" name="Preprocess only (-E)" superClass="llvm.c_cpp.compiler.option.preprocessor.preprocess" value="false" valueType="boolean"/>
+							<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.775170506" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
+						</tool>
+						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1712556930" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1241934539" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1691674458" name="Resource Custom Build Step Output Type"/>
+						</tool>
+					</fileInfo>
 					<folderInfo id="cdt.managedbuild.config.gnu.macosx.exe.debug.662410388.1114395684.micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source" name="/" resourcePath="micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source">
 						<toolChain id="cdt.managedbuild.toolchain.llvm.clang.macosx.base.1257878164" name="LLVM with Clang (MacOSX)" superClass="cdt.managedbuild.toolchain.llvm.clang.macosx.base">
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.MachO64" id="cdt.managedbuild.target.llvm.macosx.platform.base" isAbstract="true" name="Debug Platform" osList="macosx" superClass="cdt.managedbuild.target.llvm.macosx.platform.base"/>
@@ -1778,42 +1790,6 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
-					<fileInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581.1641680966.1619641456.1948249800" name="os-core.cpp" rcbsApplicability="disable" resourcePath="micro-os-plus-iii/ilg/synthetic/posix-arch-xpack/src/rtos/os-core.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.base.1662503240.1822395845">
-						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.1662503240.1822395845" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base.1662503240">
-							<option id="gnu.cpp.compiler.option.preprocessor.preprocess.2054940516" name="Preprocess only (-E)" superClass="gnu.cpp.compiler.option.preprocessor.preprocess" value="false" valueType="boolean"/>
-							<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.793450754" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
-						</tool>
-						<tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.654135292" name="Resource Custom Build Step">
-							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.770820065" name="Resource Custom Build Step Input Type">
-								<additionalInput kind="additionalinputdependency" paths=""/>
-							</inputType>
-							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1926968457" name="Resource Custom Build Step Output Type"/>
-						</tool>
-					</fileInfo>
-					<folderInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581.1641680966.1619641456.1930310661" name="/" resourcePath="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/rtos">
-						<toolChain id="cdt.managedbuild.toolchain.gnu.base.413605164" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base" unusedChildren="">
-							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
-							<tool id="cdt.managedbuild.tool.gnu.archiver.base.783927686" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base.1520253056"/>
-							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.298258850" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base.1662503240">
-								<option id="gnu.cpp.compiler.option.preprocessor.preprocess.1286378063" name="Preprocess only (-E)" superClass="gnu.cpp.compiler.option.preprocessor.preprocess" value="false" valueType="boolean"/>
-								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1985838325" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
-							</tool>
-							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.1422949741" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base.1348396776">
-								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1899052631" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
-							</tool>
-							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.925326770" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base.566948809"/>
-							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.2113112496" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base.773931598"/>
-							<tool id="cdt.managedbuild.tool.gnu.assembler.base.470844380" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base.1447215713">
-								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1064773736" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
-							</tool>
-						</toolChain>
-					</folderInfo>
-					<fileInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581.1641680966.1619641456.749777925" name="chrono.cpp" rcbsApplicability="disable" resourcePath="micro-os-plus-iii/ilg/arm/cmsis-plus-xpack/src/libcpp/chrono.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.base.1662503240.1948448747">
-						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.1662503240.1948448747" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base.1662503240">
-							<option id="gnu.cpp.compiler.option.preprocessor.preprocess.143224620" name="Preprocess only (-E)" superClass="gnu.cpp.compiler.option.preprocessor.preprocess" value="false" valueType="boolean"/>
-							<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.597268225" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
-						</tool>
-					</fileInfo>
 					<folderInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581.1641680966.1619641456.micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source" name="/" resourcePath="micro-os-plus-iii/ilg/arm/arm-cmsis-rtos-validator-xpack/Source">
 						<toolChain id="cdt.managedbuild.toolchain.gnu.base.498040609" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.866060588" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>

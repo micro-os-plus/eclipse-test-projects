@@ -14,3 +14,5 @@
 /test-mutex-stress-release/
 /test-sema-stress-debug/
 /test-sema-stress-release/
+/test-rtos-cm0-debug/
+/test-cmsis-rtos-valid-cm0-debug/

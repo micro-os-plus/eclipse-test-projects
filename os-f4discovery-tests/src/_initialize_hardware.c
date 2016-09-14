@@ -5,11 +5,13 @@
 
 // ----------------------------------------------------------------------------
 
+#include <cmsis-plus/rtos/os-hooks.h>
+#include <cmsis-plus/cortexm/exception-handlers.h>
+
 #include <stm32f4xx.h>
 #include <stm32f4xx_hal.h>
 #include <stm32f4xx_hal_cortex.h>
 
-#include <cmsis-plus/cortexm/exception-handlers.h>
 
 // ----------------------------------------------------------------------------
 
@@ -35,9 +37,6 @@
 // Forward declarations.
 
 void
-os_initialize_hardware(void);
-
-void
 SystemClock_Config(void);
 
 // ----------------------------------------------------------------------------
@@ -55,7 +54,7 @@ SystemClock_Config(void);
 // and calling HAL_IncTick().
 
 void
-os_initialize_hardware(void)
+os_startup_initialize_hardware(void)
 {
   //NVIC_SetPriorityGrouping(NVIC_PRIORITYGROUP_4);
   NVIC_SetPriorityGrouping( 0 );
