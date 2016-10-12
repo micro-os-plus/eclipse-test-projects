@@ -450,7 +450,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.632898091" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.misc.other.308819915" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe  -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
@@ -470,7 +470,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.1343549206" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.misc.other.760476083" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
@@ -492,7 +492,7 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/tests/mutex-stress/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/test/mutex-stress/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/posix-arch/src"/>
 					</sourceEntries>
 				</configuration>
@@ -531,7 +531,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.275890919" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
@@ -542,7 +542,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1056704999" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
@@ -563,7 +563,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1220769976" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
@@ -582,7 +582,7 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/tests/mutex-stress/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/test/mutex-stress/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/posix-arch/src"/>
 					</sourceEntries>
 				</configuration>
@@ -621,7 +621,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.359891863" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.misc.other.1080169901" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
@@ -639,7 +639,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.2027354259" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.misc.other.1324239600" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
@@ -661,7 +661,7 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/tests/mutex-stress/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/test/mutex-stress/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/posix-arch/src"/>
 					</sourceEntries>
 				</configuration>
@@ -700,7 +700,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.2024062531" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
@@ -711,7 +711,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1803694721" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
@@ -730,7 +730,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.699559938" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
@@ -747,7 +747,7 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/tests/mutex-stress/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/test/mutex-stress/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/posix-arch/src"/>
 					</sourceEntries>
 				</configuration>
@@ -786,7 +786,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.54148316" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
@@ -797,7 +797,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.429374970" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
@@ -820,7 +820,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.429592633" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
@@ -841,7 +841,7 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/tests/rtos/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/test/rtos/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/posix-arch/src"/>
 					</sourceEntries>
 				</configuration>
@@ -877,7 +877,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="llvm.c_cpp.compiler.option.preprocessor.def.89054094" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
@@ -898,7 +898,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="llvm.c_cpp.compiler.option.preprocessor.def.1601178939" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
@@ -927,7 +927,7 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/tests/rtos/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/test/rtos/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/posix-arch/src"/>
 					</sourceEntries>
 				</configuration>
@@ -962,7 +962,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="llvm.c_cpp.compiler.option.preprocessor.def.1403923065" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
@@ -980,7 +980,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="llvm.c_cpp.compiler.option.preprocessor.def.1038156178" name="Defined symbols (-D)" superClass="llvm.c_cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
@@ -1006,7 +1006,7 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/tests/rtos/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/test/rtos/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/posix-arch/src"/>
 					</sourceEntries>
 				</configuration>
@@ -1044,7 +1044,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.55088984" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
@@ -1055,7 +1055,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.539032948" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
@@ -1075,7 +1075,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1088679768" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
@@ -1093,7 +1093,7 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/tests/rtos/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/test/rtos/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/posix-arch/src"/>
 					</sourceEntries>
 				</configuration>
@@ -1126,7 +1126,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1559426401" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
@@ -1148,7 +1148,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1312409564" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
@@ -1177,7 +1177,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.93377476" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
@@ -1185,7 +1185,7 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/tests/rtos/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/test/rtos/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/posix-arch/src"/>
 					</sourceEntries>
 				</configuration>
@@ -1218,7 +1218,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.743044083" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
@@ -1237,7 +1237,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1618401766" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
@@ -1263,7 +1263,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1415832229" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
@@ -1271,7 +1271,7 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/tests/rtos/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/test/rtos/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/posix-arch/src"/>
 					</sourceEntries>
 				</configuration>
@@ -1533,7 +1533,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.759887096" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
@@ -1555,7 +1555,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1384649357" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
@@ -1584,7 +1584,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.67934340" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
@@ -1592,7 +1592,7 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/tests/mutex-stress/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/test/mutex-stress/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/posix-arch/src"/>
 					</sourceEntries>
 				</configuration>
@@ -1625,7 +1625,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1717962269" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
@@ -1644,7 +1644,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.196362544" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
@@ -1670,7 +1670,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1488689278" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
@@ -1678,7 +1678,7 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/tests/mutex-stress/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/test/mutex-stress/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/posix-arch/src"/>
 					</sourceEntries>
 				</configuration>
@@ -1940,7 +1940,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.637268866" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
@@ -1962,7 +1962,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1686080690" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
@@ -1991,7 +1991,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.2054017887" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
@@ -1999,7 +1999,7 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/tests/rtos/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/test/rtos/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/posix-arch/src"/>
 					</sourceEntries>
 				</configuration>
@@ -2032,7 +2032,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1594032327" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
@@ -2051,7 +2051,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.88144648" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
@@ -2077,7 +2077,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/include/cmsis-plus/legacy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/posix-arch/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis/driver/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.586713136" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
@@ -2085,7 +2085,7 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/tests/rtos/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/test/rtos/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/posix-arch/src"/>
 					</sourceEntries>
 				</configuration>

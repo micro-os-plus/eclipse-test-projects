@@ -406,7 +406,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/cube-mx/Inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/arm-cmsis/core/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/tests/sema-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/test/sema-stress/include}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs.456180314" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -430,7 +430,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/cube-mx/Inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/arm-cmsis/core/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/tests/sema-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/test/sema-stress/include}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.88869234" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -457,7 +457,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/cube-mx/Inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/arm-cmsis/core/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/tests/sema-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/test/sema-stress/include}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs.813627112" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -578,7 +578,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="cube-mx/Src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii-cortexm/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/tests/sema-stress/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/test/sema-stress/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/stm32f4-cmsis/stm32f407xx/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/stm32f4-hal/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src"/>
@@ -1010,7 +1010,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/cube-mx/Inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/arm-cmsis/core/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/tests/sema-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/test/sema-stress/include}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs.557894893" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -1031,7 +1031,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/cube-mx/Inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/arm-cmsis/core/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/tests/sema-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/test/sema-stress/include}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.741747996" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -1055,7 +1055,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/cube-mx/Inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/arm-cmsis/core/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/tests/sema-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/test/sema-stress/include}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs.771614208" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -1173,7 +1173,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="cube-mx/Src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii-cortexm/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/tests/sema-stress/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/test/sema-stress/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/stm32f4-cmsis/stm32f407xx/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/stm32f4-hal/src"/>
 						<entry excluding="systick.c|stm32f4xx_hal_msp.c" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src"/>
@@ -1272,7 +1272,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/cube-mx/Inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/arm-cmsis/core/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs.1148940346" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -1296,7 +1296,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/cube-mx/Inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/arm-cmsis/core/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.500353482" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -1323,7 +1323,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/cube-mx/Inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/arm-cmsis/core/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs.2112704373" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -1444,7 +1444,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="cube-mx/Src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii-cortexm/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/tests/mutex-stress/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/test/mutex-stress/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/stm32f4-cmsis/stm32f407xx/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/stm32f4-hal/src"/>
 						<entry excluding="systick.c|stm32f4xx_hal_msp.c" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src"/>
@@ -1552,7 +1552,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/cube-mx/Inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/arm-cmsis/core/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs.332712540" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -1573,7 +1573,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/cube-mx/Inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/arm-cmsis/core/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.252154122" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -1597,7 +1597,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/cube-mx/Inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/arm-cmsis/core/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/tests/mutex-stress/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs.852032060" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -1715,7 +1715,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="cube-mx/Src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii-cortexm/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/tests/mutex-stress/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/test/mutex-stress/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/stm32f4-cmsis/stm32f407xx/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/stm32f4-hal/src"/>
 						<entry excluding="systick.c|stm32f4xx_hal_msp.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
@@ -1814,7 +1814,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/cube-mx/Inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/arm-cmsis/core/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs.911701843" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -1838,7 +1838,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/cube-mx/Inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/arm-cmsis/core/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.29659256" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -1865,7 +1865,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/cube-mx/Inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/arm-cmsis/core/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs.341022766" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -1986,7 +1986,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="cube-mx/Src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii-cortexm/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/tests/rtos/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/test/rtos/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/stm32f4-cmsis/stm32f407xx/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/stm32f4-hal/src"/>
 						<entry excluding="systick.c|stm32f4xx_hal_msp.c" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src"/>
@@ -2094,7 +2094,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/cube-mx/Inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/arm-cmsis/core/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs.658747647" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -2116,7 +2116,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/cube-mx/Inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/arm-cmsis/core/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.193912278" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -2141,7 +2141,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/cube-mx/Inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/arm-cmsis/core/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/tests/rtos/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/f4discovery-tests-micro-os-plus/generated/micro-os-plus-iii/test/rtos/include}&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs.315182589" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="HSE_VALUE=8000000"/>
@@ -2260,7 +2260,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="cube-mx/Src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii-cortexm/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/tests/rtos/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/micro-os-plus-iii/test/rtos/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/stm32f4-cmsis/stm32f407xx/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="generated/stm32f4-hal/src"/>
 						<entry excluding="systick.c|stm32f4xx_hal_msp.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
