@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>os-synthetic-posix-tests</name>
+	<name>synthetic-posix-tests-micro-os-plus</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -24,11 +24,4 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>micro-os-plus-iii</name>
-			<type>2</type>
-			<locationURI>MICRO_OS_PLUS_LOC</locationURI>
-		</link>
-	</linkedResources>
 </projectDescription>

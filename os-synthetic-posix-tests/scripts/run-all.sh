@@ -6,6 +6,7 @@ list=( \
 "test-cmsis-rtos-valid-clang-release" \
 "test-cmsis-rtos-valid-gcc-release" \
 "test-cmsis-rtos-valid-gcc5-release" \
+"test-cmsis-rtos-valid-gcc6-release" \
 "test-rtos-clang-release" \
 "test-rtos-gcc-release" \
 "test-rtos-gcc5-release" \
@@ -15,6 +16,7 @@ list=( \
 "test-cmsis-rtos-valid-clang-debug" \
 "test-cmsis-rtos-valid-gcc-debug" \
 "test-cmsis-rtos-valid-gcc5-debug" \
+"test-cmsis-rtos-valid-gcc6-debug" \
 "test-rtos-clang-debug" \
 "test-rtos-gcc-debug" \
 "test-rtos-gcc5-debug" \

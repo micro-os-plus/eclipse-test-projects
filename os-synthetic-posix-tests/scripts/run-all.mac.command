@@ -15,6 +15,6 @@ echo $parent
 export PATH=/usr/local/gcc-arm-none-eabi-5_3-2016q1/bin:$PATH
 export PATH=/Users/ilg/Work/qemu/build/osx/qemu/gnuarmeclipse-softmmu:$PATH
 export PATH=/Applications/SEGGER/JLink_V510s:$PATH
-export PATH=/opt/homebrew/bin:$PATH
+export PATH=/opt/homebrew-gcc/bin:$PATH
 
 bash "$parent/run-all.sh"
