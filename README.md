@@ -10,19 +10,6 @@ These tests run on the STM32F4DISCOVERY board (or the QEMU emulator).
 
 These tests run on the synthetic POSIX platform, on top of macOS.
 
-- test-cmsis-rtos-valid-clang-{debug|release}
-- test-cmsis-rtos-valid-gcc-{debug|release}
-- test-cmsis-rtos-valid-gcc5-{debug|release}
-- test-cmsis-rtos-valid-gcc6-{debug|release}
-- test-mutex-stress-clang-{debug|release}
-- test-mutex-stress-gcc-{debug|release}
-- test-mutex-stress-gcc5-{debug|release}
-- test-rtos-clang-{debug|release}
-- test-rtos-gcc-{debug|release}
-- test-rtos-gcc5-{debug|release}
-- test-rtos-gcc6-{debug|release}
-
-
 ## Prerequisites
 
 These projects have several dependencies to code available from xPacks. To satisfy these dependencies it is necessary to run the `generate.sh` shell scripts.

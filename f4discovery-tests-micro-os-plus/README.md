@@ -1,6 +1,6 @@
-# Tests for STM32F4DISCOVERY, using µOS++
+# µOS++ tests running on STM32F4DISCOVERY
 
-These test run on the STM32F4DISCOVERY board and perform various tests
+These applications run on the STM32F4DISCOVERY board and perform various tests
 
 - test-cmsis-rtos-valid-{debug|release}
 - test-mutex-stress-{debug|release}
