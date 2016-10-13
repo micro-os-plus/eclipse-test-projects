@@ -3,7 +3,7 @@
 <booleanAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.disableGraphics" value="true"/>
 <booleanAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.doContinue" value="true"/>
 <booleanAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.doDebugInRam" value="false"/>
-<booleanAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.doFirstReset" value="false"/>
+<booleanAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.doFirstReset" value="true"/>
 <booleanAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.doGdbServerAllocateConsole" value="true"/>
 <booleanAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.doSecondReset" value="true"/>
 <booleanAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.doStartGdbServer" value="true"/>
@@ -45,7 +45,7 @@
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_REGISTER_GROUPS" value=""/>
 <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="test-rtos-release/test-rtos-release.elf"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="f4discovery-tests-micro-os-plus"/>
-<booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="true"/>
+<booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.94517381.328754879.1553375008.1975411341.794027929"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/f4discovery-tests-micro-os-plus"/>
