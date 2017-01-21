@@ -5,11 +5,12 @@ osx_image: xcode8.2
 
 language:
   - c++
+  - java
   
 script:
-  - brew list
-  - brew install tree
   - cd synthetic-posix-tests-micro-os-plus
   - bash scripts/generate.sh
-  - tree
+  - brew list
+  - # brew install tree
+  - # tree
   
