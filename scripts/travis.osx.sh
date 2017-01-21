@@ -26,10 +26,10 @@ curl -L "http://artfiles.org/eclipse.org//technology/epp/downloads/release/mars/
 
 tar xf $HOME/Downloads/${eclipse_archive_name}
 
-cd $HOME/micro-os-plus/eclipse-test-projects/synthetic-posix-tests-micro-os-plus
+cd $HOME/build/micro-os-plus/eclipse-test-projects/synthetic-posix-tests-micro-os-plus
 bash scripts/generate.sh
 
 $HOME/Eclipse.app/Contents/MacOS/eclipse --launcher.suppressErrors -nosplash \
 -application org.eclipse.cdt.managedbuilder.core.headlessbuild \
 -data $HOME/workspace \
--import $HOME/micro-os-plus/eclipse-test-projects/synthetic-posix-tests-micro-os-plus
+-import $HOME/build/micro-os-plus/eclipse-test-projects/synthetic-posix-tests-micro-os-plus
