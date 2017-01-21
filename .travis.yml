@@ -1,0 +1,12 @@
+os:
+  - osx
+  
+osx_image: xcode8.2
+
+language:
+  - c++
+  
+script:
+  - cd synthetic-posix-tests-micro-os-plus
+  - bash scripts/generate.sh
+  
