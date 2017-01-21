@@ -3,9 +3,7 @@ os:
   
 osx_image: xcode8.2
 
-language:
-  - c++
-  - java
+language: c++
   
 script:
   - export DEBUG=1
