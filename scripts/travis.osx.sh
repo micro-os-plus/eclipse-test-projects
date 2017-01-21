@@ -33,3 +33,11 @@ $HOME/Eclipse.app/Contents/MacOS/eclipse --launcher.suppressErrors -nosplash \
 -application org.eclipse.cdt.managedbuilder.core.headlessbuild \
 -data $HOME/workspace \
 -import $HOME/build/micro-os-plus/eclipse-test-projects/synthetic-posix-tests-micro-os-plus
+-cleanBuild test-cmsis-rtos-valid-clang-debug
+-cleanBuild test-cmsis-rtos-valid-clang-release
+-cleanBuild test-mutex-stress-clang-debug
+-cleanBuild test-mutex-stress-clang-release
+-cleanBuild test-rtos-clang-debug
+-cleanBuild test-rtos-clang-release
+
+
