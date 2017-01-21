@@ -7,6 +7,9 @@ language:
   - c++
   
 script:
+  - brew list
+  - brew install tree
   - cd synthetic-posix-tests-micro-os-plus
   - bash scripts/generate.sh
+  - tree
   
