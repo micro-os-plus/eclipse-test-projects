@@ -8,9 +8,5 @@ language:
   - java
   
 script:
-  - cd synthetic-posix-tests-micro-os-plus
-  - bash scripts/generate.sh
-  - brew list
-  - # brew install tree
-  - # tree
+  - bash scripts/travis.osx.sh
   
