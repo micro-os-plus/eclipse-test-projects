@@ -8,5 +8,6 @@ language:
   - java
   
 script:
+  - export DEBUG=1; 
   - bash scripts/travis.osx.sh
   
