@@ -1,5 +1,8 @@
 # Eclipse projects to build some µOS++/CMSIS++ tests
 
+## Status
+
+[![Build Status](https://travis-ci.org/micro-os-plus/eclipse-test-projects.svg?branch=master)](https://travis-ci.org/micro-os-plus/eclipse-test-projects)
 ## Projects
 
 ### os-f4discovery-tests
