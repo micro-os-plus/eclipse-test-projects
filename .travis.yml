@@ -7,5 +7,5 @@ language: c++
   
 script:
   - export DEBUG=1
-  - bash scripts/travis.osx.sh
+  - bash synthetic-posix-tests-micro-os-plus/scripts/travis.osx.sh
   
