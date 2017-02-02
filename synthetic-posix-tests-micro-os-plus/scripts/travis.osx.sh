@@ -15,7 +15,12 @@ IFS=$'\n\t'
 
 pwd
 uname -a
+
 clang --version
+gcc --version
+gcc-5 --version
+gcc-6 --version
+
 java -version
 
 # cd ${HOME}
@@ -87,11 +92,26 @@ rm -rf "${work}/workspace"
 # Build & run configurations.
 cfgs=( \
   "test-cmsis-rtos-valid-clang-release" \
+  "test-cmsis-rtos-valid-gcc-release" \
+  "test-cmsis-rtos-valid-gcc5-release" \
+  "test-cmsis-rtos-valid-gcc6-release" \
   "test-rtos-clang-release" \
+  "test-rtos-gcc-release" \
+  "test-rtos-gcc5-release" \
   "test-mutex-stress-clang-release" \
+  "test-mutex-stress-gcc-release" \
+  "test-mutex-stress-gcc5-release" \
   "test-cmsis-rtos-valid-clang-debug" \
+  "test-cmsis-rtos-valid-gcc-debug" \
+  "test-cmsis-rtos-valid-gcc5-debug" \
+  "test-cmsis-rtos-valid-gcc6-debug" \
   "test-rtos-clang-debug" \
+  "test-rtos-gcc-debug" \
+  "test-rtos-gcc5-debug" \
 )
+
+# Not passing:
+# "test-rtos-gcc6-release"
 
 for cfg in "${cfgs[@]}"
 do
