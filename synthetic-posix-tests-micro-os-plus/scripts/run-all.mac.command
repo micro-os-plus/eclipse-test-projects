@@ -12,9 +12,9 @@ fi
 parent="$(dirname ${script})"
 echo $parent
 
-export PATH=/usr/local/gcc-arm-none-eabi-5_3-2016q1/bin:$PATH
-export PATH=/Users/ilg/Work/qemu/build/osx/qemu/gnuarmeclipse-softmmu:$PATH
+export PATH=/opt/gcc-arm-none-eabi-5_3-2016q1/bin:$PATH
+export PATH=$HOME/Work/qemu/build/osx/qemu/gnuarmeclipse-softmmu:$PATH
 export PATH=/Applications/SEGGER/JLink_V510s:$PATH
-export PATH=/opt/homebrew-gcc/bin:$PATH
+export PATH=$HOME/opt/homebrew-gcc/bin:$PATH
 
 bash "$parent/run-all.sh"
