@@ -91,7 +91,8 @@ function do_before_install() {
       eclipse_archive_name=eclipse-cpp-mars-2-macosx-cocoa-x86_64.tar.gz
     elif [ "${TRAVIS_OS_NAME}" == "linux" ]
     then
-      do_run sudo add-apt-repository --yes ppa:jonathonf/gcc-5.4
+      # https://launchpad.net/~jonathonf/+archive/ubuntu/gcc
+      do_run sudo add-apt-repository --yes ppa:jonathonf/gcc
       do_run sudo apt-get --yes --quiet update
       do_run sudo apt-get --yes --quiet install gcc-5 g++-5
 
