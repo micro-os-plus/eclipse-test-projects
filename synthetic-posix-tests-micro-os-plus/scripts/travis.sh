@@ -30,7 +30,7 @@ host_uname="$(uname)"
 
 if [ "${is_travis}" == "true" ]
 then
-  work="$HOME"
+  work="${HOME}"
   build="${HOME}/build"
   cache="${HOME}/downloads"
 else
@@ -40,6 +40,7 @@ else
   then
     cache="${HOME}/Library/Caches/Travis"
   elif [ "${host_uname}" == "Linux" ]
+  then
     cache="${HOME}/.cache/travis"
   fi
 fi
@@ -48,6 +49,7 @@ if [ "${host_uname}" == "Darwin" ]
 then
   eclipse="${work}/Eclipse.app/Contents/MacOS/eclipse" 
 elif [ "${host_uname}" == "Linux" ]
+then
   eclipse="${work}/eclipse/eclipse"
 fi
 
@@ -88,6 +90,7 @@ function do_before_install() {
 
       eclipse_archive_name=eclipse-cpp-mars-2-macosx-cocoa-x86_64.tar.gz
     elif [ "${TRAVIS_OS_NAME}" == "linux" ]
+    then
       do_run sudo add-apt-repository ppa:jonathonf/gcc-5.4
       do_run sudo apt-get -yes -quiet update
       do_run sudo apt-get -yes -quiet install gcc-5 g++-5
@@ -109,7 +112,7 @@ function do_before_install() {
   do_run tar -x -f "${cache}/${eclipse_archive_name}"
 
   do_run ls -lL
-  
+
   # Install "C/C++ LLVM-Family Compiler Build Support" feature,
   # which is not present by default in the Eclipse CDT distributions.
   # Eclipse Launcher runt-time options
@@ -133,6 +136,7 @@ function do_before_install() {
       -p2.arch x86_64 \
       -roaming 
   elif [ "${host_uname}" == "Linux" ]
+  then
     do_run "${work}/eclipse/eclipse" \
       --launcher.suppressErrors \
       -nosplash \
