@@ -216,17 +216,12 @@ function do_script() {
   elif [ "${host_uname}" == "Linux" ]
   then
     cfgs=( \
-      "test-cmsis-rtos-valid-clang-release" \
       "test-cmsis-rtos-valid-gcc5-release" \
       "test-cmsis-rtos-valid-gcc6-release" \
-      "test-rtos-clang-release" \
       "test-rtos-gcc5-release" \
-      "test-mutex-stress-clang-release" \
       "test-mutex-stress-gcc5-release" \
-      "test-cmsis-rtos-valid-clang-debug" \
       "test-cmsis-rtos-valid-gcc5-debug" \
       "test-cmsis-rtos-valid-gcc6-debug" \
-      "test-rtos-clang-debug" \
       "test-rtos-gcc5-debug" \
     )
   fi
