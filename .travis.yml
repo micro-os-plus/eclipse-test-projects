@@ -1,3 +1,5 @@
+# Travis CI configuration file to run the µOS++ tests.
+
 os:
   - osx
   
@@ -5,7 +7,30 @@ osx_image: xcode8.2
 
 language: c++
   
+before_install:
+  - bash -x synthetic-posix-tests-micro-os-plus/scripts/travis.sh before_install
+
+before_script:
+  - bash -x synthetic-posix-tests-micro-os-plus/scripts/travis.sh before_script
+
 script:
-  - export DEBUG=1
-  - bash synthetic-posix-tests-micro-os-plus/scripts/travis.osx.sh
+  - bash -x synthetic-posix-tests-micro-os-plus/scripts/travis.sh script
+
+# -----------------------------------------------------------------------------
+# Unused.
+
+# after_success:
+#  - bash scripts/travis.linux.sh after_success
+
+# after_failure:
+#  - bash scripts/travis.linux.sh after_failure
+
+# Deploy via script not functional (or not understood).
+# deploy:
+#  provider: script
+#  script: bash scripts/travis.linux.sh deploy
+#  on:
+#    branch: master
   
+# after_script:
+#  - bash scripts/travis.linux.sh after_script
