@@ -44,6 +44,13 @@ else
   fi
 fi
 
+if [ "${host_uname}" == "Darwin" ]
+then
+  eclipse="${work}/Eclipse.app/Contents/MacOS/eclipse" 
+elif [ "${host_uname}" == "Linux" ]
+  eclipse="${work}/eclipse/eclipse"
+fi
+
 export work
 export build
 export cache
@@ -81,9 +88,9 @@ function do_before_install() {
 
       eclipse_archive_name=eclipse-cpp-mars-2-macosx-cocoa-x86_64.tar.gz
     elif [ "${TRAVIS_OS_NAME}" == "linux" ]
-      sudo add-apt-repository ppa:jonathonf/gcc-5.4
-      sudo apt-get update
-      sudo apt-get -yes -quiet install gcc-5 g++-5
+      do_run sudo add-apt-repository ppa:jonathonf/gcc-5.4
+      do_run sudo apt-get -yes -quiet update
+      do_run sudo apt-get -yes -quiet install gcc-5 g++-5
 
       eclipse_archive_name=eclipse-cpp-mars-2-linux-gtk-x86_64.tar.gz
     fi
@@ -98,28 +105,48 @@ function do_before_install() {
 
   cd "${work}"
 
-  do_run rm -rf Eclipse.app 
+  do_run rm -rf Eclipse.app eclipse
   do_run tar -x -f "${cache}/${eclipse_archive_name}"
 
+  do_run ls -lL
+  
   # Install "C/C++ LLVM-Family Compiler Build Support" feature,
   # which is not present by default in the Eclipse CDT distributions.
   # Eclipse Launcher runt-time options
   # http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fmisc%2Fruntime-options.html
   # Eclipse provisioning, installation management
   # http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Fguide%2Fp2_director.html
-  do_run "${work}/Eclipse.app/Contents/MacOS/eclipse" \
-    --launcher.suppressErrors \
-    -nosplash \
-    -application org.eclipse.equinox.p2.director \
-    -repository http://download.eclipse.org/releases/mars/ \
-    -installIU org.eclipse.cdt.managedbuilder.llvm.feature.group \
-    -tag InitialState \
-    -destination "${work}/Eclipse.app/" \
-    -profileProperties org.eclipse.update.install.features=true \
-    -p2.os macosx \
-    -p2.ws cocoa \
-    -p2.arch x86_64 \
-    -roaming 
+
+  if [ "${host_uname}" == "Darwin" ]
+  then
+    do_run "${work}/Eclipse.app/Contents/MacOS/eclipse" \
+      --launcher.suppressErrors \
+      -nosplash \
+      -application org.eclipse.equinox.p2.director \
+      -repository http://download.eclipse.org/releases/mars/ \
+      -installIU org.eclipse.cdt.managedbuilder.llvm.feature.group \
+      -tag InitialState \
+      -destination "${work}/Eclipse.app/" \
+      -profileProperties org.eclipse.update.install.features=true \
+      -p2.os macosx \
+      -p2.ws cocoa \
+      -p2.arch x86_64 \
+      -roaming 
+  elif [ "${host_uname}" == "Linux" ]
+    do_run "${work}/eclipse/eclipse" \
+      --launcher.suppressErrors \
+      -nosplash \
+      -application org.eclipse.equinox.p2.director \
+      -repository http://download.eclipse.org/releases/mars/ \
+      -installIU org.eclipse.cdt.managedbuilder.llvm.feature.group \
+      -tag InitialState \
+      -destination "${work}/eclipse/" \
+      -profileProperties org.eclipse.update.install.features=true \
+      -p2.os linux \
+      -p2.ws gtk \
+      -p2.arch x86_64 \
+      -roaming 
+  fi
 
   return 0
 }
@@ -138,10 +165,9 @@ function do_before_script() {
   cd "${project}"
   do_run bash scripts/generate.sh
 
-
   # The project is now complete. Import it into the Eclipse workspace.
   do_run rm -rf "${build}/workspace"
-  "${work}/Eclipse.app/Contents/MacOS/eclipse" \
+  do_run "${eclipse}" \
     --launcher.suppressErrors \
     -nosplash \
     -application org.eclipse.cdt.managedbuilder.core.headlessbuild \
@@ -192,7 +218,7 @@ function do_script() {
     set +o errexit 
 
     # Clean build a configuration.
-    do_run "${work}/Eclipse.app/Contents/MacOS/eclipse" \
+    do_run "${eclipse}" \
       --launcher.suppressErrors \
       -nosplash \
       -application org.eclipse.cdt.managedbuilder.core.headlessbuild \
@@ -219,7 +245,7 @@ function do_script() {
     # Temporarily disable errors, because (???); 
     # if the build fails, there will be no binary and the next test will fai-.
     set +o errexit 
-    do_run "${work}/Eclipse.app/Contents/MacOS/eclipse" \
+    do_run "${eclipse}" \
       --launcher.suppressErrors \
       -nosplash \
       -application org.eclipse.cdt.managedbuilder.core.headlessbuild \

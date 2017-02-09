@@ -1,8 +1,13 @@
 # Travis CI configuration file to run the µOS++ tests.
 
 os:
-  - osx
-  
+  - linux
+  # - osx
+
+# Use the new Debian 14 containers.
+dist: trusty
+sudo: true
+
 osx_image: xcode8.2
 
 language: c++
