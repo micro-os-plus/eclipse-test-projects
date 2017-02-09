@@ -53,6 +53,8 @@ then
   eclipse="${work}/eclipse/eclipse"
 fi
 
+export slug="${TRAVIS_BUILD_DIR}"
+
 export work
 export build
 export cache
@@ -190,25 +192,44 @@ function do_script() {
   cd "${slug}"
 
   # Build & run configurations.
-  cfgs=( \
-    "test-cmsis-rtos-valid-clang-release" \
-    "test-cmsis-rtos-valid-gcc-release" \
-    "test-cmsis-rtos-valid-gcc5-release" \
-    "test-cmsis-rtos-valid-gcc6-release" \
-    "test-rtos-clang-release" \
-    "test-rtos-gcc-release" \
-    "test-rtos-gcc5-release" \
-    "test-mutex-stress-clang-release" \
-    "test-mutex-stress-gcc-release" \
-    "test-mutex-stress-gcc5-release" \
-    "test-cmsis-rtos-valid-clang-debug" \
-    "test-cmsis-rtos-valid-gcc-debug" \
-    "test-cmsis-rtos-valid-gcc5-debug" \
-    "test-cmsis-rtos-valid-gcc6-debug" \
-    "test-rtos-clang-debug" \
-    "test-rtos-gcc-debug" \
-    "test-rtos-gcc5-debug" \
-  )
+  if [ "${host_uname}" == "Darwin" ]
+  then
+    cfgs=( \
+      "test-cmsis-rtos-valid-clang-release" \
+      "test-cmsis-rtos-valid-gcc-release" \
+      "test-cmsis-rtos-valid-gcc5-release" \
+      "test-cmsis-rtos-valid-gcc6-release" \
+      "test-rtos-clang-release" \
+      "test-rtos-gcc-release" \
+      "test-rtos-gcc5-release" \
+      "test-mutex-stress-clang-release" \
+      "test-mutex-stress-gcc-release" \
+      "test-mutex-stress-gcc5-release" \
+      "test-cmsis-rtos-valid-clang-debug" \
+      "test-cmsis-rtos-valid-gcc-debug" \
+      "test-cmsis-rtos-valid-gcc5-debug" \
+      "test-cmsis-rtos-valid-gcc6-debug" \
+      "test-rtos-clang-debug" \
+      "test-rtos-gcc-debug" \
+      "test-rtos-gcc5-debug" \
+    )
+  elif [ "${host_uname}" == "Linux" ]
+  then
+    cfgs=( \
+      "test-cmsis-rtos-valid-clang-release" \
+      "test-cmsis-rtos-valid-gcc5-release" \
+      "test-cmsis-rtos-valid-gcc6-release" \
+      "test-rtos-clang-release" \
+      "test-rtos-gcc5-release" \
+      "test-mutex-stress-clang-release" \
+      "test-mutex-stress-gcc5-release" \
+      "test-cmsis-rtos-valid-clang-debug" \
+      "test-cmsis-rtos-valid-gcc5-debug" \
+      "test-cmsis-rtos-valid-gcc6-debug" \
+      "test-rtos-clang-debug" \
+      "test-rtos-gcc5-debug" \
+    )
+  fi
 
   # Not passing:
   # "test-rtos-gcc6-release"

@@ -13,13 +13,13 @@ osx_image: xcode8.2
 language: c++
   
 before_install:
-  - bash -x synthetic-posix-tests-micro-os-plus/scripts/travis.sh before_install
+  - bash synthetic-posix-tests-micro-os-plus/scripts/travis.sh before_install
 
 before_script:
-  - bash -x synthetic-posix-tests-micro-os-plus/scripts/travis.sh before_script
+  - bash synthetic-posix-tests-micro-os-plus/scripts/travis.sh before_script
 
 script:
-  - bash -x synthetic-posix-tests-micro-os-plus/scripts/travis.sh script
+  - bash synthetic-posix-tests-micro-os-plus/scripts/travis.sh script
 
 # -----------------------------------------------------------------------------
 # Unused.
