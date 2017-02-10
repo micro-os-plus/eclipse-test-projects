@@ -803,7 +803,6 @@
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
-									<listOptionValue builtIn="false" value="OS_USE_TRACE_POSIX_STDOUT"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.optimization.level.826350156" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.debugging.level.947403030" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
@@ -826,7 +825,6 @@
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
-									<listOptionValue builtIn="false" value="OS_USE_TRACE_POSIX_STDOUT"/>
 								</option>
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1234017335" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.1521794164" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
@@ -883,7 +881,6 @@
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
-									<listOptionValue builtIn="false" value="OS_USE_TRACE_POSIX_STDOUT"/>
 								</option>
 								<option id="llvm.c_cpp.compiler.option.optimization.level.740281397" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.debugging.level.935172093" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
@@ -904,7 +901,6 @@
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
-									<listOptionValue builtIn="false" value="OS_USE_TRACE_POSIX_STDOUT"/>
 								</option>
 								<option id="llvm.c_cpp.compiler.option.optimization.level.1803073917" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.debugging.level.1468551364" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
@@ -1132,7 +1128,6 @@
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
-									<listOptionValue builtIn="false" value="OS_USE_TRACE_POSIX_STDOUT"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.optimization.level.1534090593" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.debugging.level.197457760" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
@@ -1154,7 +1149,6 @@
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
-									<listOptionValue builtIn="false" value="OS_USE_TRACE_POSIX_STDOUT"/>
 								</option>
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1340061043" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.1835624334" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
@@ -1312,7 +1306,6 @@
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
-									<listOptionValue builtIn="false" value="OS_USE_TRACE_POSIX_STDOUT"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.optimization.level.1825134246" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.debugging.level.559588046" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
@@ -1337,7 +1330,6 @@
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
-									<listOptionValue builtIn="false" value="OS_USE_TRACE_POSIX_STDOUT"/>
 								</option>
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1721677637" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.1463378079" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
@@ -1368,6 +1360,12 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581.1641680966.1619641456.1153021833" name="os-core.cpp" rcbsApplicability="disable" resourcePath="generated/posix-arch/src/rtos/os-core.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.base.1662503240.1415472070">
+						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.1662503240.1415472070" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base.1662503240">
+							<option id="gnu.cpp.compiler.option.preprocessor.preprocess.448107916" name="Preprocess only (-E)" superClass="gnu.cpp.compiler.option.preprocessor.preprocess" value="false" valueType="boolean"/>
+							<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1685974928" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+						</tool>
+					</fileInfo>
 					<folderInfo id="cdt.managedbuild.config.llvm.clang.macosx.exe.debug.1111179562.955122864.764811296.873598999.460271676.1133966581.1641680966.1619641456.765678611" name="/" resourcePath="generated/arm-cmsis-rtos-validator/arm/src">
 						<toolChain id="cdt.managedbuild.toolchain.gnu.base.1404946019" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base" unusedChildren="">
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
@@ -1539,7 +1537,6 @@
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
-									<listOptionValue builtIn="false" value="OS_USE_TRACE_POSIX_STDOUT"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.optimization.level.2093437330" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.debugging.level.39478746" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
@@ -1561,7 +1558,6 @@
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
-									<listOptionValue builtIn="false" value="OS_USE_TRACE_POSIX_STDOUT"/>
 								</option>
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1098338372" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.1231980189" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
@@ -1719,7 +1715,6 @@
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
-									<listOptionValue builtIn="false" value="OS_USE_TRACE_POSIX_STDOUT"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.optimization.level.258733067" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.debugging.level.2114338637" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
@@ -1744,7 +1739,6 @@
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
-									<listOptionValue builtIn="false" value="OS_USE_TRACE_POSIX_STDOUT"/>
 								</option>
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1662524756" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.315447942" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
@@ -1946,7 +1940,6 @@
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
-									<listOptionValue builtIn="false" value="OS_USE_TRACE_POSIX_STDOUT"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.optimization.level.976172877" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.debugging.level.1743682638" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
@@ -1968,7 +1961,6 @@
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
 									<listOptionValue builtIn="false" value="_XOPEN_SOURCE=700L"/>
-									<listOptionValue builtIn="false" value="OS_USE_TRACE_POSIX_STDOUT"/>
 								</option>
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.853492649" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.1661556477" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
