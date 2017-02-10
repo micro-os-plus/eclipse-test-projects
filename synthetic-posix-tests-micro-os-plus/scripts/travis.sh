@@ -46,7 +46,6 @@ then
   project="${slug}/synthetic-posix-tests-micro-os-plus"
 else
   work="${HOME}/Work/travis"
-  # build="${work}/build"
   project="$(dirname ${parent})"
   slug="$(dirname ${project})"
 fi
@@ -64,7 +63,6 @@ fi
 mkdir -p "${cache}"
 
 export work
-export build
 export slug
 export cache
 export project
@@ -216,9 +214,6 @@ function do_before_install() {
 function do_before_script() {
 
   echo "Before starting the test, generate the projects..."
-
-  # For just in case.
-  cd "${HOME}"
 
   # Generate the required folders in the project, from downloaded xPacks. 
   cd "${project}"
