@@ -19,48 +19,55 @@ IFS=$'\n\t'
 
 # -----------------------------------------------------------------------------
 
-# https://docs.travis-ci.com/user/environment-variables/#Default-Environment-Variables
-
-set +o nounset # Ignore if variable not set.
-is_travis=${TRAVIS:-false}
-set -o nounset # Exit if variable not set.
-
-# "Darwin", "Linux"
-host_uname="$(uname)"
-
-if [ "${is_travis}" == "true" ]
+script=$0
+if [[ "${script}" != /* ]]
 then
-  work="${HOME}"
-  build="${HOME}/build"
-  cache="${HOME}/downloads"
-else
-  work="${HOME}/Work/travis"
-  build="${HOME}/Work/travis"
-  if [ "${host_uname}" == "Darwin" ]
-  then
-    cache="${HOME}/Library/Caches/Travis"
-  elif [ "${host_uname}" == "Linux" ]
-  then
-    cache="${HOME}/.cache/travis"
-  fi
+  # Make relative path absolute.
+  script=$(pwd)/$0
 fi
 
-if [ "${host_uname}" == "Darwin" ]
+parent="$(dirname ${script})"
+# echo $parent
+
+# -----------------------------------------------------------------------------
+
+# https://docs.travis-ci.com/user/environment-variables/#Default-Environment-Variables
+
+# For local build, provide 
+# - TRAVIS=false
+# - TRAVIS_OS_NAME=osx|linux
+
+# - TRAVIS_REPO_SLUG=<user>/<repo>
+
+if [ "${TRAVIS}" == "true" ]
 then
+  work="${HOME}"
+  slug="${TRAVIS_BUILD_DIR}"
+  project="${slug}/synthetic-posix-tests-micro-os-plus"
+else
+  work="${HOME}/Work/travis"
+  # build="${work}/build"
+  project="$(dirname ${parent})"
+  slug="$(dirname ${project})"
+fi
+
+if [ "${TRAVIS_OS_NAME}" == "osx" ]
+then
+  cache="${HOME}/Library/Caches/Travis"
   eclipse="${work}/Eclipse.app/Contents/MacOS/eclipse" 
-elif [ "${host_uname}" == "Linux" ]
+elif [ "${TRAVIS_OS_NAME}" == "linux" ]
 then
+  cache="${HOME}/.cache/travis"
   eclipse="${work}/eclipse/eclipse"
 fi
 
-export slug="${TRAVIS_BUILD_DIR}"
+mkdir -p "${cache}"
 
 export work
 export build
+export slug
 export cache
-
-mkdir -p "${work}"
-mkdir -p "${cache}"
+export project
 
 # -----------------------------------------------------------------------------
 
@@ -70,6 +77,12 @@ function do_run()
   "$@"
 }
 
+function do_run_quietly()
+{
+  echo "\$ $@ > /dev/null"
+  "$@" > /dev/null
+}
+
 # -----------------------------------------------------------------------------
 
 # Errors in this function will break the build.
@@ -77,10 +90,18 @@ function do_before_install() {
 
   echo "Before install, bring extra tools..."
 
+  if [ "${TRAVIS}" != "true" ]
+  then
+    # When not running on Travis, clean play arena.
+    do_run rm -rf "${work}"
+  fi
+
   do_run clang --version
+  do_run clang++ --version
+
   do_run gcc --version
 
-  if [ "${is_travis}" == "true" ]
+  if [ "${TRAVIS}" == "true" ]
   then
     if [ "${TRAVIS_OS_NAME}" == "osx" ]
     then
@@ -88,48 +109,81 @@ function do_before_install() {
       do_run brew tap homebrew/versions
 
       do_run brew install gcc5
-      # do_run brew install gcc6
-
-      eclipse_archive_name=eclipse-cpp-mars-2-macosx-cocoa-x86_64.tar.gz
+      do_run brew install gcc6
     elif [ "${TRAVIS_OS_NAME}" == "linux" ]
     then
       # https://launchpad.net/~jonathonf/+archive/ubuntu/gcc
       do_run sudo add-apt-repository --yes ppa:jonathonf/gcc
       do_run sudo apt-get --yes --quiet update
       do_run sudo apt-get --yes --quiet install gcc-5 g++-5
-
-      eclipse_archive_name=eclipse-cpp-mars-2-linux-gtk-x86_64.tar.gz
+      do_run sudo apt-get --yes --quiet install gcc-6 g++-6
     fi
   fi
+
+  do_run gcc-5 --version
+  do_run g++-5 --version
+
+  do_run gcc-6 --version
+  do_run g++-6 --version
+  
+  if [ "${TRAVIS_OS_NAME}" == "osx" ]
+  then
+    eclipse_archive_name=eclipse-cpp-mars-2-macosx-cocoa-x86_64.tar.gz
+  elif [ "${TRAVIS_OS_NAME}" == "linux" ]
+  then
+    eclipse_archive_name=eclipse-cpp-mars-2-linux-gtk-x86_64.tar.gz
+  fi
+
+  eclipse_url="http://artfiles.org/eclipse.org//technology/epp/downloads/release/mars/2/${eclipse_archive_name}"
 
   if [ ! -f "${cache}/${eclipse_archive_name}" ]
   then
     do_run curl -L \
-    "http://artfiles.org/eclipse.org//technology/epp/downloads/release/mars/2/${eclipse_archive_name}" \
+    "${eclipse_url}" \
     -o "${cache}/${eclipse_archive_name}"
   fi
 
+  cdt_release="8.8.1"
+  cdt_folder="cdt-${cdt_release}"
+  cdt_archive_name="${cdt_folder}.zip"
+  cdt_archive_url="http://download.eclipse.org/tools/cdt/releases/${cdt_release}/${cdt_archive_name}"
+
+  if [ ! -f "${cache}/${cdt_archive_name}" ]
+  then
+    do_run curl -L \
+    "${cdt_archive_url}" \
+    -o "${cache}/${cdt_archive_name}"
+  fi
+
+  mkdir -p "${work}"
   cd "${work}"
 
   do_run rm -rf Eclipse.app eclipse
   do_run tar -x -f "${cache}/${eclipse_archive_name}"
 
+  do_run rm -rf "${cdt_folder}"
+  mkdir "${cdt_folder}"
+  do_run tar -x -f "${cache}/${cdt_archive_name}" -C "${cdt_folder}"
+
   do_run ls -lL
 
   # Install "C/C++ LLVM-Family Compiler Build Support" feature,
   # which is not present by default in the Eclipse CDT distributions.
+  # The p2.os, p2.ws, p2.arch might help to make the right plug-in selection.
+
   # Eclipse Launcher runt-time options
   # http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fmisc%2Fruntime-options.html
+
   # Eclipse provisioning, installation management
   # http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Fguide%2Fp2_director.html
 
-  if [ "${host_uname}" == "Darwin" ]
+  if [ "${TRAVIS_OS_NAME}" == "osx" ]
   then
-    do_run "${work}/Eclipse.app/Contents/MacOS/eclipse" \
+    do_run "${eclipse}" \
       --launcher.suppressErrors \
       -nosplash \
       -application org.eclipse.equinox.p2.director \
-      -repository http://download.eclipse.org/releases/mars/ \
+      -repository "file:///${work}/${cdt_folder}" \
       -installIU org.eclipse.cdt.managedbuilder.llvm.feature.group \
       -tag InitialState \
       -destination "${work}/Eclipse.app/" \
@@ -138,9 +192,9 @@ function do_before_install() {
       -p2.ws cocoa \
       -p2.arch x86_64 \
       -roaming 
-  elif [ "${host_uname}" == "Linux" ]
+  elif [ "${TRAVIS_OS_NAME}" == "linux" ]
   then
-    do_run "${work}/eclipse/eclipse" \
+    do_run "${eclipse}" \
       --launcher.suppressErrors \
       -nosplash \
       -application org.eclipse.equinox.p2.director \
@@ -166,14 +220,12 @@ function do_before_script() {
   # For just in case.
   cd "${HOME}"
 
-  project="${TRAVIS_BUILD_DIR}/synthetic-posix-tests-micro-os-plus"
-
   # Generate the required folders in the project, from downloaded xPacks. 
   cd "${project}"
   do_run bash scripts/generate.sh
 
   # The project is now complete. Import it into the Eclipse workspace.
-  do_run rm -rf "${build}/workspace"
+  do_run rm -rf "${work}/workspace"
   do_run "${eclipse}" \
     --launcher.suppressErrors \
     -nosplash \
@@ -192,7 +244,7 @@ function do_script() {
   cd "${slug}"
 
   # Build & run configurations.
-  if [ "${host_uname}" == "Darwin" ]
+  if [ "${TRAVIS_OS_NAME}" == "osx" ]
   then
     cfgs=( \
       "test-cmsis-rtos-valid-clang-release" \
@@ -213,7 +265,11 @@ function do_script() {
       "test-rtos-gcc-debug" \
       "test-rtos-gcc5-debug" \
     )
-  elif [ "${host_uname}" == "Linux" ]
+    _cfgs=( \
+      "test-cmsis-rtos-valid-gcc5-debug" \
+      "test-cmsis-rtos-valid-gcc6-debug" \
+    )
+  elif [ "${TRAVIS_OS_NAME}" == "linux" ]
   then
     cfgs=( \
       "test-cmsis-rtos-valid-gcc5-release" \
@@ -239,18 +295,19 @@ function do_script() {
     set +o errexit 
 
     # Clean build a configuration.
-    do_run "${eclipse}" \
+    do_run_quietly "${eclipse}" \
       --launcher.suppressErrors \
       -nosplash \
       -application org.eclipse.cdt.managedbuilder.core.headlessbuild \
       -data "${work}/workspace" \
-      -cleanBuild synthetic-posix-tests-micro-os-plus/${cfg}
+      -cleanBuild synthetic-posix-tests-micro-os-plus/${cfg} 
+      
     set -o errexit 
 
     echo
     echo Run ${cfg}
 
-    do_run "${project}/${cfg}/${cfg}"
+    do_run_quietly "${project}/${cfg}/${cfg}"
   done
 
   # Build only configurations (trace output too heavy to run).
@@ -266,12 +323,13 @@ function do_script() {
     # Temporarily disable errors, because (???); 
     # if the build fails, there will be no binary and the next test will fai-.
     set +o errexit 
-    do_run "${eclipse}" \
+    do_run_quietly "${eclipse}" \
       --launcher.suppressErrors \
       -nosplash \
       -application org.eclipse.cdt.managedbuilder.core.headlessbuild \
       -data "${work}/workspace" \
-      -cleanBuild synthetic-posix-tests-micro-os-plus/${cfg}
+      -cleanBuild synthetic-posix-tests-micro-os-plus/${cfg} 
+      
     set -o errexit 
 
     if [ ! -f "${project}/${cfg}/${cfg}" ]
@@ -280,6 +338,8 @@ function do_script() {
     fi
   done
 
+  echo
+  echo "PASSED"
   return 0
 }
 
@@ -310,6 +370,21 @@ function do_after_script() {
 }
 
 # -----------------------------------------------------------------------------
+
+# https://docs.travis-ci.com/user/customizing-the-build/#The-Build-Lifecycle
+
+# - OPTIONAL Install apt addons
+# - OPTIONAL Install cache components
+# - before_install
+# - install
+# - before_script
+# - script
+# - OPTIONAL before_cache (for cleaning up cache)
+# - after_success or after_failure
+# - OPTIONAL before_deploy
+# - OPTIONAL deploy
+# - OPTIONAL after_deploy
+# - after_script
 
 if [ $# -ge 1 ]
 then
@@ -359,160 +434,3 @@ else
 fi
 
 # -----------------------------------------------------------------------------
-
-
-
-if false
-then
-
-pwd
-uname -a
-
-clang --version
-gcc --version
-gcc-5 --version
-gcc-6 --version
-
-java -version
-
-# cd ${HOME}
-if [ "${USER}" == "travis" ]
-then
-  work="$HOME"
-  cache="${HOME}/Downloads"
-else
-  work="${HOME}/Work/travis"
-  cache="${HOME}/Library/Caches/Travis"
-fi
-
-mkdir -p "${cache}"
-
-eclipse_archive_name=eclipse-cpp-mars-2-macosx-cocoa-x86_64.tar.gz
-if [ ! -f "${cache}/${eclipse_archive_name}" ]
-then
-  curl -L "http://artfiles.org/eclipse.org//technology/epp/downloads/release/mars/2/${eclipse_archive_name}" \
-    -o "${cache}/${eclipse_archive_name}"
-fi
-
-mkdir -p "${work}"
-cd "${work}"
-
-# Create a fresh Eclipse
-rm -rf Eclipse.app 
-tar xf "${cache}/${eclipse_archive_name}"
-
-# Install "C/C++ LLVM-Family Compiler Build Support" feature,
-# which is not present by default in the Eclipse CDT distributions.
-"${work}/Eclipse.app/Contents/MacOS/eclipse" --launcher.suppressErrors \
--nosplash \
--application org.eclipse.equinox.p2.director \
--repository http://download.eclipse.org/releases/mars/ \
--installIU org.eclipse.cdt.managedbuilder.llvm.feature.group \
--tag InitialState \
--destination "${work}/Eclipse.app/" \
--profileProperties org.eclipse.update.install.features=true \
--p2.os macosx \
--p2.ws cocoa \
--p2.arch x86_64 \
--roaming 
- 
-mkdir -p "${work}/build"
-cd "${work}/build"
-if [ "${USER}" != "travis" ]
-then
-  chmod -R a+w "micro-os-plus/eclipse-test-projects"
-  rm -rf "micro-os-plus/eclipse-test-projects"
-  git clone --branch=master \
-    https://github.com/micro-os-plus/eclipse-test-projects.git \
-    "micro-os-plus/eclipse-test-projects"
-fi
-
-# Generate the required folders in the project, from downloaded xPacks. 
-cd "${work}/build/micro-os-plus/eclipse-test-projects/synthetic-posix-tests-micro-os-plus"
-bash scripts/generate.sh
-
-project="${work}/build/micro-os-plus/eclipse-test-projects/synthetic-posix-tests-micro-os-plus"
-
-# The project is now complete. Import it into the Eclipse workspace.
-rm -rf "${work}/workspace"
-"${work}/Eclipse.app/Contents/MacOS/eclipse" --launcher.suppressErrors \
--nosplash \
--application org.eclipse.cdt.managedbuilder.core.headlessbuild \
--data "${work}/workspace" \
--import "${project}"
-
-# Build & run configurations.
-cfgs=( \
-  "test-cmsis-rtos-valid-clang-release" \
-  "test-cmsis-rtos-valid-gcc-release" \
-  "test-cmsis-rtos-valid-gcc5-release" \
-  "test-cmsis-rtos-valid-gcc6-release" \
-  "test-rtos-clang-release" \
-  "test-rtos-gcc-release" \
-  "test-rtos-gcc5-release" \
-  "test-mutex-stress-clang-release" \
-  "test-mutex-stress-gcc-release" \
-  "test-mutex-stress-gcc5-release" \
-  "test-cmsis-rtos-valid-clang-debug" \
-  "test-cmsis-rtos-valid-gcc-debug" \
-  "test-cmsis-rtos-valid-gcc5-debug" \
-  "test-cmsis-rtos-valid-gcc6-debug" \
-  "test-rtos-clang-debug" \
-  "test-rtos-gcc-debug" \
-  "test-rtos-gcc5-debug" \
-)
-
-# Not passing:
-# "test-rtos-gcc6-release"
-
-for cfg in "${cfgs[@]}"
-do
-  echo
-  echo Build ${cfg}
-  
-  set +o errexit 
-  "${work}/Eclipse.app/Contents/MacOS/eclipse" --launcher.suppressErrors \
-    -nosplash \
-    -application org.eclipse.cdt.managedbuilder.core.headlessbuild \
-    -data "${work}/workspace" \
-    -cleanBuild synthetic-posix-tests-micro-os-plus/${cfg}
-  set -o errexit 
-
-  echo
-  echo Run ${cfg}
-
-  "${project}/${cfg}/${cfg}"
-done
-
-# Build only configurations (trace output too heavy to run).
-cfgs=( \
-  "test-mutex-stress-clang-debug" \
-)
-
-for cfg in "${cfgs[@]}"
-do
-  echo
-  echo Build ${cfg}
-
-  set +o errexit 
-  "${work}/Eclipse.app/Contents/MacOS/eclipse" --launcher.suppressErrors \
-    -nosplash \
-    -application org.eclipse.cdt.managedbuilder.core.headlessbuild \
-    -data "${work}/workspace" \
-    -cleanBuild synthetic-posix-tests-micro-os-plus/${cfg}
-  set -o errexit 
-
-  if [ ! -f "${project}/${cfg}/${cfg}" ]
-  then
-    echo
-    echo "FAILED"
-    exit 2
-  fi
-done
-
-echo
-echo "PASSED"
-
-exit 0
-
-fi

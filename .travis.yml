@@ -1,8 +1,8 @@
 # Travis CI configuration file to run the µOS++ tests.
 
 os:
-  - linux
-  # - osx
+  # - linux
+  - osx
 
 # Use the new Debian 14 containers.
 dist: trusty
@@ -11,9 +11,16 @@ sudo: true
 osx_image: xcode8.2
 
 language: c++
-  
+
+git:
+  # Limit the clone depth; default is 50.
+  depth: 3
+
 before_install:
   - bash synthetic-posix-tests-micro-os-plus/scripts/travis.sh before_install
+
+# Skip the install step.
+install: true
 
 before_script:
   - bash synthetic-posix-tests-micro-os-plus/scripts/travis.sh before_script
