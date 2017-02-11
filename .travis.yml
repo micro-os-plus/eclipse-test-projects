@@ -29,23 +29,27 @@ git:
   # Limit the clone depth; default is 50.
   depth: 3
 
+env:
+  global:
+    - SCRIPT="synthetic-posix-tests-micro-os-plus/scripts/travis.sh"
+
 before_install:
-  - bash synthetic-posix-tests-micro-os-plus/scripts/travis.sh before_install
+  - bash "${SCRIPT}" before_install
 
 # Skip the install step.
 install: true
 
 before_script:
-  - bash synthetic-posix-tests-micro-os-plus/scripts/travis.sh before_script
+  - bash "${SCRIPT}" before_script
 
 script:
-  - bash synthetic-posix-tests-micro-os-plus/scripts/travis.sh script
+  - bash "${SCRIPT}" script
 
 after_success:
-- bash scripts/travis.sh after_success
+  - bash "${SCRIPT}" after_success
 
 after_failure:
-- bash scripts/travis.sh after_failure
+  - bash "${SCRIPT}" after_failure
 
 # Deploy via script not functional (or not understood).
 # deploy:
@@ -55,4 +59,4 @@ after_failure:
 #    branch: master
   
 after_script:
-- bash scripts/travis.sh after_script
+  - bash "${SCRIPT}" after_script

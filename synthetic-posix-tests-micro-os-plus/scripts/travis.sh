@@ -307,7 +307,13 @@ function do_script() {
     echo
     echo Run ${cfg}
 
-    do_run_quietly "${project}/${cfg}/${cfg}"
+    if [ -f "${project}/${cfg}/${cfg}" ]
+    then
+      do_run_quietly "${project}/${cfg}/${cfg}"
+    else
+      echo "FAILED"
+      return 2
+    fi
   done
 
   # Build only configurations (trace output too heavy to run).
@@ -334,11 +340,13 @@ function do_script() {
 
     if [ ! -f "${project}/${cfg}/${cfg}" ]
     then
+      echo "FAILED"
       return 2
     fi
   done
 
   rm -rf "${work}/output.log"
+  
   echo
   echo "PASSED"
   return 0
