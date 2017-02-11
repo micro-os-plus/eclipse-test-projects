@@ -42,10 +42,10 @@ script:
   - bash synthetic-posix-tests-micro-os-plus/scripts/travis.sh script
 
 after_success:
-- bash scripts/travis.linux.sh after_success
+- bash scripts/travis.sh after_success
 
 after_failure:
-- bash scripts/travis.linux.sh after_failure
+- bash scripts/travis.sh after_failure
 
 # Deploy via script not functional (or not understood).
 # deploy:
@@ -55,4 +55,4 @@ after_failure:
 #    branch: master
   
 after_script:
-- bash scripts/travis.linux.sh after_script
+- bash scripts/travis.sh after_script
