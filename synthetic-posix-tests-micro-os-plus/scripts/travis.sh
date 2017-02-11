@@ -108,12 +108,12 @@ function do_before_install() {
       # Prefer packages from the new multi-version core.
       # do_run brew tap homebrew/versions
 
-      brew --version
+      do_run brew --version
 
-      brew cask list
+      do_run brew cask list
       # oclint creates `/usr/local/include/c++`, which prevents
       # gcc@[56] to link to system locations.
-      brew cask uninstall oclint
+      do_run brew cask uninstall oclint
 
       do_run brew install gcc5
       do_run brew install gcc6
@@ -281,6 +281,9 @@ function do_script() {
       "test-rtos-gcc-debug" \
       "test-rtos-gcc5-release" \
       "test-rtos-gcc5-debug" \
+      # GCC 6.2 fails with header error.
+      # "test-rtos-gcc6-release"
+      # "test-rtos-gcc6-debug"
       # Mutex stress as release only, debug too heavy.
       "test-mutex-stress-clang-release" \
       "test-mutex-stress-clang38-release" \
