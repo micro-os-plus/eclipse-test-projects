@@ -271,6 +271,15 @@ function do_script() {
     )
   elif [ "${TRAVIS_OS_NAME}" == "linux" ]
   then
+    _cfgs=( \
+      "test-cmsis-rtos-valid-gcc5-release" \
+      "test-cmsis-rtos-valid-gcc6-release" \
+      "test-rtos-gcc5-release" \
+      "test-mutex-stress-gcc5-release" \
+      "test-cmsis-rtos-valid-gcc5-debug" \
+      "test-cmsis-rtos-valid-gcc6-debug" \
+      "test-rtos-gcc5-debug" \
+    )
     cfgs=( \
       "test-cmsis-rtos-valid-gcc5-release" \
       "test-cmsis-rtos-valid-gcc6-release" \
@@ -304,13 +313,17 @@ function do_script() {
       
     set -o errexit 
 
-    echo
-    echo Run ${cfg}
-
     if [ -f "${project}/${cfg}/${cfg}" ]
     then
+      echo
+      echo Run ${cfg}
       do_run_quietly "${project}/${cfg}/${cfg}"
     else
+      if [ -f "${work}/output.log" ]
+      then
+        cat "${work}/output.log"
+      fi
+      echo
       echo "FAILED"
       return 2
     fi
@@ -340,13 +353,16 @@ function do_script() {
 
     if [ ! -f "${project}/${cfg}/${cfg}" ]
     then
+      if [ -f "${work}/output.log" ]
+      then
+        cat "${work}/output.log"
+      fi
+      echo
       echo "FAILED"
       return 2
     fi
   done
 
-  rm -rf "${work}/output.log"
-  
   echo
   echo "PASSED"
   return 0
@@ -362,12 +378,7 @@ function do_after_success() {
 
 function do_after_failure() {
 
-  echo "Print the output.log..."
-
-  if [ -f "${work}/output.log" ]
-  then
-    cat "${work}/output.log"
-  fi
+  echo "Nothing to do after failure..."
   return 0
 }
 

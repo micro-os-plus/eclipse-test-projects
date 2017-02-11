@@ -37,7 +37,7 @@ before_install:
   - bash "${SCRIPT}" before_install
 
 # Skip the install step.
-install: true
+# install: true
 
 before_script:
   - bash "${SCRIPT}" before_script
