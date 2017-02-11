@@ -77,8 +77,8 @@ function do_run()
 
 function do_run_quietly()
 {
-  echo "\$ $@ > /dev/null"
-  "$@" > /dev/null
+  echo "\$ $@ > output.log"
+  "$@" > "${work}/output.log"
 }
 
 # -----------------------------------------------------------------------------
@@ -338,6 +338,7 @@ function do_script() {
     fi
   done
 
+  rm -rf "${work}/output.log"
   echo
   echo "PASSED"
   return 0
@@ -353,7 +354,12 @@ function do_after_success() {
 
 function do_after_failure() {
 
-  echo "Nothing to do after failure..."
+  echo "Print the output.log..."
+
+  if [ -f "${work}/output.log" ]
+  then
+    cat "${work}/output.log"
+  fi
   return 0
 }
 

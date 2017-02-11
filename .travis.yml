@@ -41,14 +41,11 @@ before_script:
 script:
   - bash synthetic-posix-tests-micro-os-plus/scripts/travis.sh script
 
-# -----------------------------------------------------------------------------
-# Unused.
+after_success:
+- bash scripts/travis.linux.sh after_success
 
-# after_success:
-#  - bash scripts/travis.linux.sh after_success
-
-# after_failure:
-#  - bash scripts/travis.linux.sh after_failure
+after_failure:
+- bash scripts/travis.linux.sh after_failure
 
 # Deploy via script not functional (or not understood).
 # deploy:
@@ -57,5 +54,5 @@ script:
 #  on:
 #    branch: master
   
-# after_script:
-#  - bash scripts/travis.linux.sh after_script
+after_script:
+- bash scripts/travis.linux.sh after_script
