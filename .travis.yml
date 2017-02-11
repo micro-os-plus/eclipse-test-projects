@@ -40,16 +40,18 @@ before_install:
 # install: true
 
 before_script:
-  - bash "${SCRIPT}" before_script
+  - bash "${SCRIPT}" before_script --develop
 
 script:
   - bash "${SCRIPT}" script
 
-after_success:
-  - bash "${SCRIPT}" after_success
+# Unused, kept for just in case.
 
-after_failure:
-  - bash "${SCRIPT}" after_failure
+# after_success:
+#  - bash "${SCRIPT}" after_success
+
+# after_failure:
+#   - bash "${SCRIPT}" after_failure
 
 # Deploy via script not functional (or not understood).
 # deploy:
@@ -58,5 +60,5 @@ after_failure:
 #  on:
 #    branch: master
   
-after_script:
-  - bash "${SCRIPT}" after_script
+# after_script:
+#   - bash "${SCRIPT}" after_script

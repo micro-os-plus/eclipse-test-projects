@@ -222,7 +222,7 @@ function do_before_script() {
 
   # Generate the required folders in the project, from downloaded xPacks. 
   cd "${project}"
-  do_run bash scripts/generate.sh
+  do_run bash scripts/generate.sh "$@"
 
   # The project is now complete. Import it into the Eclipse workspace.
   do_run rm -rf "${work}/workspace"
