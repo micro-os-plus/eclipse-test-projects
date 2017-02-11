@@ -116,6 +116,7 @@ function do_before_install() {
       # do_run sudo apt-get --yes --quiet update
       # do_run sudo apt-get --yes --quiet install gcc-5 g++-5
       # do_run sudo apt-get --yes --quiet install gcc-6 g++-6
+      :
     fi
   fi
 
@@ -124,7 +125,10 @@ function do_before_install() {
 
   do_run gcc-6 --version
   do_run g++-6 --version
-  
+
+  do_run clang-3.9 --version
+  do_run clang++-3.9 --version
+
   if [ "${TRAVIS_OS_NAME}" == "osx" ]
   then
     eclipse_archive_name=eclipse-cpp-mars-2-macosx-cocoa-x86_64.tar.gz
