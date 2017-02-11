@@ -14,12 +14,13 @@ addons:
     sources:
     # - ppa:jonathonf/gcc
     - ubuntu-toolchain-r-test
+    - sourceline: 'deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty-3.8 main'
     - sourceline: 'deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty-3.9 main'
     packages:
     - g++-5
     - g++-6
+    - clang-3.8
     - clang-3.9
-
 
 osx_image: xcode8.2
 

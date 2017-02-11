@@ -104,10 +104,15 @@ function do_before_install() {
     if [ "${TRAVIS_OS_NAME}" == "osx" ]
     then
       # Use brew to install specific GCC versions
-      do_run brew tap homebrew/versions
+      # do_run brew tap homebrew/versions
 
-      do_run brew install gcc5
-      do_run brew install gcc6
+      do_run brew install gcc@5
+      do_run brew install gcc@6
+      do_run brew install llvm@3.8
+
+      do_run clang-3.8 --version
+      do_run clang++-3.8 --version
+
     elif [ "${TRAVIS_OS_NAME}" == "linux" ]
     then
       # ppa:ubuntu-toolchain-r-test
@@ -116,7 +121,12 @@ function do_before_install() {
       # do_run sudo apt-get --yes --quiet update
       # do_run sudo apt-get --yes --quiet install gcc-5 g++-5
       # do_run sudo apt-get --yes --quiet install gcc-6 g++-6
-      :
+      do_run clang-3.8 --version
+      do_run clang++-3.8 --version
+
+      do_run clang-3.9 --version
+      do_run clang++-3.9 --version
+
     fi
   fi
 
@@ -125,9 +135,6 @@ function do_before_install() {
 
   do_run gcc-6 --version
   do_run g++-6 --version
-
-  do_run clang-3.9 --version
-  do_run clang++-3.9 --version
 
   if [ "${TRAVIS_OS_NAME}" == "osx" ]
   then
@@ -266,22 +273,27 @@ function do_script() {
       "test-rtos-gcc5-debug" \
     )
     _cfgs=( \
-      "test-cmsis-rtos-valid-gcc5-debug" \
-      "test-cmsis-rtos-valid-gcc6-debug" \
     )
   elif [ "${TRAVIS_OS_NAME}" == "linux" ]
   then
     _cfgs=( \
+      "test-cmsis-rtos-valid-clang38-release" \
       "test-cmsis-rtos-valid-gcc5-release" \
       "test-cmsis-rtos-valid-gcc6-release" \
+      "test-rtos-clang38-release" \
       "test-rtos-gcc5-release" \
+      "test-mutex-stress-clang38-release" \
       "test-mutex-stress-gcc5-release" \
       "test-cmsis-rtos-valid-gcc5-debug" \
       "test-cmsis-rtos-valid-gcc6-debug" \
+      "test-rtos-clang38-debug" \
       "test-rtos-gcc5-debug" \
     )
     cfgs=( \
-      "test-rtos-gcc5-debug" \
+      "test-cmsis-rtos-valid-clang38-release" \
+      "test-rtos-clang38-release" \
+      "test-mutex-stress-clang38-release" \
+      "test-rtos-clang38-debug" \
     )
   fi
 
