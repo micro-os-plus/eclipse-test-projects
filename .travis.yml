@@ -1,12 +1,25 @@
 # Travis CI configuration file to run the µOS++ tests.
 
 os:
-  # - linux
-  - osx
+  - linux
+  # - osx
 
 # Use the new Debian 14 containers.
 dist: trusty
 sudo: true
+
+# For more clang versions: http://apt.llvm.org
+addons:
+  apt:
+    sources:
+    # - ppa:jonathonf/gcc
+    - ubuntu-toolchain-r-test
+    - sourceline: 'http://apt.llvm.org/trusty/ llvm-toolchain-trusty-3.9 main'
+    packages:
+    - g++-5
+    - g++-6
+    - clang-3.9
+
 
 osx_image: xcode8.2
 

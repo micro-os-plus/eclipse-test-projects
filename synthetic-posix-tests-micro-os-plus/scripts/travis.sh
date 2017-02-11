@@ -110,11 +110,12 @@ function do_before_install() {
       do_run brew install gcc6
     elif [ "${TRAVIS_OS_NAME}" == "linux" ]
     then
+      # ppa:ubuntu-toolchain-r-test
       # https://launchpad.net/~jonathonf/+archive/ubuntu/gcc
-      do_run sudo add-apt-repository --yes ppa:jonathonf/gcc
-      do_run sudo apt-get --yes --quiet update
-      do_run sudo apt-get --yes --quiet install gcc-5 g++-5
-      do_run sudo apt-get --yes --quiet install gcc-6 g++-6
+      # do_run sudo add-apt-repository --yes ppa:jonathonf/gcc
+      # do_run sudo apt-get --yes --quiet update
+      # do_run sudo apt-get --yes --quiet install gcc-5 g++-5
+      # do_run sudo apt-get --yes --quiet install gcc-6 g++-6
     fi
   fi
 
