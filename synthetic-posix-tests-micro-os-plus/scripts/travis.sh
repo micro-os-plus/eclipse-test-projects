@@ -105,9 +105,11 @@ function do_before_install() {
     if [ "${TRAVIS}" == "true" ]
     then
       # Specific GCC versions are installed via brew.
-      # No need for versions tap, now core is multi-version.
-      do_run brew install gcc@5
-      do_run brew install gcc@6
+      # Prefer packages from the new multi-version core.
+      do_run brew tap homebrew/versions
+      # gcc@5 from core fails, use the one from versions.
+      do_run brew install gcc5
+      do_run brew install gcc6
       do_run brew install llvm@3.8
     fi
 
