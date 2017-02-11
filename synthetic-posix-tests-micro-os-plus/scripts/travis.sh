@@ -115,17 +115,12 @@ function do_before_install() {
 
     elif [ "${TRAVIS_OS_NAME}" == "linux" ]
     then
-      # ppa:ubuntu-toolchain-r-test
-      # https://launchpad.net/~jonathonf/+archive/ubuntu/gcc
-      # do_run sudo add-apt-repository --yes ppa:jonathonf/gcc
-      # do_run sudo apt-get --yes --quiet update
-      # do_run sudo apt-get --yes --quiet install gcc-5 g++-5
-      # do_run sudo apt-get --yes --quiet install gcc-6 g++-6
+      # Use addons.apt to install gcc-[56], clang-3.[89]
       do_run clang-3.8 --version
       do_run clang++-3.8 --version
 
-      do_run clang-3.9 --version
-      do_run clang++-3.9 --version
+      # do_run clang-3.9 --version
+      # do_run clang++-3.9 --version
 
     fi
   fi
@@ -276,30 +271,27 @@ function do_script() {
     )
   elif [ "${TRAVIS_OS_NAME}" == "linux" ]
   then
-    _cfgs=( \
+    cfgs=( \
       "test-cmsis-rtos-valid-clang38-release" \
+      "test-cmsis-rtos-valid-clang38-debug" \
       "test-cmsis-rtos-valid-gcc5-release" \
+      "test-cmsis-rtos-valid-gcc5-debug" \
       "test-cmsis-rtos-valid-gcc6-release" \
-      "test-rtos-clang38-release" \
+      "test-cmsis-rtos-valid-gcc6-debug" \
+      # "test-rtos-clang38-release" \
+      # "test-rtos-clang38-debug" \
       "test-rtos-gcc5-release" \
+      "test-rtos-gcc5-debug" \
+      # GCC 6.2 fails with header error.
+      # "test-rtos-gcc6-release"
+      # "test-rtos-gcc6-debug"
+      # Mutex stress as release only, debug too heavy.
       "test-mutex-stress-clang38-release" \
       "test-mutex-stress-gcc5-release" \
-      "test-cmsis-rtos-valid-gcc5-debug" \
-      "test-cmsis-rtos-valid-gcc6-debug" \
-      "test-rtos-clang38-debug" \
-      "test-rtos-gcc5-debug" \
     )
-    cfgs=( \
-      # "test-rtos-gcc6-release" \
-      "test-mutex-stress-clang38-release" \
-      "test-rtos-clang38-debug" \
+    _cfgs=( \
     )
   fi
-
-  # Not passing on Ubuntu:
-  # "test-rtos-clang38-release"
-  
-  # "test-rtos-gcc6-release"
 
   for cfg in "${cfgs[@]}"
   do
