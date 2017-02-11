@@ -99,30 +99,36 @@ function do_before_install() {
 
   do_run gcc --version
 
-  if [ "${TRAVIS}" == "true" ]
+  if [ "${TRAVIS_OS_NAME}" == "osx" ]
   then
-    if [ "${TRAVIS_OS_NAME}" == "osx" ]
-    then
-      # Use brew to install specific GCC versions
-      # do_run brew tap homebrew/versions
 
+    if [ "${TRAVIS}" == "true" ]
+    then
+      # Specific GCC versions are installed via brew.
+      # No need for versions tap, now core is multi-version.
       do_run brew install gcc@5
       do_run brew install gcc@6
       do_run brew install llvm@3.8
-
-      do_run clang-3.8 --version
-      do_run clang++-3.8 --version
-
-    elif [ "${TRAVIS_OS_NAME}" == "linux" ]
-    then
-      # Use addons.apt to install gcc-[56], clang-3.[89]
-      do_run clang-3.8 --version
-      do_run clang++-3.8 --version
-
-      # do_run clang-3.9 --version
-      # do_run clang++-3.9 --version
-
     fi
+
+    do_run clang-3.8 --version
+    do_run clang++-3.8 --version
+
+  elif [ "${TRAVIS_OS_NAME}" == "linux" ]
+  then
+
+    if [ "${TRAVIS}" == "true" ]
+    then
+      # gcc-[56], clang-3.[89] installed via `addons.apt`. 
+      :
+    fi
+
+    do_run clang-3.8 --version
+    do_run clang++-3.8 --version
+
+    # do_run clang-3.9 --version
+    # do_run clang++-3.9 --version
+
   fi
 
   do_run gcc-5 --version
@@ -250,22 +256,26 @@ function do_script() {
   then
     cfgs=( \
       "test-cmsis-rtos-valid-clang-release" \
+      "test-cmsis-rtos-valid-clang-debug" \
+      "test-cmsis-rtos-valid-clang38-release" \
+      "test-cmsis-rtos-valid-clang38-debug" \
       "test-cmsis-rtos-valid-gcc-release" \
+      "test-cmsis-rtos-valid-gcc-debug" \
       "test-cmsis-rtos-valid-gcc5-release" \
+      "test-cmsis-rtos-valid-gcc5-debug" \
       "test-cmsis-rtos-valid-gcc6-release" \
+      "test-cmsis-rtos-valid-gcc6-debug" \
       "test-rtos-clang-release" \
+      "test-rtos-clang-debug" \
       "test-rtos-gcc-release" \
+      "test-rtos-gcc-debug" \
       "test-rtos-gcc5-release" \
+      "test-rtos-gcc5-debug" \
+      # Mutex stress as release only, debug too heavy.
       "test-mutex-stress-clang-release" \
+      "test-mutex-stress-clang38-release" \
       "test-mutex-stress-gcc-release" \
       "test-mutex-stress-gcc5-release" \
-      "test-cmsis-rtos-valid-clang-debug" \
-      "test-cmsis-rtos-valid-gcc-debug" \
-      "test-cmsis-rtos-valid-gcc5-debug" \
-      "test-cmsis-rtos-valid-gcc6-debug" \
-      "test-rtos-clang-debug" \
-      "test-rtos-gcc-debug" \
-      "test-rtos-gcc5-debug" \
     )
     _cfgs=( \
     )
