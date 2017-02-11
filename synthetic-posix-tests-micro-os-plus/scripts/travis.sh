@@ -162,11 +162,11 @@ function do_before_install() {
   cd "${work}"
 
   do_run rm -rf Eclipse.app eclipse
-  do_run tar -x -f "${cache}/${eclipse_archive_name}"
+  do_run tar -x -z -f "${cache}/${eclipse_archive_name}"
 
   do_run rm -rf "${cdt_folder}"
   mkdir "${cdt_folder}"
-  do_run tar -x -f "${cache}/${cdt_archive_name}" -C "${cdt_folder}"
+  do_run unzip -q -d "${cdt_folder}" "${cache}/${cdt_archive_name}"
 
   do_run ls -lL
 
