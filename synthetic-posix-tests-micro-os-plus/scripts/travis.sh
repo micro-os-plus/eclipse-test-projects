@@ -106,8 +106,15 @@ function do_before_install() {
     then
       # Specific GCC versions are installed via brew.
       # Prefer packages from the new multi-version core.
-      do_run brew tap homebrew/versions
-      # gcc@5 from core fails, use the one from versions.
+      # do_run brew tap homebrew/versions
+
+      brew --version
+      
+      brew cask list
+      # oclint creates `/usr/local/include/c++`, which prevents
+      # gcc@[56] to link to system locations.
+      brew cask uninstall oclint
+
       do_run brew install gcc5
       do_run brew install gcc6
       do_run brew install llvm@3.8
