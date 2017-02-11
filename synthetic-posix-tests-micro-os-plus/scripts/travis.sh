@@ -109,7 +109,7 @@ function do_before_install() {
       # do_run brew tap homebrew/versions
 
       brew --version
-      
+
       brew cask list
       # oclint creates `/usr/local/include/c++`, which prevents
       # gcc@[56] to link to system locations.
@@ -118,6 +118,7 @@ function do_before_install() {
       do_run brew install gcc5
       do_run brew install gcc6
       do_run brew install llvm@3.8
+      # llvm@3.9 not yet available.
     fi
 
     do_run clang-3.8 --version
