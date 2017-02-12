@@ -297,12 +297,16 @@ function do_script() {
     cfgs=( \
       "test-cmsis-rtos-valid-clang38-release" \
       "test-cmsis-rtos-valid-clang38-debug" \
+      "test-cmsis-rtos-valid-clang39-release" \
+      "test-cmsis-rtos-valid-clang39-debug" \
       "test-cmsis-rtos-valid-gcc5-release" \
       "test-cmsis-rtos-valid-gcc5-debug" \
       "test-cmsis-rtos-valid-gcc6-release" \
       "test-cmsis-rtos-valid-gcc6-debug" \
       # "test-rtos-clang38-release" \
       # "test-rtos-clang38-debug" \
+      # "test-rtos-clang39-release" \
+      # "test-rtos-clang39-debug" \
       "test-rtos-gcc5-release" \
       "test-rtos-gcc5-debug" \
       # GCC 6.2 fails with header error.
@@ -310,6 +314,7 @@ function do_script() {
       # "test-rtos-gcc6-debug"
       # Mutex stress as release only, debug too heavy.
       "test-mutex-stress-clang38-release" \
+      "test-mutex-stress-clang39-release" \
       "test-mutex-stress-gcc5-release" \
     )
     _cfgs=( \
@@ -352,9 +357,22 @@ function do_script() {
   done
 
   # Build only configurations (trace output too heavy to run).
-  cfgs=( \
-    "test-mutex-stress-clang-debug" \
-  )
+  if [ "${TRAVIS_OS_NAME}" == "osx" ]
+  then
+  	cfgs=( \
+      "test-mutex-stress-clang-debug" \
+      "test-mutex-stress-clang38-debug" \
+      "test-mutex-stress-gcc-release" \
+      "test-mutex-stress-gcc5-release" \
+    )
+  elif [ "${TRAVIS_OS_NAME}" == "linux" ]
+  then
+  	cfgs=( \
+      "test-mutex-stress-clang38-debug" \
+      "test-mutex-stress-clang39-debug" \
+      "test-mutex-stress-gcc5-release" \
+    )
+  fi
 
   for cfg in "${cfgs[@]}"
   do
