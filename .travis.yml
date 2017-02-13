@@ -6,7 +6,7 @@ os:
 
 # Use the new Debian 14 containers.
 dist: trusty
-sudo: true
+sudo: false
 
 # For more clang versions: http://apt.llvm.org
 # Unfortunately clang is not yet reliable on linux, it uses GCC headers,
