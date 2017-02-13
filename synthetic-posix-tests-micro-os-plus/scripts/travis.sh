@@ -55,11 +55,21 @@ then
   cache="${HOME}/Library/Caches/Travis"
   eclipse="${work}/Eclipse.app/Contents/MacOS/eclipse" 
   use_clang="true"
+  use_clang38="true"
+  use_clang39="false"
+  use_gcc="true"
+  use_gcc5="true"
+  use_gcc6="true"
 elif [ "${TRAVIS_OS_NAME}" == "linux" ]
 then
   cache="${HOME}/.cache/travis"
   eclipse="${work}/eclipse/eclipse"
   use_clang="false"
+  use_clang38="true"
+  use_clang39="false"
+  use_gcc="false"
+  use_gcc5="true"
+  use_gcc6="true"
 fi
 
 mkdir -p "${cache}"
@@ -83,6 +93,76 @@ function do_run_quietly()
   "$@" > "${work}/output.log"
 }
 
+# $1 configuration name
+function do_build()
+{
+  local cfg=$1
+
+  echo
+  echo Build ${cfg}
+  
+  # Temporarily disable errors, because (???); 
+  # if the build fails, there will be no binary and the next test will fai-.
+  set +o errexit 
+  do_run_quietly "${eclipse}" \
+    --launcher.suppressErrors \
+    -nosplash \
+    -application org.eclipse.cdt.managedbuilder.core.headlessbuild \
+    -data "${work}/workspace" \
+    -cleanBuild synthetic-posix-tests-micro-os-plus/${cfg} 
+      
+  set -o errexit 
+
+  if [ ! -f "${project}/${cfg}/${cfg}" ]
+  then
+    if [ -f "${work}/output.log" ]
+    then
+      cat "${work}/output.log"
+    fi
+    echo
+    echo "FAILED"
+    return 2
+  fi
+}
+
+# $1 configuration name
+function do_build_run()
+{
+  local cfg=$1
+
+  echo
+  echo Build ${cfg}
+  
+  # Temporarily disable errors, because (???); 
+  # if the build fails, the attempt to run the binary will fail anyway.
+  set +o errexit 
+
+  # Clean build a configuration.
+  do_run_quietly "${eclipse}" \
+    --launcher.suppressErrors \
+    -nosplash \
+    -application org.eclipse.cdt.managedbuilder.core.headlessbuild \
+    -data "${work}/workspace" \
+    -cleanBuild synthetic-posix-tests-micro-os-plus/${cfg} 
+      
+  set -o errexit 
+
+  if [ -f "${project}/${cfg}/${cfg}" ]
+  then
+    echo
+    echo Run ${cfg}
+    do_run_quietly "${project}/${cfg}/${cfg}"
+  else
+    if [ -f "${work}/output.log" ]
+    then
+      cat "${work}/output.log"
+    fi
+    echo
+    echo "FAILED"
+    return 2
+  fi
+}
+
 # -----------------------------------------------------------------------------
 
 # Errors in this function will break the build.
@@ -102,7 +182,10 @@ function do_before_install() {
     do_run clang++ --version
   fi
 
-  do_run gcc --version
+  if [ "${use_gcc}" == "true" ]
+  then
+    do_run gcc --version
+  fi
 
   if [ "${TRAVIS_OS_NAME}" == "osx" ]
   then
@@ -120,20 +203,27 @@ function do_before_install() {
       # gcc@[56] to link to system locations.
       do_run brew cask uninstall oclint
 
-      do_run brew install gcc5
-      do_run brew install gcc6
+      if [ "${use_gcc5}" == "true" ]
+      then
+        do_run brew install gcc5
+      fi
 
-      if [ "${use_clang}" == "true" ]
+      if [ "${use_gcc6}" == "true" ]
+      then
+        do_run brew install gcc6
+      fi
+
+      if [ "${use_clang38}" == "true" ]
       then
         do_run brew install llvm@3.8
         # llvm@3.9 not yet available.
       fi
-    fi
 
-    if [ "${use_clang}" == "true" ]
-    then
-      do_run clang-3.8 --version
-      do_run clang++-3.8 --version
+      # llvm@3.9 not yet available.
+      if [ "${use_clang39}" == "true" ]
+      then
+        do_run brew install llvm@3.9
+      fi
     fi
 
   elif [ "${TRAVIS_OS_NAME}" == "linux" ]
@@ -144,23 +234,31 @@ function do_before_install() {
       # gcc-[56], clang-3.[89] installed via `addons.apt`. 
       :
     fi
-
-    if [ "${use_clang}" == "true" ]
-    then
-      do_run clang-3.8 --version
-      do_run clang++-3.8 --version
-
-      do_run clang-3.9 --version
-      do_run clang++-3.9 --version
-    fi
-
   fi
 
-  do_run gcc-5 --version
-  do_run g++-5 --version
+  if [ "${use_clang38}" == "true" ]
+  then
+    do_run clang-3.8 --version
+    do_run clang++-3.8 --version
+  fi
 
-  do_run gcc-6 --version
-  do_run g++-6 --version
+  if [ "${use_clang39}" == "true" ]
+  then
+    do_run clang-3.9 --version
+    do_run clang++-3.9 --version
+  fi
+
+  if [ "${use_gcc5}" == "true" ]
+  then
+    do_run gcc-5 --version
+    do_run g++-5 --version
+  fi
+
+  if [ "${use_gcc6}" == "true" ]
+  then
+    do_run gcc-6 --version
+    do_run g++-6 --version
+  fi
 
   if [ "${TRAVIS_OS_NAME}" == "osx" ]
   then
@@ -281,148 +379,85 @@ function do_script() {
   cd "${slug}"
 
   # Build & run configurations.
-  if [ "${TRAVIS_OS_NAME}" == "osx" ]
+
+  if [ "${use_clang}" == "true" ]
   then
-    cfgs=( \
-      "test-cmsis-rtos-valid-clang-release" \
-      "test-cmsis-rtos-valid-clang-debug" \
-      "test-cmsis-rtos-valid-clang38-release" \
-      "test-cmsis-rtos-valid-clang38-debug" \
-      "test-cmsis-rtos-valid-gcc-release" \
-      "test-cmsis-rtos-valid-gcc-debug" \
-      "test-cmsis-rtos-valid-gcc5-release" \
-      "test-cmsis-rtos-valid-gcc5-debug" \
-      "test-cmsis-rtos-valid-gcc6-release" \
-      "test-cmsis-rtos-valid-gcc6-debug" \
-      "test-rtos-clang-release" \
-      "test-rtos-clang-debug" \
-      "test-rtos-gcc-release" \
-      "test-rtos-gcc-debug" \
-      "test-rtos-gcc5-release" \
-      "test-rtos-gcc5-debug" \
-      # GCC 6.2 fails with header error.
-      # "test-rtos-gcc6-release"
-      # "test-rtos-gcc6-debug"
-      # Mutex stress as release only, debug too heavy.
-      "test-mutex-stress-clang-release" \
-      "test-mutex-stress-clang38-release" \
-      "test-mutex-stress-gcc-release" \
-      "test-mutex-stress-gcc5-release" \
-    )
-    _cfgs=( \
-    )
-  elif [ "${TRAVIS_OS_NAME}" == "linux" ]
-  then
-    # Unfortunately clang is not yet reliable on linux, it uses GCC headers,
-    # and it might get the wrong ones.
-    cfgs=( \
-      # "test-cmsis-rtos-valid-clang38-release" \
-      # "test-cmsis-rtos-valid-clang38-debug" \
-      # "test-cmsis-rtos-valid-clang39-release" \
-      # "test-cmsis-rtos-valid-clang39-debug" \
-      "test-cmsis-rtos-valid-gcc5-release" \
-      "test-cmsis-rtos-valid-gcc5-debug" \
-      "test-cmsis-rtos-valid-gcc6-release" \
-      "test-cmsis-rtos-valid-gcc6-debug" \
-      # "test-rtos-clang38-release" \
-      # "test-rtos-clang38-debug" \
-      # "test-rtos-clang39-release" \
-      # "test-rtos-clang39-debug" \
-      "test-rtos-gcc5-release" \
-      "test-rtos-gcc5-debug" \
-      # GCC 6.2 fails with header error.
-      # "test-rtos-gcc6-release"
-      # "test-rtos-gcc6-debug"
-      # Mutex stress as release only, debug too heavy.
-      # "test-mutex-stress-clang38-release" \
-      # "test-mutex-stress-clang39-release" \
-      "test-mutex-stress-gcc5-release" \
-    )
-    _cfgs=( \
-    )
+    do_build_run "test-cmsis-rtos-valid-clang-release" 
+    do_build_run "test-cmsis-rtos-valid-clang-debug" 
+
+    do_build_run "test-rtos-clang-release" 
+    do_build_run "test-rtos-clang-debug" 
+
+    do_build_run "test-mutex-stress-clang-release" 
+    # Mutex stress as release only, debug too heavy.
+    do_build "test-mutex-stress-clang-debug" 
   fi
 
-  for cfg in "${cfgs[@]}"
-  do
-    echo
-    echo Build ${cfg}
-  
-    # Temporarily disable errors, because (???); 
-    # if the build fails, the attempt to run the binary will fail anyway.
-    set +o errexit 
-
-    # Clean build a configuration.
-    do_run_quietly "${eclipse}" \
-      --launcher.suppressErrors \
-      -nosplash \
-      -application org.eclipse.cdt.managedbuilder.core.headlessbuild \
-      -data "${work}/workspace" \
-      -cleanBuild synthetic-posix-tests-micro-os-plus/${cfg} 
-      
-    set -o errexit 
-
-    if [ -f "${project}/${cfg}/${cfg}" ]
-    then
-      echo
-      echo Run ${cfg}
-      do_run_quietly "${project}/${cfg}/${cfg}"
-    else
-      if [ -f "${work}/output.log" ]
-      then
-        cat "${work}/output.log"
-      fi
-      echo
-      echo "FAILED"
-      return 2
-    fi
-  done
-
-  # Build only configurations (trace output too heavy to run).
-  if [ "${TRAVIS_OS_NAME}" == "osx" ]
+  if [ "${use_clang38}" == "true" ]
   then
-  	cfgs=( \
-      "test-mutex-stress-clang-debug" \
-      "test-mutex-stress-clang38-debug" \
-      "test-mutex-stress-gcc-release" \
-      "test-mutex-stress-gcc5-release" \
-    )
-  elif [ "${TRAVIS_OS_NAME}" == "linux" ]
-  then
-  	cfgs=( \
-      # "test-mutex-stress-clang38-debug" \
-      # "test-mutex-stress-clang39-debug" \
-      "test-mutex-stress-gcc5-release" \
-    )
+    do_build_run "test-cmsis-rtos-valid-clang38-release" 
+    do_build_run "test-cmsis-rtos-valid-clang38-debug" 
+
+    do_build_run "test-rtos-clang38-release" 
+    do_build_run "test-rtos-clang38-debug" 
+
+    do_build_run "test-mutex-stress-clang38-release" 
+    # Mutex stress as release only, debug too heavy.
+    do_build "test-mutex-stress-clang38-debug" 
   fi
 
-  for cfg in "${cfgs[@]}"
-  do
-    echo
-    echo Build ${cfg}
+  if [ "${use_clang39}" == "true" ]
+  then
+    do_build_run "test-cmsis-rtos-valid-clang39-release" 
+    do_build_run "test-cmsis-rtos-valid-clang39-debug" 
 
-    # Temporarily disable errors, because (???); 
-    # if the build fails, there will be no binary and the next test will fai-.
-    set +o errexit 
-    do_run_quietly "${eclipse}" \
-      --launcher.suppressErrors \
-      -nosplash \
-      -application org.eclipse.cdt.managedbuilder.core.headlessbuild \
-      -data "${work}/workspace" \
-      -cleanBuild synthetic-posix-tests-micro-os-plus/${cfg} 
-      
-    set -o errexit 
+    do_build_run "test-rtos-clang39-release" 
+    do_build_run "test-rtos-clang39-debug" 
 
-    if [ ! -f "${project}/${cfg}/${cfg}" ]
-    then
-      if [ -f "${work}/output.log" ]
-      then
-        cat "${work}/output.log"
-      fi
-      echo
-      echo "FAILED"
-      return 2
-    fi
-  done
+    do_build_run "test-mutex-stress-clang39-release" 
+    # Mutex stress as release only, debug too heavy.
+    do_build "test-mutex-stress-clang39-debug" 
+  fi
+
+  if [ "${use_gcc}" == "true" ]
+  then
+    do_build_run "test-cmsis-rtos-valid-gcc-release" 
+    do_build_run "test-cmsis-rtos-valid-gcc-debug" 
+
+    do_build_run "test-rtos-gcc-release" 
+    do_build_run "test-rtos-gcc-debug" 
+
+    do_build_run "test-mutex-stress-gcc-release" 
+    # Mutex stress as release only, debug too heavy.
+    do_build "test-mutex-stress-gcc-debug" 
+  fi
+
+  if [ "${use_gcc5}" == "true" ]
+  then
+    do_build_run "test-cmsis-rtos-valid-gcc5-release" 
+    do_build_run "test-cmsis-rtos-valid-gcc5-debug" 
+
+    do_build_run "test-rtos-gcc5-release" 
+    do_build_run "test-rtos-gcc5-debug" 
+
+    do_build_run "test-mutex-stress-gcc5-release" 
+    # Mutex stress as release only, debug too heavy.
+    do_build "test-mutex-stress-gcc5-debug" 
+  fi
+
+  if [ "${use_gcc6}" == "true" ]
+  then
+    do_build_run "test-cmsis-rtos-valid-gcc6-release" 
+    do_build_run "test-cmsis-rtos-valid-gcc6-debug" 
+
+    # GCC 6.2 fails with header error.
+    # do_build_run "test-rtos-gcc6-release"
+    # do_build_run "test-rtos-gcc6-debug"
+
+    # do_build_run "test-mutex-stress-gcc6-release" 
+    # Mutex stress as release only, debug too heavy.
+    # do_build "test-mutex-stress-gcc6-debug" 
+  fi
 
   echo
   echo "PASSED"
