@@ -77,7 +77,7 @@ then
   use_gcc="false"
   use_gcc5="true"
   use_gcc6="true"
-  
+
 fi
 
 mkdir -p "${cache}"
@@ -109,6 +109,8 @@ function do_build()
   echo
   echo Build ${cfg}
   
+  local code=0
+
   # Temporarily disable errors, because (???); 
   # if the build fails, there will be no binary and the next test will fai-.
   set +o errexit 
@@ -119,18 +121,24 @@ function do_build()
     -data "${work}/workspace" \
     -cleanBuild synthetic-posix-tests-micro-os-plus/${cfg} 
       
+  code=$?
+
   set -o errexit 
 
-  if [ ! -f "${project}/${cfg}/${cfg}" ]
+  if [ \( ${code} -eq 0 \) -a \( -f "${project}/${cfg}/${cfg}" \) ]
   then
-    if [ -f "${work}/output.log" ]
-    then
-      cat "${work}/output.log"
-    fi
-    echo
-    echo "FAILED"
-    return 2
+    return 0
   fi
+
+  if [ -f "${work}/output.log" ]
+  then
+    cat "${work}/output.log"
+  fi
+
+  echo
+  echo "FAILED"
+
+  return ${code}
 }
 
 # $1 configuration name
@@ -141,6 +149,8 @@ function do_build_run()
   echo
   echo Build ${cfg}
   
+  local code=0
+
   # Temporarily disable errors, because (???); 
   # if the build fails, the attempt to run the binary will fail anyway.
   set +o errexit 
@@ -152,23 +162,38 @@ function do_build_run()
     -application org.eclipse.cdt.managedbuilder.core.headlessbuild \
     -data "${work}/workspace" \
     -cleanBuild synthetic-posix-tests-micro-os-plus/${cfg} 
-      
+  
+  code=$?
+
   set -o errexit 
 
-  if [ -f "${project}/${cfg}/${cfg}" ]
+  if [ \( ${code} -eq 0 \) -a \( -f "${project}/${cfg}/${cfg}" \) ]
   then
     echo
     echo Run ${cfg}
+    set +o errexit 
     do_run_quietly "${project}/${cfg}/${cfg}"
-  else
-    if [ -f "${work}/output.log" ]
+    code=$?
+    set -o errexit 
+
+    if [ ${code} -eq 0 ]
     then
-      cat "${work}/output.log"
+      return 0
     fi
+  fi
+
+  if [ \( ${code} -ne 0 \) -a \( -f "${work}/output.log" \) ]
+  then
+    cat "${work}/output.log"
+  fi
+
+  if [ ${code} -ne 0 ]
+  then
     echo
     echo "FAILED"
-    return 2
   fi
+
+  return ${code}
 }
 
 # -----------------------------------------------------------------------------
