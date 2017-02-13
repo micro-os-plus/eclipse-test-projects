@@ -44,10 +44,12 @@ then
   work="${HOME}"
   slug="${TRAVIS_BUILD_DIR}"
   project="${slug}/synthetic-posix-tests-micro-os-plus"
+  use_clang=true
 else
   work="${HOME}/Work/travis"
   project="$(dirname ${parent})"
   slug="$(dirname ${project})"
+  use_clang=false
 fi
 
 if [ "${TRAVIS_OS_NAME}" == "osx" ]
@@ -94,8 +96,11 @@ function do_before_install() {
     do_run rm -rf "${work}"
   fi
 
-  do_run clang --version
-  do_run clang++ --version
+  if ${use_clang}
+  then
+    do_run clang --version
+    do_run clang++ --version
+  fi
 
   do_run gcc --version
 
@@ -117,12 +122,19 @@ function do_before_install() {
 
       do_run brew install gcc5
       do_run brew install gcc6
-      do_run brew install llvm@3.8
-      # llvm@3.9 not yet available.
+
+      if ${use_clang}
+      then
+        do_run brew install llvm@3.8
+        # llvm@3.9 not yet available.
+      fi
     fi
 
-    do_run clang-3.8 --version
-    do_run clang++-3.8 --version
+    if ${use_clang}
+    then
+      do_run clang-3.8 --version
+      do_run clang++-3.8 --version
+    fi
 
   elif [ "${TRAVIS_OS_NAME}" == "linux" ]
   then
@@ -133,11 +145,14 @@ function do_before_install() {
       :
     fi
 
-    do_run clang-3.8 --version
-    do_run clang++-3.8 --version
+    if ${use_clang}
+    then
+      do_run clang-3.8 --version
+      do_run clang++-3.8 --version
 
-    # do_run clang-3.9 --version
-    # do_run clang++-3.9 --version
+      do_run clang-3.9 --version
+      do_run clang++-3.9 --version
+    fi
 
   fi
 
@@ -190,6 +205,10 @@ function do_before_install() {
 
   # Install "C/C++ LLVM-Family Compiler Build Support" feature,
   # which is not present by default in the Eclipse CDT distributions.
+
+  # The LLVM plug-in is necessary even if the clang tests are disabled,
+  # otherwise CDT will complain for each clang configuration.
+  
   # The p2.os, p2.ws, p2.arch might help to make the right plug-in selection.
 
   # Eclipse Launcher runt-time options
@@ -294,11 +313,13 @@ function do_script() {
     )
   elif [ "${TRAVIS_OS_NAME}" == "linux" ]
   then
+    # Unfortunately clang is not yet reliable on linux, it uses GCC headers,
+    # and it might get the wrong ones.
     cfgs=( \
-      "test-cmsis-rtos-valid-clang38-release" \
-      "test-cmsis-rtos-valid-clang38-debug" \
-      "test-cmsis-rtos-valid-clang39-release" \
-      "test-cmsis-rtos-valid-clang39-debug" \
+      # "test-cmsis-rtos-valid-clang38-release" \
+      # "test-cmsis-rtos-valid-clang38-debug" \
+      # "test-cmsis-rtos-valid-clang39-release" \
+      # "test-cmsis-rtos-valid-clang39-debug" \
       "test-cmsis-rtos-valid-gcc5-release" \
       "test-cmsis-rtos-valid-gcc5-debug" \
       "test-cmsis-rtos-valid-gcc6-release" \
@@ -313,8 +334,8 @@ function do_script() {
       # "test-rtos-gcc6-release"
       # "test-rtos-gcc6-debug"
       # Mutex stress as release only, debug too heavy.
-      "test-mutex-stress-clang38-release" \
-      "test-mutex-stress-clang39-release" \
+      # "test-mutex-stress-clang38-release" \
+      # "test-mutex-stress-clang39-release" \
       "test-mutex-stress-gcc5-release" \
     )
     _cfgs=( \
