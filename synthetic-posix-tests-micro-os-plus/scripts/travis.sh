@@ -52,24 +52,32 @@ fi
 
 if [ "${TRAVIS_OS_NAME}" == "osx" ]
 then
+
   cache="${HOME}/Library/Caches/Travis"
   eclipse="${work}/Eclipse.app/Contents/MacOS/eclipse" 
+
   use_clang="true"
   use_clang38="true"
   use_clang39="false"
+
   use_gcc="true"
   use_gcc5="true"
   use_gcc6="true"
+
 elif [ "${TRAVIS_OS_NAME}" == "linux" ]
 then
+
   cache="${HOME}/.cache/travis"
   eclipse="${work}/eclipse/eclipse"
+
   use_clang="false"
-  use_clang38="true"
+  use_clang38="false"
   use_clang39="false"
+
   use_gcc="false"
   use_gcc5="true"
   use_gcc6="true"
+  
 fi
 
 mkdir -p "${cache}"
