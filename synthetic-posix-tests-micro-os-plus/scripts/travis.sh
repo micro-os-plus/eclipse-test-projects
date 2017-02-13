@@ -44,22 +44,22 @@ then
   work="${HOME}"
   slug="${TRAVIS_BUILD_DIR}"
   project="${slug}/synthetic-posix-tests-micro-os-plus"
-  use_clang="true"
 else
   work="${HOME}/Work/travis"
   project="$(dirname ${parent})"
   slug="$(dirname ${project})"
-  use_clang="false"
 fi
 
 if [ "${TRAVIS_OS_NAME}" == "osx" ]
 then
   cache="${HOME}/Library/Caches/Travis"
   eclipse="${work}/Eclipse.app/Contents/MacOS/eclipse" 
+  use_clang="true"
 elif [ "${TRAVIS_OS_NAME}" == "linux" ]
 then
   cache="${HOME}/.cache/travis"
   eclipse="${work}/eclipse/eclipse"
+  use_clang="false"
 fi
 
 mkdir -p "${cache}"
