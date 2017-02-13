@@ -44,12 +44,12 @@ then
   work="${HOME}"
   slug="${TRAVIS_BUILD_DIR}"
   project="${slug}/synthetic-posix-tests-micro-os-plus"
-  use_clang=true
+  use_clang="true"
 else
   work="${HOME}/Work/travis"
   project="$(dirname ${parent})"
   slug="$(dirname ${project})"
-  use_clang=false
+  use_clang="false"
 fi
 
 if [ "${TRAVIS_OS_NAME}" == "osx" ]
@@ -96,7 +96,7 @@ function do_before_install() {
     do_run rm -rf "${work}"
   fi
 
-  if ${use_clang}
+  if [ "${use_clang}" == "true" ]
   then
     do_run clang --version
     do_run clang++ --version
@@ -123,14 +123,14 @@ function do_before_install() {
       do_run brew install gcc5
       do_run brew install gcc6
 
-      if ${use_clang}
+      if [ "${use_clang}" == "true" ]
       then
         do_run brew install llvm@3.8
         # llvm@3.9 not yet available.
       fi
     fi
 
-    if ${use_clang}
+    if [ "${use_clang}" == "true" ]
     then
       do_run clang-3.8 --version
       do_run clang++-3.8 --version
@@ -145,7 +145,7 @@ function do_before_install() {
       :
     fi
 
-    if ${use_clang}
+    if [ "${use_clang}" == "true" ]
     then
       do_run clang-3.8 --version
       do_run clang++-3.8 --version
@@ -208,7 +208,7 @@ function do_before_install() {
 
   # The LLVM plug-in is necessary even if the clang tests are disabled,
   # otherwise CDT will complain for each clang configuration.
-  
+
   # The p2.os, p2.ws, p2.arch might help to make the right plug-in selection.
 
   # Eclipse Launcher runt-time options
