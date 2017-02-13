@@ -209,22 +209,12 @@ function do_before_install() {
     do_run rm -rf "${work}"
   fi
 
-  if [ "${use_clang}" == "true" ]
-  then
-    do_run clang --version
-    do_run clang++ --version
-  fi
-
-  if [ "${use_gcc}" == "true" ]
-  then
-    do_run gcc --version
-  fi
-
-  if [ "${TRAVIS_OS_NAME}" == "osx" ]
+  if [ "${TRAVIS}" == "true" ]
   then
 
-    if [ "${TRAVIS}" == "true" ]
+    if [ "${TRAVIS_OS_NAME}" == "osx" ]
     then
+
       # Specific GCC versions are installed via brew.
       # Prefer packages from the new multi-version core.
       # do_run brew tap homebrew/versions
@@ -249,24 +239,29 @@ function do_before_install() {
       if [ "${use_clang38}" == "true" ]
       then
         do_run brew install llvm@3.8
-        # llvm@3.9 not yet available.
       fi
 
-      # llvm@3.9 not yet available.
+      # llvm@3.9 is not yet available.
       if [ "${use_clang39}" == "true" ]
       then
         do_run brew install llvm@3.9
       fi
-    fi
-
-  elif [ "${TRAVIS_OS_NAME}" == "linux" ]
-  then
-
-    if [ "${TRAVIS}" == "true" ]
+ 
+    elif [ "${TRAVIS_OS_NAME}" == "linux" ]
     then
       # gcc-[56], clang-3.[89] installed via `addons.apt`. 
       :
     fi
+  
+  else
+    # When not running on Travis, clean play arena.
+    do_run rm -rf "${work}"
+  fi
+
+  if [ "${use_clang}" == "true" ]
+  then
+    do_run clang --version
+    do_run clang++ --version
   fi
 
   if [ "${use_clang38}" == "true" ]
@@ -279,6 +274,12 @@ function do_before_install() {
   then
     do_run clang-3.9 --version
     do_run clang++-3.9 --version
+  fi
+
+  if [ "${use_gcc}" == "true" ]
+  then
+    do_run gcc --version
+    do_run g++ --version
   fi
 
   if [ "${use_gcc5}" == "true" ]
@@ -411,7 +412,8 @@ function do_script() {
 
   cd "${slug}"
 
-  # Build & run configurations.
+  # Build & possibly run configurations.
+  # Configurations too heavy (lots of traces) are build only.
 
   if [ "${use_clang}" == "true" ]
   then
