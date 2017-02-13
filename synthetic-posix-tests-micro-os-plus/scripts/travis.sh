@@ -98,11 +98,11 @@ function do_before_install() {
 
   if [ "${use_clang}" == "true" ]
   then
-    do_run clang --version
-    do_run clang++ --version
+    do_run clang --version | grep clang
+    do_run clang++ --version | grep clang
   fi
 
-  do_run gcc --version
+  do_run gcc --version | grep gcc
 
   if [ "${TRAVIS_OS_NAME}" == "osx" ]
   then
@@ -132,8 +132,8 @@ function do_before_install() {
 
     if [ "${use_clang}" == "true" ]
     then
-      do_run clang-3.8 --version
-      do_run clang++-3.8 --version
+      do_run clang-3.8 --version | grep clang
+      do_run clang++-3.8 --version | grep clang
     fi
 
   elif [ "${TRAVIS_OS_NAME}" == "linux" ]
@@ -147,20 +147,20 @@ function do_before_install() {
 
     if [ "${use_clang}" == "true" ]
     then
-      do_run clang-3.8 --version
-      do_run clang++-3.8 --version
+      do_run clang-3.8 --version | grep clang
+      do_run clang++-3.8 --version | grep clang
 
-      do_run clang-3.9 --version
-      do_run clang++-3.9 --version
+      do_run clang-3.9 --version | grep clang
+      do_run clang++-3.9 --version | grep clang
     fi
 
   fi
 
-  do_run gcc-5 --version
-  do_run g++-5 --version
+  do_run gcc-5 --version | grep gcc
+  do_run g++-5 --version | grep gcc
 
-  do_run gcc-6 --version
-  do_run g++-6 --version
+  do_run gcc-6 --version | grep gcc
+  do_run g++-6 --version | grep gcc
 
   if [ "${TRAVIS_OS_NAME}" == "osx" ]
   then
@@ -389,8 +389,8 @@ function do_script() {
   elif [ "${TRAVIS_OS_NAME}" == "linux" ]
   then
   	cfgs=( \
-      "test-mutex-stress-clang38-debug" \
-      "test-mutex-stress-clang39-debug" \
+      # "test-mutex-stress-clang38-debug" \
+      # "test-mutex-stress-clang39-debug" \
       "test-mutex-stress-gcc5-release" \
     )
   fi
