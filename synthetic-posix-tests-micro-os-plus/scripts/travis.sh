@@ -64,6 +64,9 @@ then
   use_gcc5="true"
   use_gcc6="true"
 
+  p2_os="macosx"
+  p2_ws="cocoa"
+
 elif [ "${TRAVIS_OS_NAME}" == "linux" ]
 then
 
@@ -77,6 +80,9 @@ then
   use_gcc="false"
   use_gcc5="true"
   use_gcc6="true"
+
+  p2_os="linux"
+  p2_ws="gtk"
 
 fi
 
@@ -349,37 +355,19 @@ function do_before_install() {
   # Eclipse provisioning, installation management
   # http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Fguide%2Fp2_director.html
 
-  if [ "${TRAVIS_OS_NAME}" == "osx" ]
-  then
-    do_run "${eclipse}" \
-      --launcher.suppressErrors \
-      -nosplash \
-      -application org.eclipse.equinox.p2.director \
-      -repository "file:///${work}/${cdt_folder}" \
-      -installIU org.eclipse.cdt.managedbuilder.llvm.feature.group \
-      -tag InitialState \
-      -destination "${work}/Eclipse.app/" \
-      -profileProperties org.eclipse.update.install.features=true \
-      -p2.os macosx \
-      -p2.ws cocoa \
-      -p2.arch x86_64 \
-      -roaming 
-  elif [ "${TRAVIS_OS_NAME}" == "linux" ]
-  then
-    do_run "${eclipse}" \
-      --launcher.suppressErrors \
-      -nosplash \
-      -application org.eclipse.equinox.p2.director \
-      -repository http://download.eclipse.org/releases/mars/ \
-      -installIU org.eclipse.cdt.managedbuilder.llvm.feature.group \
-      -tag InitialState \
-      -destination "${work}/eclipse/" \
-      -profileProperties org.eclipse.update.install.features=true \
-      -p2.os linux \
-      -p2.ws gtk \
-      -p2.arch x86_64 \
-      -roaming 
-  fi
+  do_run "${eclipse}" \
+    --launcher.suppressErrors \
+    -nosplash \
+    -application org.eclipse.equinox.p2.director \
+    -repository "file:///${work}/${cdt_folder}" \
+    -installIU org.eclipse.cdt.managedbuilder.llvm.feature.group \
+    -tag InitialState \
+    -destination "${work}/Eclipse.app/" \
+    -profileProperties org.eclipse.update.install.features=true \
+    -p2.os "${p2_os}" \
+    -p2.ws "${p2_ws}" \
+    -p2.arch x86_64 \
+    -roaming 
 
   return 0
 }

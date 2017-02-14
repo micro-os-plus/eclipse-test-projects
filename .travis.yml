@@ -25,7 +25,7 @@ addons:
 
 osx_image: xcode8.2
 
-language: c++
+language: cpp
 
 git:
   # Limit the clone depth; default is 50.
