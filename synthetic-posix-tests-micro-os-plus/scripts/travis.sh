@@ -50,6 +50,14 @@ else
   slug="$(dirname ${project})"
 fi
 
+use_clang="false"
+use_clang38="false"
+use_clang39="false"
+
+use_gcc="false"
+use_gcc5="false"
+use_gcc6="false"
+
 if [ "${TRAVIS_OS_NAME}" == "osx" ]
 then
 
@@ -470,12 +478,12 @@ function do_script() {
     do_build_run "test-cmsis-rtos-valid-gcc6-debug" 
 
     # GCC 6.2 fails with header error.
-    # do_build_run "test-rtos-gcc6-release"
-    # do_build_run "test-rtos-gcc6-debug"
+    do_build_run "test-rtos-gcc6-release"
+    do_build_run "test-rtos-gcc6-debug"
 
-    # do_build_run "test-mutex-stress-gcc6-release" 
+    do_build_run "test-mutex-stress-gcc6-release" 
     # Mutex stress as release only, debug too heavy.
-    # do_build "test-mutex-stress-gcc6-debug" 
+    do_build "test-mutex-stress-gcc6-debug" 
   fi
 
   echo
