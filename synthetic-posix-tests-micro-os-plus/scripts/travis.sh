@@ -54,7 +54,8 @@ if [ "${TRAVIS_OS_NAME}" == "osx" ]
 then
 
   cache="${HOME}/Library/Caches/Travis"
-  eclipse="${work}/Eclipse.app/Contents/MacOS/eclipse" 
+  eclipse_folder="${work}/Eclipse.app" 
+  eclipse="${eclipse_folder}/Contents/MacOS/eclipse" 
 
   use_clang="true"
   use_clang38="true"
@@ -71,7 +72,8 @@ elif [ "${TRAVIS_OS_NAME}" == "linux" ]
 then
 
   cache="${HOME}/.cache/travis"
-  eclipse="${work}/eclipse/eclipse"
+  eclipse_folder="${work}/eclipse"
+  eclipse="${eclipse_folder}/eclipse"
 
   use_clang="false"
   use_clang38="false"
@@ -362,7 +364,7 @@ function do_before_install() {
     -repository "file:///${work}/${cdt_folder}" \
     -installIU org.eclipse.cdt.managedbuilder.llvm.feature.group \
     -tag InitialState \
-    -destination "${work}/Eclipse.app/" \
+    -destination "${eclipse_folder}/" \
     -profileProperties org.eclipse.update.install.features=true \
     -p2.os "${p2_os}" \
     -p2.ws "${p2_ws}" \
