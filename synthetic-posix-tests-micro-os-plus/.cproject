@@ -249,7 +249,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis-rtos-validator/cmsis-rtos-valid/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.675464414" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.561350290" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.561350290" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.1518898990" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.426807539" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
@@ -271,7 +271,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis-rtos-validator/cmsis-rtos-valid/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.931921806" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.286065507" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.286065507" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.484475473" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.1098011226" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
 							</tool>
@@ -298,7 +298,7 @@
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.assembler.exe.debug.1266164964" name="LLVM assembler" superClass="cdt.managedbuild.tool.llvm.clang.macosx.assembler.exe.debug.396048007"/>
 							<tool id="cdt.managedbuild.tool.llvm.archiver.base.713213395" name="LLVM archiver" superClass="cdt.managedbuild.tool.llvm.archiver.base.1486179096"/>
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug.1306010490" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug.663545108">
-								<option id="llvm.c_cpp.compiler.option.misc.other.1514049277" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit -Wno-missing-prototypes -Wno-missing-declarations -Wno-padded -Wno-unused-parameter -Wno-format -Wno-sign-conversion -Wno-conversion -Wno-unused-function -Wno-sign-compare -Wno-reserved-id-macro -Wno-missing-variable-declarations -Wno-cast-qual -Wno-missing-noreturn -Wno-switch-enum -Wno-format-nonliteral -Wno-unused-macros -Wno-undef -Wno-date-time" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1514049277" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit -Wno-missing-prototypes -Wno-missing-declarations -Wno-padded -Wno-unused-parameter -Wno-format -Wno-sign-conversion -Wno-conversion -Wno-unused-function -Wno-sign-compare -Wno-reserved-id-macro -Wno-missing-variable-declarations -Wno-cast-qual -Wno-missing-noreturn -Wno-switch-enum -Wno-format-nonliteral -Wno-unused-macros -Wno-undef -Wno-date-time" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.105924453" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug.1547040192" name="LLVM Clang++" superClass="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug.268322832">
@@ -358,7 +358,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis-rtos-validator/cmsis-rtos-valid/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.482129096" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1776956070" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything  -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1776956070" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything  -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.698256673" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1803695143" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
@@ -379,7 +379,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis-rtos-validator/cmsis-rtos-valid/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.1511094877" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1795020497" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation  -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1795020497" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation  -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.1604508222" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.1038855149" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
 							</tool>
@@ -406,7 +406,7 @@
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.assembler.exe.debug.1621841143" name="LLVM assembler" superClass="cdt.managedbuild.tool.llvm.clang.macosx.assembler.exe.debug.866126259"/>
 							<tool id="cdt.managedbuild.tool.llvm.archiver.base.29882328" name="LLVM archiver" superClass="cdt.managedbuild.tool.llvm.archiver.base.1963463730"/>
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug.421761091" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug.388440236">
-								<option id="llvm.c_cpp.compiler.option.misc.other.1598372712" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit -Wno-missing-prototypes -Wno-missing-declarations -Wno-padded -Wno-unused-parameter -Wno-format -Wno-sign-conversion -Wno-conversion -Wno-unused-function -Wno-sign-compare -Wno-reserved-id-macro -Wno-missing-variable-declarations -Wno-cast-qual -Wno-missing-noreturn -Wno-switch-enum -Wno-format-nonliteral -Wno-unused-macros -Wno-undef -Wno-date-time" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1598372712" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit -Wno-missing-prototypes -Wno-missing-declarations -Wno-padded -Wno-unused-parameter -Wno-format -Wno-sign-conversion -Wno-conversion -Wno-unused-function -Wno-sign-compare -Wno-reserved-id-macro -Wno-missing-variable-declarations -Wno-cast-qual -Wno-missing-noreturn -Wno-switch-enum -Wno-format-nonliteral -Wno-unused-macros -Wno-undef -Wno-date-time" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1238698256" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug.508459898" name="LLVM Clang++" superClass="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug.158935157">
@@ -465,7 +465,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.632898091" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.308819915" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe  -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.308819915" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe  -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.396112582" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1321225242" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
@@ -485,7 +485,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.1343549206" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.760476083" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.760476083" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.241330542" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.1895160504" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
 							</tool>
@@ -640,7 +640,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.359891863" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1080169901" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1080169901" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.1030503373" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1420935173" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
@@ -658,7 +658,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.2027354259" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1324239600" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1324239600" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.1146079050" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.1773658324" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
 							</tool>
@@ -905,7 +905,7 @@
 								<option id="llvm.c_cpp.compiler.option.optimization.level.740281397" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.debugging.level.935172093" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.276631464" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1248676878" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1248676878" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.1490008288" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.908154360" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
@@ -925,7 +925,7 @@
 								<option id="llvm.c_cpp.compiler.option.optimization.level.1803073917" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.debugging.level.1468551364" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.1791160059" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1571302376" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1571302376" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.898308472" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.250892621" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
 							</tool>
@@ -989,7 +989,7 @@
 								<option id="llvm.c_cpp.compiler.option.optimization.level.78795980" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.debugging.level.404848845" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.538293619" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1386469873" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1386469873" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.672936874" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1275022937" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
@@ -1007,7 +1007,7 @@
 								<option id="llvm.c_cpp.compiler.option.optimization.level.275107611" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.debugging.level.1236070573" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.1378369402" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1977930818" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1977930818" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.386941835" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.1884301707" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
 							</tool>
@@ -2143,7 +2143,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis-rtos-validator/cmsis-rtos-valid/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.1081933017" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1224854187" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1224854187" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.284708860" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.996997716" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
@@ -2165,7 +2165,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis-rtos-validator/cmsis-rtos-valid/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.1846123984" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1438908193" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1438908193" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.1993240772" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.2088820087" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
 							</tool>
@@ -2192,7 +2192,7 @@
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.assembler.exe.debug.1517684798" name="LLVM assembler" superClass="cdt.managedbuild.tool.llvm.clang.macosx.assembler.exe.debug.1658762869"/>
 							<tool id="cdt.managedbuild.tool.llvm.archiver.base.278017968" name="LLVM archiver" superClass="cdt.managedbuild.tool.llvm.archiver.base.1694936100"/>
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug.471383058" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug.2137680193">
-								<option id="llvm.c_cpp.compiler.option.misc.other.1133354142" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit -Wno-missing-prototypes -Wno-missing-declarations -Wno-padded -Wno-unused-parameter -Wno-format -Wno-sign-conversion -Wno-conversion -Wno-unused-function -Wno-sign-compare -Wno-reserved-id-macro -Wno-missing-variable-declarations -Wno-cast-qual -Wno-missing-noreturn -Wno-switch-enum -Wno-format-nonliteral -Wno-unused-macros -Wno-undef -Wno-date-time" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1133354142" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit -Wno-missing-prototypes -Wno-missing-declarations -Wno-padded -Wno-unused-parameter -Wno-format -Wno-sign-conversion -Wno-conversion -Wno-unused-function -Wno-sign-compare -Wno-reserved-id-macro -Wno-missing-variable-declarations -Wno-cast-qual -Wno-missing-noreturn -Wno-switch-enum -Wno-format-nonliteral -Wno-unused-macros -Wno-undef -Wno-date-time" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.174188325" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug.911668177" name="LLVM Clang++" superClass="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug.607933959">
@@ -2252,7 +2252,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis-rtos-validator/cmsis-rtos-valid/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.658823269" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.610784828" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything  -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.610784828" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything  -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.736225819" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.775413026" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
@@ -2273,7 +2273,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis-rtos-validator/cmsis-rtos-valid/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.1345168927" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1424219278" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation  -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1424219278" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation  -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.1980441847" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.708372984" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
 							</tool>
@@ -2300,7 +2300,7 @@
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.assembler.exe.debug.1076350965" name="LLVM assembler" superClass="cdt.managedbuild.tool.llvm.clang.macosx.assembler.exe.debug.1737420141"/>
 							<tool id="cdt.managedbuild.tool.llvm.archiver.base.1351523907" name="LLVM archiver" superClass="cdt.managedbuild.tool.llvm.archiver.base.387514998"/>
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug.314041746" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug.2091125704">
-								<option id="llvm.c_cpp.compiler.option.misc.other.405418757" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit -Wno-missing-prototypes -Wno-missing-declarations -Wno-padded -Wno-unused-parameter -Wno-format -Wno-sign-conversion -Wno-conversion -Wno-unused-function -Wno-sign-compare -Wno-reserved-id-macro -Wno-missing-variable-declarations -Wno-cast-qual -Wno-missing-noreturn -Wno-switch-enum -Wno-format-nonliteral -Wno-unused-macros -Wno-undef -Wno-date-time" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.405418757" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit -Wno-missing-prototypes -Wno-missing-declarations -Wno-padded -Wno-unused-parameter -Wno-format -Wno-sign-conversion -Wno-conversion -Wno-unused-function -Wno-sign-compare -Wno-reserved-id-macro -Wno-missing-variable-declarations -Wno-cast-qual -Wno-missing-noreturn -Wno-switch-enum -Wno-format-nonliteral -Wno-unused-macros -Wno-undef -Wno-date-time" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1077571028" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug.1938854608" name="LLVM Clang++" superClass="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug.1002603279">
@@ -2359,7 +2359,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.429530052" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.2060674353" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe  -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.2060674353" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe  -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.897916958" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1496548837" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
@@ -2379,7 +2379,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.249841766" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1220086839" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1220086839" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.1836736806" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.254172609" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
 							</tool>
@@ -2444,7 +2444,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.1716236645" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1651466907" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1651466907" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.1321078767" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1822769910" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
@@ -2462,7 +2462,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.1997905739" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1449858255" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1449858255" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.211657437" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.341603416" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
 							</tool>
@@ -2531,7 +2531,7 @@
 								<option id="llvm.c_cpp.compiler.option.optimization.level.1871151479" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.debugging.level.1270784107" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.956299296" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.2009283406" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.2009283406" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.809688713" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1798937971" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
@@ -2551,7 +2551,7 @@
 								<option id="llvm.c_cpp.compiler.option.optimization.level.832130849" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.debugging.level.1879810936" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.1121333700" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.234072440" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.234072440" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.1535553568" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.108898956" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
 							</tool>
@@ -2616,7 +2616,7 @@
 								<option id="llvm.c_cpp.compiler.option.optimization.level.1681110330" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.debugging.level.1518353906" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.3034055" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.155316078" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.155316078" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.1270412082" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1954813827" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
@@ -2634,7 +2634,7 @@
 								<option id="llvm.c_cpp.compiler.option.optimization.level.690904340" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.debugging.level.1974552483" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.845016145" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1664601498" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1664601498" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.1272934627" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.1751739614" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
 							</tool>
@@ -2701,7 +2701,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis-rtos-validator/cmsis-rtos-valid/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.1009445669" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.494609279" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.494609279" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.1822335145" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.168309753" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
@@ -2723,7 +2723,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis-rtos-validator/cmsis-rtos-valid/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.850591977" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.687612699" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.687612699" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.1689523726" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.954876245" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
 							</tool>
@@ -2750,7 +2750,7 @@
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.assembler.exe.debug.166420041" name="LLVM assembler" superClass="cdt.managedbuild.tool.llvm.clang.macosx.assembler.exe.debug.9620788"/>
 							<tool id="cdt.managedbuild.tool.llvm.archiver.base.931579488" name="LLVM archiver" superClass="cdt.managedbuild.tool.llvm.archiver.base.256735761"/>
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug.535415306" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug.745767432">
-								<option id="llvm.c_cpp.compiler.option.misc.other.590563010" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit -Wno-missing-prototypes -Wno-missing-declarations -Wno-padded -Wno-unused-parameter -Wno-format -Wno-sign-conversion -Wno-conversion -Wno-unused-function -Wno-sign-compare -Wno-reserved-id-macro -Wno-missing-variable-declarations -Wno-cast-qual -Wno-missing-noreturn -Wno-switch-enum -Wno-format-nonliteral -Wno-unused-macros -Wno-undef -Wno-date-time" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.590563010" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit -Wno-missing-prototypes -Wno-missing-declarations -Wno-padded -Wno-unused-parameter -Wno-format -Wno-sign-conversion -Wno-conversion -Wno-unused-function -Wno-sign-compare -Wno-reserved-id-macro -Wno-missing-variable-declarations -Wno-cast-qual -Wno-missing-noreturn -Wno-switch-enum -Wno-format-nonliteral -Wno-unused-macros -Wno-undef -Wno-date-time" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.310566254" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug.2046002068" name="LLVM Clang++" superClass="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug.2022068015">
@@ -2810,7 +2810,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis-rtos-validator/cmsis-rtos-valid/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.2126644775" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1709010400" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything  -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1709010400" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything  -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.1882028032" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.300283655" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
@@ -2831,7 +2831,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/arm-cmsis-rtos-validator/cmsis-rtos-valid/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.2143144836" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.2032358827" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation  -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.2032358827" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation  -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.96382353" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.2029205207" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
 							</tool>
@@ -2858,7 +2858,7 @@
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.assembler.exe.debug.2001023395" name="LLVM assembler" superClass="cdt.managedbuild.tool.llvm.clang.macosx.assembler.exe.debug.724441566"/>
 							<tool id="cdt.managedbuild.tool.llvm.archiver.base.391631787" name="LLVM archiver" superClass="cdt.managedbuild.tool.llvm.archiver.base.89438751"/>
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug.979875178" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.macosx.c.compiler.exe.debug.1265095597">
-								<option id="llvm.c_cpp.compiler.option.misc.other.633243599" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit -Wno-missing-prototypes -Wno-missing-declarations -Wno-padded -Wno-unused-parameter -Wno-format -Wno-sign-conversion -Wno-conversion -Wno-unused-function -Wno-sign-compare -Wno-reserved-id-macro -Wno-missing-variable-declarations -Wno-cast-qual -Wno-missing-noreturn -Wno-switch-enum -Wno-format-nonliteral -Wno-unused-macros -Wno-undef -Wno-date-time" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.633243599" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit -Wno-missing-prototypes -Wno-missing-declarations -Wno-padded -Wno-unused-parameter -Wno-format -Wno-sign-conversion -Wno-conversion -Wno-unused-function -Wno-sign-compare -Wno-reserved-id-macro -Wno-missing-variable-declarations -Wno-cast-qual -Wno-missing-noreturn -Wno-switch-enum -Wno-format-nonliteral -Wno-unused-macros -Wno-undef -Wno-date-time" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.437451315" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug.1272074195" name="LLVM Clang++" superClass="cdt.managedbuild.tool.llvm.clang.macosx.cpp.compiler.exe.debug.765098373">
@@ -2917,7 +2917,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.802145513" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1339589064" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe  -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1339589064" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe  -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.777988913" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1070409639" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
@@ -2937,7 +2937,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.1520287809" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.839396831" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.839396831" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.1120202212" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.571103160" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
 							</tool>
@@ -3002,7 +3002,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.1871123014" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.53849620" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.53849620" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.59374655" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1475749168" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
@@ -3020,7 +3020,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/synthetic-posix-tests-micro-os-plus/generated/micro-os-plus-iii/test/mutex-stress/include}&quot;"/>
 								</option>
 								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.1381993386" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.227572831" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.227572831" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.1639569387" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.481608505" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
 							</tool>
@@ -3089,7 +3089,7 @@
 								<option id="llvm.c_cpp.compiler.option.optimization.level.1004525903" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.debugging.level.1120218943" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.1128478873" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1241563109" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1241563109" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.1077389309" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1369489104" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
@@ -3109,7 +3109,7 @@
 								<option id="llvm.c_cpp.compiler.option.optimization.level.583330020" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.debugging.level.2040111642" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.1425858944" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.637150920" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.637150920" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.441546225" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.791352706" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
 							</tool>
@@ -3174,7 +3174,7 @@
 								<option id="llvm.c_cpp.compiler.option.optimization.level.128101366" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.debugging.level.1705256504" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.88499951" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.c11" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1397472986" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1397472986" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-documentation-unknown-command -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.1366564709" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.682931520" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
@@ -3192,7 +3192,7 @@
 								<option id="llvm.c_cpp.compiler.option.optimization.level.1512580043" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
 								<option id="llvm.c_cpp.compiler.option.debugging.level.469306732" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.91399184" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
-								<option id="llvm.c_cpp.compiler.option.misc.other.1491658622" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -stdlib=libc++ -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.misc.other.1491658622" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" value="-c -fmessage-length=0 -pipe -Weverything -Wno-c++98-compat   -Wno-c++98-compat-pedantic -Wno-documentation-unknown-command -Wno-documentation -Wno-empty-translation-unit" valueType="string"/>
 								<option id="llvm.c_cpp.compiler.option.warnings.toerrors.725018318" name="Warnings as errors (-Werror)" superClass="llvm.c_cpp.compiler.option.warnings.toerrors" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.679266085" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
 							</tool>
