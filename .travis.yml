@@ -15,8 +15,10 @@ addons:
   apt:
     sources:
       - ubuntu-toolchain-r-test
-      - sourceline: 'deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty-3.8 main' key_url: 'http://apt.llvm.org/llvm-snapshot.gpg.key'
-      - sourceline: 'deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty-3.9 main' key_url: 'http://apt.llvm.org/llvm-snapshot.gpg.key'
+      - sourceline: 'deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty-3.8 main' 
+        key_url: 'http://apt.llvm.org/llvm-snapshot.gpg.key'
+      - sourceline: 'deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty-3.9 main' 
+        key_url: 'http://apt.llvm.org/llvm-snapshot.gpg.key'
     packages:
       - g++-5
       - g++-6
