@@ -57,6 +57,9 @@ then
   eclipse_folder="${work}/Eclipse.app" 
   eclipse="${eclipse_folder}/Contents/MacOS/eclipse" 
 
+  p2_os="macosx"
+  p2_ws="cocoa"
+
   use_clang="true"
   use_clang38="true"
   use_clang39="false"
@@ -65,15 +68,15 @@ then
   use_gcc5="true"
   use_gcc6="true"
 
-  p2_os="macosx"
-  p2_ws="cocoa"
-
 elif [ "${TRAVIS_OS_NAME}" == "linux" ]
 then
 
   cache="${HOME}/.cache/travis"
   eclipse_folder="${work}/eclipse"
   eclipse="${eclipse_folder}/eclipse"
+
+  p2_os="linux"
+  p2_ws="gtk"
 
   use_clang="false"
   use_clang38="false"
@@ -82,9 +85,6 @@ then
   use_gcc="false"
   use_gcc5="true"
   use_gcc6="true"
-
-  p2_os="linux"
-  p2_ws="gtk"
 
 fi
 
@@ -210,12 +210,6 @@ function do_build_run()
 function do_before_install() {
 
   echo "Before install, bring extra tools..."
-
-  if [ "${TRAVIS}" != "true" ]
-  then
-    # When not running on Travis, clean play arena.
-    do_run rm -rf "${work}"
-  fi
 
   if [ "${TRAVIS}" == "true" ]
   then
