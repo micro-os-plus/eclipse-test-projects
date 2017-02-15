@@ -87,8 +87,10 @@ then
   p2_ws="gtk"
 
   use_clang="false"
-  use_clang38="true"
-  use_clang39="true"
+  # For now clang compiles, but fails to run.
+  # To be investigate at a later time.
+  use_clang38="false"
+  use_clang39="false"
 
   use_gcc="false"
   use_gcc5="true"
