@@ -3,14 +3,23 @@ set -euo pipefail
 IFS=$'\n\t'
 
 # -----------------------------------------------------------------------------
-# Until the XCDL utility will be functional, use this Bash script
+# Until the xPacks utilities will be functional, use this Bash script
 # to generate the project folders from the xPacks repository.
 # -----------------------------------------------------------------------------
 
-# Prefer the environment location XPACKS_FOLDER, if defined,
-# but default to '.xpacks'.
-xpacks_repo_folder="${XPACKS_REPO_FOLDER:-$HOME/.xpacks}"
+# Prefer the environment location XPACKS_REPO_FOLDER, if defined.
 
+xpacks_paths_helper="${HOME}/Downloads/xpacks-paths.sh"
+
+# Check if the helper is present.
+if [ ! -f "${xpacks_paths_helper}" ]
+then
+  mkdir -p "${HOME}/Downloads"
+  echo "Downloading bootstrap-paths.sh..."
+  curl -L https://github.com/xpacks/scripts/raw/master/xpacks-paths.sh -o "${xpacks_paths_helper}"
+fi
+
+source  "${xpacks_paths_helper}"
 
 # -----------------------------------------------------------------------------
 
