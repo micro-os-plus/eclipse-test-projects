@@ -24,17 +24,17 @@ source  "${xpacks_paths_helper}"
 # -----------------------------------------------------------------------------
 
 # Check if the helper is present.
-if [[ ! -f "$xpacks_repo_folder/ilg/scripts.git/xpacks-helper.sh" ]]
+if [ ! -f "${xpacks_repo_folder}/ilg/scripts.git/xpacks-helper.sh" ]
 then
-  mkdir -p ~/Downloads
+  mkdir -p "${HOME}/Downloads"
   echo "Downloading bootstrap.sh..."
-  curl -L https://github.com/xpacks/scripts/raw/master/bootstrap.sh -o ~/Downloads/bootstrap.sh
-  bash  ~/Downloads/bootstrap.sh
+  curl -L https://github.com/xpacks/scripts/raw/master/bootstrap.sh -o "${HOME}/Downloads/bootstrap.sh"
+  bash  "${HOME}/Downloads/bootstrap.sh"
 fi
 
 # -----------------------------------------------------------------------------
 
-helper_script="$xpacks_repo_folder/ilg/scripts.git/xpacks-helper.sh"
+helper_script="${xpacks_repo_folder}/ilg/scripts.git/xpacks-helper.sh"
 
 # Include common definitions from helper script.
 source "${helper_script}"

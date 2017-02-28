@@ -24,7 +24,7 @@ source  "${xpacks_paths_helper}"
 # -----------------------------------------------------------------------------
 
 # Check if the helper is present.
-if [ ! -f "$xpacks_repo_folder/ilg/scripts.git/xpacks-helper.sh" ]
+if [ ! -f "${xpacks_repo_folder}/ilg/scripts.git/xpacks-helper.sh" ]
 then
   mkdir -p "${HOME}/Downloads"
   echo "Downloading bootstrap.sh..."
