@@ -15,7 +15,7 @@ xpacks_paths_helper="${HOME}/Downloads/xpacks-paths.sh"
 if [ ! -f "${xpacks_paths_helper}" ]
 then
   mkdir -p "${HOME}/Downloads"
-  echo "Downloading bootstrap-paths.sh..."
+  echo "Downloading xpacks-paths.sh..."
   curl -L https://github.com/xpacks/scripts/raw/master/xpacks-paths.sh -o "${xpacks_paths_helper}"
 fi
 
