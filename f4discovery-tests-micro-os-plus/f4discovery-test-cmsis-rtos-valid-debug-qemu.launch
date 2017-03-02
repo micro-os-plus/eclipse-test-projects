@@ -46,7 +46,7 @@
 <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="test-cmsis-rtos-valid-debug/test-cmsis-rtos-valid-debug.elf"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="f4discovery-tests-micro-os-plus"/>
 <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
-<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.94517381"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value=""/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/f4discovery-tests-micro-os-plus"/>
 </listAttribute>
