@@ -117,10 +117,10 @@ then
   gcc6_url_base="https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu-rm/6_1-2017q1"
 
   # https://github.com/gnuarmeclipse/qemu/releases
-  # https://github.com/gnuarmeclipse/qemu/releases/download/gae-2.8.0-20170301/gnuarmeclipse-qemu-debian64-2.8.0-201703021843-head.tgz
-  qemu_archive_name="gnuarmeclipse-qemu-debian64-2.8.0-201703021843-head.tgz"
+  # https://github.com/gnuarmeclipse/qemu/releases/download/gae-2.8.0-20170301/gnuarmeclipse-qemu-debian64-2.8.0-201703022210-head.tgz
+  qemu_archive_name="gnuarmeclipse-qemu-debian64-2.8.0-201703022210-head.tgz"
   qemu_url_base="https://github.com/gnuarmeclipse/qemu/releases/download/gae-2.8.0-20170301"
-  qemu_folder_name="gnuarmeclipse/qemu/2.8.0-201703021843-head"
+  qemu_folder_name="gnuarmeclipse/qemu/2.8.0-201703022210-head"
 
   eclipse_archive_name=eclipse-cpp-mars-2-linux-gtk-x86_64.tar.gz
 
