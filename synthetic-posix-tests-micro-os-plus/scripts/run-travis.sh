@@ -44,6 +44,10 @@ then
 elif [ "${host_uname}" == "Linux" ]
 then
   export TRAVIS_OS_NAME=linux
+elif [ "${host_uname:0:6}" == "MINGW64" ]
+then
+  # Extension, Travis does not support Windows.
+  export TRAVIS_OS_NAME=mingw64
 fi
 
 bash "${parent}/travis.sh" before_install

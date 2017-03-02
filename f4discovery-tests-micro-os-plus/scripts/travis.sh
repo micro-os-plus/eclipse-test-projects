@@ -262,12 +262,16 @@ function do_before_install() {
     then
       gcc5_url="${gcc5_url_base}/${gcc5_archive_name}"
       mkdir -p "${cache}"
+      echo
+      echo "Downloading arm-none-eabi-gcc v5..."
       do_run curl -L ${gcc5_url} -o "${cache}/${gcc5_archive_name}"
     fi
 
     if [ ! -d "${gcc5_folder_path}" ]
     then
       mkdir -p "$(dirname ${gcc5_folder_path})"
+      echo
+      echo "Installing arm-none-eabi-gcc v5..."
       do_run tar -x -z -f "${cache}/${gcc5_archive_name}" -C "$(dirname ${gcc5_folder_path})"
     fi
 
@@ -287,12 +291,16 @@ function do_before_install() {
     then
       gcc6_url="${gcc6_url_base}/${gcc6_archive_name}"
       mkdir -p "${cache}"
+      echo
+      echo "Downloading arm-none-eabi-gcc v6"
       do_run curl -L ${gcc6_url} -o "${cache}/${gcc6_archive_name}"
     fi
 
     if [ ! -d "${gcc6_folder_path}" ]
     then
       mkdir -p "$(dirname ${gcc6_folder_path})"
+      echo
+      echo "Installing arm-none-eabi-gcc v6..."
       do_run tar -x -z -f "${cache}/${gcc6_archive_name}" -C "$(dirname ${gcc6_folder_path})"
     fi
 
@@ -309,15 +317,20 @@ function do_before_install() {
   then
     qemu_url="${qemu_url_base}/${qemu_archive_name}"
     mkdir -p "${cache}"
+    echo
+    echo "Downloading GNU ARM Eclipse QEMU..."
     do_run curl -L ${qemu_url} -o "${cache}/${qemu_archive_name}"
   fi
 
   if [ ! -d "${qemu_folder_path}" ]
   then
     mkdir -p "$(dirname $(dirname $(dirname ${qemu_folder_path})))"
+    echo
+    echo "Installing GNU ARM Eclipse QEMU..."
     do_run tar -x -z -f "${cache}/${qemu_archive_name}" -C "$(dirname $(dirname $(dirname ${qemu_folder_path})))"
   fi
 
+  echo
   do_run "${qemu_folder_path}/bin/qemu-system-gnuarmeclipse" --version
   echo
 
@@ -328,7 +341,8 @@ function do_before_install() {
   if [ ! -f "${cache}/${eclipse_archive_name}" ]
   then
     mkdir -p "${cache}"
-    # Download the large Eclipse distribution.
+    echo
+    echo "Downloading the large Eclipse distribution..."
     do_run curl -L \
       "${eclipse_url}" \
       -o "${cache}/${eclipse_archive_name}"
@@ -337,7 +351,8 @@ function do_before_install() {
   if [ ! -f "${cache}/${gae_archive_name}" ]
   then
     mkdir -p "${cache}"
-    # Download the GNU ARM Eclipse archived repository.
+    echo
+    echo "Downloading the GNU ARM Eclipse plug-ins archived repository..."
     do_run curl -L \
       "${gae_archive_url}" \
       -o "${cache}/${gae_archive_name}"
@@ -346,44 +361,49 @@ function do_before_install() {
   if [ ! -d "${work}/${eclipse_folder_name}" ]
   then
     mkdir -p "${work}"
+    echo
+    echo "Unpacking the Eclipse distribution..."
     do_run tar -x -z -f "${cache}/${eclipse_archive_name}" -C "${work}"
   fi
 
   if [ ! -d "${gae_folder_path}" ]
   then
     mkdir -p "${gae_folder_path}"
+    echo
+    echo "Unpacking the GNU ARM Eclipse plug-ins p2 repository..."
     do_run unzip -q -d "${gae_folder_path}" "${cache}/${gae_archive_name}"
-
-    # Install "GNU ARM Eclipse" plug-ins.
-    # The p2.os, p2.ws, p2.arch might help to make the right plug-in selection.
-
-    # Eclipse Launcher runt-time options
-    # http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fmisc%2Fruntime-options.html
-
-    # Eclipse provisioning, installation management
-    # http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Fguide%2Fp2_director.html
-
-    local feature_id="ilg.gnuarmeclipse.managedbuild.cross"
-    local feature_group="${feature_id}.feature.group"
-
-    mkdir -p "${work}"
-    echo "Installing GNU ARM Eclipse plug-ins..."
-    do_run "${eclipse}" \
-      --launcher.suppressErrors \
-      -nosplash \
-      -application org.eclipse.equinox.p2.director \
-      -repository "file:///${gae_folder_path}" \
-      -installIU "${feature_group}" \
-      -tag InitialState \
-      -destination "${work}/${eclipse_folder_name}/" \
-      -profileProperties org.eclipse.update.install.features=true \
-      -p2.os "${p2_os}" \
-      -p2.ws "${p2_ws}" \
-      -p2.arch x86_64 \
-      -roaming 
-
   fi
 
+  # Install "GNU ARM Eclipse" plug-ins.
+  # The p2.os, p2.ws, p2.arch might help to make the right plug-in selection.
+
+  # Eclipse Launcher runt-time options
+  # http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fmisc%2Fruntime-options.html
+
+  # Eclipse provisioning, installation management
+  # http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Fguide%2Fp2_director.html
+
+  local feature_id="ilg.gnuarmeclipse.managedbuild.cross"
+  local feature_group="${feature_id}.feature.group"
+
+  mkdir -p "${work}"
+  echo
+  echo "Installing the GNU ARM Eclipse plug-ins..."
+  do_run "${eclipse}" \
+    --launcher.suppressErrors \
+    -nosplash \
+    -application org.eclipse.equinox.p2.director \
+    -repository "file:///${gae_folder_path}" \
+    -installIU "${feature_group}" \
+    -tag InitialState \
+    -destination "${work}/${eclipse_folder_name}/" \
+    -profileProperties org.eclipse.update.install.features=true \
+    -p2.os "${p2_os}" \
+    -p2.ws "${p2_ws}" \
+    -p2.arch x86_64 \
+    -roaming 
+
+  echo
   do_run ls -lL "${work}"
 
   return 0
@@ -393,14 +413,17 @@ function do_before_install() {
 function do_before_script() {
 
   echo
-  echo "Before starting the test; generating the projects..."
+  echo "Before starting the tests..."
 
   # Generate the required folders in the project, from downloaded xPacks. 
   cd "${project_path}"
+  echo
+  echo "Downloading the xPacks and generating the project sources..."
   do_run bash scripts/generate.sh "$@"
 
   # The project is now complete. Import it into the Eclipse workspace.
   # do_run rm -rf "${work}/workspace"
+  echo
   echo "Importing Eclipse project '${project_name}' into workspace..."
   do_run "${eclipse}" \
     --launcher.suppressErrors \
@@ -416,7 +439,7 @@ function do_before_script() {
 function do_script() {
 
   echo
-  echo "The main test code; performing the tests..."
+  echo "Finally performing the tests..."
 
   cd "${slug}"
 
@@ -427,7 +450,7 @@ function do_script() {
   then
     PATH="${gcc5_folder_path}/bin":${saved_path}
 
-    do_run arm-none-eabi-gcc --version
+    echo
     do_run arm-none-eabi-g++ --version
 
     local toolchain_name="gcc5"
@@ -453,7 +476,7 @@ function do_script() {
   then
     PATH="${gcc6_folder_path}/bin":${saved_path}
 
-    do_run arm-none-eabi-gcc --version
+    echo
     do_run arm-none-eabi-g++ --version
 
     local toolchain_name="gcc6"

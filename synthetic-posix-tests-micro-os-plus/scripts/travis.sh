@@ -43,11 +43,13 @@ if [ "${TRAVIS}" == "true" ]
 then
   work="${HOME}"
   slug="${TRAVIS_BUILD_DIR}"
-  project="${slug}/synthetic-posix-tests-micro-os-plus"
+  project_name="synthetic-posix-tests-micro-os-plus"
+  project_path="${slug}/${project_name}"
 else
   work="${HOME}/Work/travis"
-  project="$(dirname ${parent})"
-  slug="$(dirname ${project})"
+  project_path="$(dirname ${parent})"
+  project_name="$(basename ${project_path})"
+  slug="$(dirname ${project_path})"
 fi
 
 use_clang="false"
@@ -62,8 +64,10 @@ if [ "${TRAVIS_OS_NAME}" == "osx" ]
 then
 
   cache="${HOME}/Library/Caches/Travis"
-  eclipse_folder="${work}/Eclipse.app" 
-  eclipse="${eclipse_folder}/Contents/MacOS/eclipse" 
+
+  eclipse_folder_name="Eclipse.app" 
+  eclipse_folder_path="${work}/${eclipse_folder_name}"
+  eclipse="${eclipse_folder_path}/Contents/MacOS/eclipse" 
 
   p2_os="macosx"
   p2_ws="cocoa"
@@ -80,8 +84,10 @@ elif [ "${TRAVIS_OS_NAME}" == "linux" ]
 then
 
   cache="${HOME}/.cache/travis"
-  eclipse_folder="${work}/eclipse"
-  eclipse="${eclipse_folder}/eclipse"
+
+  eclipse_folder_name="eclipse"
+  eclipse_folder_path="${work}/${eclipse_folder_name}"
+  eclipse="${eclipse_folder_path}/eclipse"
 
   p2_os="linux"
   p2_ws="gtk"
@@ -96,14 +102,22 @@ then
   use_gcc5="true"
   use_gcc6="true"
 
+else
+
+  echo "${TRAVIS_OS_NAME} not supported"
+  exit 1
+  
 fi
+
+cdt_release="8.8.1"
+cdt_folder_name="cdt-${cdt_release}"
+cdt_folder_path="${work}/${cdt_folder_name}"
+cdt_archive_name="${cdt_folder_name}.zip"
+cdt_archive_url="http://download.eclipse.org/tools/cdt/releases/${cdt_release}/${cdt_archive_name}"
 
 mkdir -p "${cache}"
 
-export work
-export slug
-export cache
-export project
+saved_path=${PATH}
 
 # -----------------------------------------------------------------------------
 
@@ -130,7 +144,7 @@ function do_build()
   local code=0
 
   # Temporarily disable errors, because (???); 
-  # if the build fails, there will be no binary and the next test will fai-.
+  # if the build fails, there will be no binary and the next test will fail.
   set +o errexit 
   do_run_quietly "${eclipse}" \
     --launcher.suppressErrors \
@@ -143,7 +157,7 @@ function do_build()
 
   set -o errexit 
 
-  if [ \( ${code} -eq 0 \) -a \( -f "${project}/${cfg}/${cfg}" \) ]
+  if [ \( ${code} -eq 0 \) -a \( -f "${project_path}/${cfg}/${cfg}" \) ]
   then
     return 0
   fi
@@ -185,12 +199,12 @@ function do_build_run()
 
   set -o errexit 
 
-  if [ \( ${code} -eq 0 \) -a \( -f "${project}/${cfg}/${cfg}" \) ]
+  if [ \( ${code} -eq 0 \) -a \( -f "${project_path}/${cfg}/${cfg}" \) ]
   then
     echo
     echo Run ${cfg}
     set +o errexit 
-    do_run_quietly "${project}/${cfg}/${cfg}"
+    do_run_quietly "${project_path}/${cfg}/${cfg}"
     code=$?
     set -o errexit 
 
@@ -219,7 +233,8 @@ function do_build_run()
 # Errors in this function will break the build.
 function do_before_install() {
 
-  echo "Before install, bring extra tools..."
+  echo
+  echo "Before install; bringing in extra tools..."
 
   if [ "${TRAVIS}" == "true" ]
   then
@@ -261,47 +276,53 @@ function do_before_install() {
  
     elif [ "${TRAVIS_OS_NAME}" == "linux" ]
     then
-      # gcc-[56], clang-3.[89] installed via `addons.apt`. 
+      # gcc-[56], clang-3.[89] should have been installed via `addons.apt`. 
       :
     fi
   
   else
-    # When not running on Travis, clean play arena.
-    do_run rm -rf "${work}"
+    # When not running on Travis.
+    :
   fi
 
   if [ "${use_clang}" == "true" ]
   then
+    echo
     do_run clang --version
     do_run clang++ --version
   fi
 
   if [ "${use_clang38}" == "true" ]
   then
+    echo
     do_run clang-3.8 --version
     do_run clang++-3.8 --version
   fi
 
   if [ "${use_clang39}" == "true" ]
   then
+    echo
     do_run clang-3.9 --version
     do_run clang++-3.9 --version
   fi
 
   if [ "${use_gcc}" == "true" ]
   then
+    echo
     do_run gcc --version
     do_run g++ --version
   fi
 
   if [ "${use_gcc5}" == "true" ]
   then
+    echo
     do_run gcc-5 --version
     do_run g++-5 --version
   fi
 
   if [ "${use_gcc6}" == "true" ]
   then
+    echo
     do_run gcc-6 --version
     do_run g++-6 --version
   fi
@@ -318,34 +339,39 @@ function do_before_install() {
 
   if [ ! -f "${cache}/${eclipse_archive_name}" ]
   then
+    mkdir -p "${cache}"
+    echo
+    echo "Downloading the large Eclipse distribution..."
     do_run curl -L \
-    "${eclipse_url}" \
-    -o "${cache}/${eclipse_archive_name}"
+      "${eclipse_url}" \
+      -o "${cache}/${eclipse_archive_name}"
   fi
-
-  cdt_release="8.8.1"
-  cdt_folder="cdt-${cdt_release}"
-  cdt_archive_name="${cdt_folder}.zip"
-  cdt_archive_url="http://download.eclipse.org/tools/cdt/releases/${cdt_release}/${cdt_archive_name}"
 
   if [ ! -f "${cache}/${cdt_archive_name}" ]
   then
+    mkdir -p "${cache}"
+    echo
+    echo "Downloading the CDT archived repository..."
     do_run curl -L \
-    "${cdt_archive_url}" \
-    -o "${cache}/${cdt_archive_name}"
+      "${cdt_archive_url}" \
+      -o "${cache}/${cdt_archive_name}"
   fi
 
-  mkdir -p "${work}"
-  cd "${work}"
+  if [ ! -d "${work}/${eclipse_folder_name}" ]
+  then
+    mkdir -p "${work}"
+    echo
+    echo "Unpacking the Eclipse distribution..."
+    do_run tar -x -z -f "${cache}/${eclipse_archive_name}" -C "${work}"
+  fi
 
-  do_run rm -rf Eclipse.app eclipse
-  do_run tar -x -z -f "${cache}/${eclipse_archive_name}"
-
-  do_run rm -rf "${cdt_folder}"
-  mkdir "${cdt_folder}"
-  do_run unzip -q -d "${cdt_folder}" "${cache}/${cdt_archive_name}"
-
-  do_run ls -lL
+  if [ ! -d "${cdt_folder_path}" ]
+  then
+    mkdir "${cdt_folder_path}"
+    echo
+    echo "Unpacking the CDT p2 repository..."
+    do_run unzip -q -d "${cdt_folder_path}" "${cache}/${cdt_archive_name}"
+  fi
 
   # Install "C/C++ LLVM-Family Compiler Build Support" feature,
   # which is not present by default in the Eclipse CDT distributions.
@@ -361,19 +387,28 @@ function do_before_install() {
   # Eclipse provisioning, installation management
   # http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Fguide%2Fp2_director.html
 
+  local feature_id="org.eclipse.cdt.managedbuilder.llvm"
+  local feature_group="${feature_id}.feature.group"
+
+  mkdir -p "${work}"
+  echo
+  echo "Installing the CDT LLVM plug-ins..."
   do_run "${eclipse}" \
     --launcher.suppressErrors \
     -nosplash \
     -application org.eclipse.equinox.p2.director \
-    -repository "file:///${work}/${cdt_folder}" \
-    -installIU org.eclipse.cdt.managedbuilder.llvm.feature.group \
+    -repository "file:///${cdt_folder_path}" \
+    -installIU "${feature_group}" \
     -tag InitialState \
-    -destination "${eclipse_folder}/" \
+    -destination "${eclipse_folder_path}/" \
     -profileProperties org.eclipse.update.install.features=true \
     -p2.os "${p2_os}" \
     -p2.ws "${p2_ws}" \
     -p2.arch x86_64 \
     -roaming 
+
+  echo
+  do_run ls -lL "${work}"
 
   return 0
 }
@@ -381,20 +416,25 @@ function do_before_install() {
 # Errors in this function will break the build.
 function do_before_script() {
 
-  echo "Before starting the test, generate the projects..."
+  echo
+  echo "Before starting the tests..."  
 
   # Generate the required folders in the project, from downloaded xPacks. 
-  cd "${project}"
+  cd "${project_path}"
+  echo
+  echo "Downloading the xPacks and generating the project sources..."
   do_run bash scripts/generate.sh "$@"
 
   # The project is now complete. Import it into the Eclipse workspace.
-  do_run rm -rf "${work}/workspace"
+  # do_run rm -rf "${work}/workspace"
+  echo
+  echo "Importing Eclipse project '${project_name}' into workspace..."
   do_run "${eclipse}" \
     --launcher.suppressErrors \
     -nosplash \
     -application org.eclipse.cdt.managedbuilder.core.headlessbuild \
     -data "${work}/workspace" \
-    -import "${project}"
+    -import "${project_path}"
 
   return 0
 }
@@ -402,7 +442,8 @@ function do_before_script() {
 # Errors in this function will break the build.
 function do_script() {
 
-  echo "The main test code; perform the tests..."
+  echo
+  echo "Finally performing the tests..."
 
   cd "${slug}"
 
@@ -411,6 +452,9 @@ function do_script() {
 
   if [ "${use_clang}" == "true" ]
   then
+    echo
+    do_run clang++ --version
+
     do_build_run "test-cmsis-rtos-valid-clang-release" 
     do_build_run "test-cmsis-rtos-valid-clang-debug" 
 
@@ -424,6 +468,9 @@ function do_script() {
 
   if [ "${use_clang38}" == "true" ]
   then
+    echo
+    do_run clang++-3.8 --version
+
     do_build_run "test-cmsis-rtos-valid-clang38-release" 
     do_build_run "test-cmsis-rtos-valid-clang38-debug" 
 
@@ -437,6 +484,9 @@ function do_script() {
 
   if [ "${use_clang39}" == "true" ]
   then
+    echo
+    do_run clang++-3.9 --version
+    
     do_build_run "test-cmsis-rtos-valid-clang39-release" 
     do_build_run "test-cmsis-rtos-valid-clang39-debug" 
 
@@ -450,6 +500,9 @@ function do_script() {
 
   if [ "${use_gcc}" == "true" ]
   then
+    echo
+    do_run g++ --version
+
     do_build_run "test-cmsis-rtos-valid-gcc-release" 
     do_build_run "test-cmsis-rtos-valid-gcc-debug" 
 
@@ -463,6 +516,9 @@ function do_script() {
 
   if [ "${use_gcc5}" == "true" ]
   then
+    echo
+    do_run g++-5 --version
+
     do_build_run "test-cmsis-rtos-valid-gcc5-release" 
     do_build_run "test-cmsis-rtos-valid-gcc5-debug" 
 
@@ -476,6 +532,9 @@ function do_script() {
 
   if [ "${use_gcc6}" == "true" ]
   then
+    echo
+    do_run g++-6 --version
+    
     do_build_run "test-cmsis-rtos-valid-gcc6-release" 
     do_build_run "test-cmsis-rtos-valid-gcc6-debug" 
 
