@@ -72,9 +72,12 @@ then
 
   gcc5_archive_name="gcc-arm-none-eabi-5_4-2016q3-20160926-mac.tar.bz2"
   gcc5_url_base="https://launchpad.net/gcc-arm-embedded/5.0/5-2016-q3-update/+download"
+
+  # https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads
   gcc6_archive_name="gcc-arm-none-eabi-6-2017-q1-update-mac.tar.bz2"
   gcc6_url_base="https://developer.arm.com/-/media/Files/downloads/gnu-rm/6-2017q1"
 
+  # https://github.com/gnuarmeclipse/qemu/releases
   # https://github.com/gnuarmeclipse/qemu/releases/download/gae-2.8.0-20170301/gnuarmeclipse-qemu-osx-2.8.0-201703012029-head.tgz
   qemu_archive_name="gnuarmeclipse-qemu-osx-2.8.0-201703012029-head.tgz"
   qemu_url_base="https://github.com/gnuarmeclipse/qemu/releases/download/gae-2.8.0-20170301"
@@ -94,8 +97,25 @@ then
   p2_os="linux"
   p2_ws="gtk"
 
+  # sudo apt-get install lib32ncurses5
+
   use_gcc5="true"
   use_gcc6="true"
+
+  # https://launchpad.net/gcc-arm-embedded/5.0/5-2016-q3-update/+download/gcc-arm-none-eabi-5_4-2016q3-20160926-linux.tar.bz2
+  gcc5_archive_name="gcc-arm-none-eabi-5_4-2016q3-20160926-linux.tar.bz2"
+  gcc5_url_base="https://launchpad.net/gcc-arm-embedded/5.0/5-2016-q3-update/+download"
+
+  # https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads
+  # https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu-rm/6_1-2017q1/gcc-arm-none-eabi-6-2017-q1-update-linux.tar.bz2
+  gcc6_archive_name="gcc-arm-none-eabi-6-2017-q1-update-linux.tar.bz2"
+  gcc6_url_base="https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu-rm/6_1-2017q1"
+
+  # https://github.com/gnuarmeclipse/qemu/releases
+  # https://github.com/gnuarmeclipse/qemu/releases/download/gae-2.8.0-20161227/gnuarmeclipse-qemu-debian64-2.8.0-201612271623-dev.tgz
+  qemu_archive_name="gnuarmeclipse-qemu-debian64-2.8.0-201612271623-dev.tgz"
+  qemu_url_base="https://github.com/gnuarmeclipse/qemu/releases/download/gae-2.8.0-20161227"
+  qemu_folder_name="gnuarmeclipse/qemu/2.8.0-201612271623-dev"
 
   eclipse_archive_name=eclipse-cpp-mars-2-linux-gtk-x86_64.tar.gz
 
@@ -272,7 +292,7 @@ function do_before_install() {
       mkdir -p "$(dirname ${gcc5_folder_path})"
       echo
       echo "Installing arm-none-eabi-gcc v5..."
-      do_run tar -x -z -f "${cache}/${gcc5_archive_name}" -C "$(dirname ${gcc5_folder_path})"
+      do_run tar -x -j -f "${cache}/${gcc5_archive_name}" -C "$(dirname ${gcc5_folder_path})"
     fi
 
     PATH="${gcc5_folder_path}/bin":${saved_path}
@@ -301,7 +321,7 @@ function do_before_install() {
       mkdir -p "$(dirname ${gcc6_folder_path})"
       echo
       echo "Installing arm-none-eabi-gcc v6..."
-      do_run tar -x -z -f "${cache}/${gcc6_archive_name}" -C "$(dirname ${gcc6_folder_path})"
+      do_run tar -x -j -f "${cache}/${gcc6_archive_name}" -C "$(dirname ${gcc6_folder_path})"
     fi
 
     PATH="${gcc6_folder_path}/bin":${saved_path}
@@ -327,7 +347,15 @@ function do_before_install() {
     mkdir -p "$(dirname $(dirname $(dirname ${qemu_folder_path})))"
     echo
     echo "Installing GNU ARM Eclipse QEMU..."
-    do_run tar -x -z -f "${cache}/${qemu_archive_name}" -C "$(dirname $(dirname $(dirname ${qemu_folder_path})))"
+    if [ "${TRAVIS_OS_NAME}" == "osx" ]
+    then
+      do_run tar -x -z -f "${cache}/${qemu_archive_name}" -C "$(dirname $(dirname $(dirname ${qemu_folder_path})))"
+    elif [ "${TRAVIS_OS_NAME}" == "linux" ]
+    then
+      # TODO: update once a new QEMU release will have the longer path.
+      mkdir -p "$(dirname $(dirname $(dirname ${qemu_folder_path})))/gnuarmeclipse"
+      do_run tar -x -z -f "${cache}/${qemu_archive_name}" -C "$(dirname $(dirname $(dirname ${qemu_folder_path})))/gnuarmeclipse"
+    fi
   fi
 
   echo
@@ -439,7 +467,7 @@ function do_before_script() {
 function do_script() {
 
   echo
-  echo "Finally performing the tests..."
+  echo "Performing the F4DISCOVERY µOS++ tests..."
 
   cd "${slug}"
 
