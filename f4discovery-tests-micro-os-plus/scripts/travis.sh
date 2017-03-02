@@ -513,13 +513,13 @@ function do_script() {
 
     local toolchain_name="arm-none-eabi-gcc v6"
 
-    do_build "test-cmsis-rtos-valid-release" ${toolchain_name}
-    do_build "test-cmsis-rtos-valid-debug" ${toolchain_name}
+    do_build_run "test-cmsis-rtos-valid-release" ${toolchain_name}
+    do_build_run "test-cmsis-rtos-valid-debug" ${toolchain_name}
 
-    do_build "test-rtos-release" ${toolchain_name}
-    do_build "test-rtos-debug" ${toolchain_name}
+    do_build_run "test-rtos-release" ${toolchain_name}
+    do_build_run "test-rtos-debug" ${toolchain_name}
 
-    do_build "test-mutex-stress-release" ${toolchain_name}
+    do_build_run "test-mutex-stress-release" ${toolchain_name}
     # Mutex stress as release only, debug too heavy.
     do_build "test-mutex-stress-debug" ${toolchain_name}
 
