@@ -11,6 +11,7 @@ sudo: false
 # For more clang versions: http://apt.llvm.org
 # Unfortunately clang is not yet reliable on linux, it uses GCC headers,
 # and it might get the wrong ones.
+# The 32-bits libraries are required by the arm-none-eabi distribution.
 addons:
   apt:
     sources:
@@ -24,6 +25,7 @@ addons:
       - g++-6
       - clang-3.8
       - clang-3.9
+      - lib32z1 lib32ncurses5 lib32bz2-1.0
 
 osx_image: xcode8.2
 
