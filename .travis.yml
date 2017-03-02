@@ -35,28 +35,32 @@ git:
 
 env:
   global:
-    - SCRIPT="synthetic-posix-tests-micro-os-plus/scripts/travis.sh"
+    - SCRIPT_SYNTH="synthetic-posix-tests-micro-os-plus/scripts/travis.sh"
+    - SCRIPT_F4DISCO="f4discovery-tests-micro-os-plus/scripts/travis.sh"
 
 before_install:
-  - bash "${SCRIPT}" before_install
+  # - bash "${SCRIPT_SYNTH}" before_install
+  - bash "${SCRIPT_F4DISCO}" before_install
 
 # Skip the install step.
 # install: true
 
 # `--develop` will pull the `develop` branch, where available.
 before_script:
-  - bash "${SCRIPT}" before_script --develop
+  # - bash "${SCRIPT_SYNTH}" before_script --develop
+  - bash "${SCRIPT_F4DISCO}" before_script --develop
 
 script:
-  - bash "${SCRIPT}" script
+  # - bash "${SCRIPT_SYNTH}" script
+  - bash "${SCRIPT_F4DISCO}" script
 
 # Unused, kept for just in case.
 
 # after_success:
-#  - bash "${SCRIPT}" after_success
+#  - bash "${SCRIPT_SYNTH}" after_success
 
 # after_failure:
-#   - bash "${SCRIPT}" after_failure
+#   - bash "${SCRIPT_SYNTH}" after_failure
 
 # Deploy via script not functional (or not understood).
 # deploy:
@@ -66,4 +70,4 @@ script:
 #    branch: master
   
 # after_script:
-#   - bash "${SCRIPT}" after_script
+#   - bash "${SCRIPT_SYNTH}" after_script
