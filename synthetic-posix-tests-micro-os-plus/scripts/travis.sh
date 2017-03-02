@@ -139,7 +139,7 @@ function do_build()
   local cfg=$1
 
   echo
-  echo Build ${cfg}
+  echo "Building ${cfg}..."
   
   local code=0
 
@@ -179,7 +179,7 @@ function do_build_run()
   local cfg=$1
 
   echo
-  echo Build ${cfg}
+  echo "Building ${cfg}..."
   
   local code=0
 
@@ -202,7 +202,7 @@ function do_build_run()
   if [ \( ${code} -eq 0 \) -a \( -f "${project_path}/${cfg}/${cfg}" \) ]
   then
     echo
-    echo Run ${cfg}
+    echo "Running ${cfg}..."
     set +o errexit 
     do_run_quietly "${project_path}/${cfg}/${cfg}"
     code=$?

@@ -146,7 +146,7 @@ function do_build()
   local toolchain_name=$2
 
   echo
-  echo Build ${cfg} with ${toolchain_name}
+  echo "Building ${cfg} with ${toolchain_name}..."
   
   local code=0
 
@@ -188,7 +188,7 @@ function do_build_run()
   local toolchain_name=$2
 
   echo
-  echo Build ${cfg} with ${toolchain_name}
+  echo "Building ${cfg} with ${toolchain_name}..."
   
   local code=0
   local board_name="STM32F4-Discovery"
@@ -212,7 +212,7 @@ function do_build_run()
   if [ -f "${project_path}/${cfg}/${cfg}.elf" ]
   then
     echo
-    echo "Run ${cfg} with QEMU ${board_name}"
+    echo "Running ${cfg} with QEMU ${board_name}..."
     set +o errexit 
     do_run_quietly ${qemu_folder_path}/bin/qemu-system-gnuarmeclipse \
       --image "${project_path}/${cfg}/${cfg}.elf" \
