@@ -11,7 +11,7 @@ sudo: false
 # For more clang versions: http://apt.llvm.org
 # Unfortunately clang is not yet reliable on linux, it uses GCC headers,
 # and it might get the wrong ones.
-# The 32-bits libraries are required by the arm-none-eabi distribution.
+# The 32-bits libraries are required by the arm-none-eabi 5.4 distribution.
 addons:
   apt:
     sources:
@@ -41,7 +41,7 @@ env:
     - SCRIPT_F4DISCO="f4discovery-tests-micro-os-plus/scripts/travis.sh"
 
 before_install:
-  # - bash "${SCRIPT_SYNTH}" before_install
+  - bash "${SCRIPT_SYNTH}" before_install
   - bash "${SCRIPT_F4DISCO}" before_install
 
 # Skip the install step.
@@ -49,11 +49,11 @@ before_install:
 
 # `--develop` will pull the `develop` branch, where available.
 before_script:
-  # - bash "${SCRIPT_SYNTH}" before_script --develop
+  - bash "${SCRIPT_SYNTH}" before_script --develop
   - bash "${SCRIPT_F4DISCO}" before_script --develop
 
 script:
-  # - bash "${SCRIPT_SYNTH}" script
+  - bash "${SCRIPT_SYNTH}" script
   - bash "${SCRIPT_F4DISCO}" script
 
 # Unused, kept for just in case.

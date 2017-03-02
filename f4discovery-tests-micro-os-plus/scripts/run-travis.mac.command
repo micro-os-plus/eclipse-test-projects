@@ -16,3 +16,5 @@ parent="$(dirname ${script})"
 # User specific inits.
 
 bash "${parent}/run-travis.sh"
+
+say "Wake up, the test completed successfully"

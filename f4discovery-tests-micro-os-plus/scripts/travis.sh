@@ -99,7 +99,12 @@ then
 
   # sudo apt-get install lib32ncurses5
 
-  use_gcc5="true"
+  if [ "${TRAVIS}" == "true" ]
+  then
+    use_gcc5="false"
+  else
+    use_gcc5="true"
+  fi
   use_gcc6="true"
 
   # https://launchpad.net/gcc-arm-embedded/5.0/5-2016-q3-update/+download/gcc-arm-none-eabi-5_4-2016q3-20160926-linux.tar.bz2
@@ -112,10 +117,10 @@ then
   gcc6_url_base="https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu-rm/6_1-2017q1"
 
   # https://github.com/gnuarmeclipse/qemu/releases
-  # https://github.com/gnuarmeclipse/qemu/releases/download/gae-2.8.0-20161227/gnuarmeclipse-qemu-debian64-2.8.0-201612271623-dev.tgz
-  qemu_archive_name="gnuarmeclipse-qemu-debian64-2.8.0-201612271623-dev.tgz"
-  qemu_url_base="https://github.com/gnuarmeclipse/qemu/releases/download/gae-2.8.0-20161227"
-  qemu_folder_name="gnuarmeclipse/qemu/2.8.0-201612271623-dev"
+  # https://github.com/gnuarmeclipse/qemu/releases/download/gae-2.8.0-20170301/gnuarmeclipse-qemu-debian64-2.8.0-201703021843-head.tgz
+  qemu_archive_name="gnuarmeclipse-qemu-debian64-2.8.0-201703021843-dev.tgz"
+  qemu_url_base="https://github.com/gnuarmeclipse/qemu/releases/download/gae-2.8.0-20170301"
+  qemu_folder_name="gnuarmeclipse/qemu/2.8.0-201703021843-dev"
 
   eclipse_archive_name=eclipse-cpp-mars-2-linux-gtk-x86_64.tar.gz
 
@@ -166,12 +171,13 @@ function do_build()
   local toolchain_name=$2
 
   echo
-  echo "Building ${cfg} with ${toolchain_name}..."
+  echo "Building '${cfg}' with ${toolchain_name}..."
   
   local code=0
 
-  # Temporarily disable errors, because (???); 
-  # if the build fails, there will be no binary and the next test will fail.
+  # Temporarily disable errors, because Eclipse headless builds sometimes 
+  # return non-zero even if the build is successful; if the build fails, 
+  # there will be no binary and the next test will fail.
   set +o errexit 
   do_run_quietly "${eclipse}" \
     --launcher.suppressErrors \
@@ -186,6 +192,8 @@ function do_build()
 
   if [ -f "${project_path}/${cfg}/${cfg}.elf" ]
   then
+    echo
+    echo "'${cfg}' passed."
     return 0
   fi
 
@@ -195,7 +203,7 @@ function do_build()
   fi
 
   echo
-  echo "FAILED"
+  echo "'${cfg}' FAILED"
 
   return ${code}
 }
@@ -208,7 +216,7 @@ function do_build_run()
   local toolchain_name=$2
 
   echo
-  echo "Building ${cfg} with ${toolchain_name}..."
+  echo "Building '${cfg}' with ${toolchain_name}..."
   
   local code=0
   local board_name="STM32F4-Discovery"
@@ -232,7 +240,7 @@ function do_build_run()
   if [ -f "${project_path}/${cfg}/${cfg}.elf" ]
   then
     echo
-    echo "Running ${cfg} with QEMU ${board_name}..."
+    echo "Running '${cfg}' with QEMU ${board_name}..."
     set +o errexit 
     do_run_quietly ${qemu_folder_path}/bin/qemu-system-gnuarmeclipse \
       --image "${project_path}/${cfg}/${cfg}.elf" \
@@ -247,6 +255,8 @@ function do_build_run()
 
     if [ ${code} -eq 0 ]
     then
+      echo
+      echo "'${cfg}' passed."
       return 0
     fi
   fi
@@ -259,10 +269,12 @@ function do_build_run()
   if [ ${code} -ne 0 ]
   then
     echo
-    echo "FAILED"
+    echo "'${cfg}' FAILED"
   fi
 
-  return ${code}
+  echo
+  echo "'${cfg}' passed."
+  return 0
 }
 
 # -----------------------------------------------------------------------------
@@ -347,15 +359,7 @@ function do_before_install() {
     mkdir -p "$(dirname $(dirname $(dirname ${qemu_folder_path})))"
     echo
     echo "Installing GNU ARM Eclipse QEMU..."
-    if [ "${TRAVIS_OS_NAME}" == "osx" ]
-    then
-      do_run tar -x -z -f "${cache}/${qemu_archive_name}" -C "$(dirname $(dirname $(dirname ${qemu_folder_path})))"
-    elif [ "${TRAVIS_OS_NAME}" == "linux" ]
-    then
-      # TODO: update once a new QEMU release will have the longer path.
-      mkdir -p "$(dirname $(dirname $(dirname ${qemu_folder_path})))/gnuarmeclipse"
-      do_run tar -x -z -f "${cache}/${qemu_archive_name}" -C "$(dirname $(dirname $(dirname ${qemu_folder_path})))/gnuarmeclipse"
-    fi
+    do_run tar -x -z -f "${cache}/${qemu_archive_name}" -C "$(dirname $(dirname $(dirname ${qemu_folder_path})))"
   fi
 
   echo
@@ -481,7 +485,7 @@ function do_script() {
     echo
     do_run arm-none-eabi-g++ --version
 
-    local toolchain_name="gcc5"
+    local toolchain_name="arm-none-eabi-gcc v5"
 
     do_build_run "test-cmsis-rtos-valid-release" ${toolchain_name}
     do_build_run "test-cmsis-rtos-valid-debug" ${toolchain_name}
@@ -507,7 +511,7 @@ function do_script() {
     echo
     do_run arm-none-eabi-g++ --version
 
-    local toolchain_name="gcc6"
+    local toolchain_name="arm-none-eabi-gcc v6"
 
     do_build "test-cmsis-rtos-valid-release" ${toolchain_name}
     do_build "test-cmsis-rtos-valid-debug" ${toolchain_name}

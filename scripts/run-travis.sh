@@ -50,6 +50,11 @@ then
   export TRAVIS_OS_NAME=mingw64
 fi
 
-bash "${parent}/travis.sh" before_install
-bash "${parent}/travis.sh" before_script --develop
-bash "${parent}/travis.sh" script
+bash "$(dirname ${parent})/synthetic-posix-tests-micro-os-plus/scripts/travis.sh" before_install
+bash "$(dirname ${parent})/f4discovery-tests-micro-os-plus/scripts/travis.sh" before_install
+
+bash "$(dirname ${parent})/synthetic-posix-tests-micro-os-plus/scripts/travis.sh" before_script --develop
+bash "$(dirname ${parent})/f4discovery-tests-micro-os-plus/scripts/travis.sh" before_script --develop
+
+bash "$(dirname ${parent})/synthetic-posix-tests-micro-os-plus/scripts/travis.sh" script
+bash "$(dirname ${parent})/f4discovery-tests-micro-os-plus/scripts/travis.sh" script

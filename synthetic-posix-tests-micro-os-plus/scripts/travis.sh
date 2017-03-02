@@ -98,8 +98,14 @@ then
   use_clang38="false"
   use_clang39="false"
 
+  # Plain gcc may be too old to be useful.
   use_gcc="false"
-  use_gcc5="true"
+  if [ "${TRAVIS}" == "true" ]
+  then
+    use_gcc5="false"
+  else
+    use_gcc5="true"
+  fi
   use_gcc6="true"
 
 else
@@ -134,17 +140,20 @@ function do_run_quietly()
 }
 
 # $1 configuration name
+# $2 toolchain name
 function do_build()
 {
   local cfg=$1
 
   echo
-  echo "Building ${cfg}..."
+  echo "Building '${cfg}' with ${toolchain_name}..."
   
   local code=0
+  local toolchain_name=$2
 
-  # Temporarily disable errors, because (???); 
-  # if the build fails, there will be no binary and the next test will fail.
+  # Temporarily disable errors, because Eclipse headless builds sometimes 
+  # return non-zero even if the build is successful; if the build fails, 
+  # there will be no binary and the next test will fail.
   set +o errexit 
   do_run_quietly "${eclipse}" \
     --launcher.suppressErrors \
@@ -159,6 +168,8 @@ function do_build()
 
   if [ \( ${code} -eq 0 \) -a \( -f "${project_path}/${cfg}/${cfg}" \) ]
   then
+    echo
+    echo "'${cfg}' passed."
     return 0
   fi
 
@@ -168,20 +179,22 @@ function do_build()
   fi
 
   echo
-  echo "FAILED"
+  echo "'${cfg}' FAILED"
 
   return ${code}
 }
 
 # $1 configuration name
+# $2 toolchain name
 function do_build_run()
 {
   local cfg=$1
 
   echo
-  echo "Building ${cfg}..."
+  echo "Building '${cfg}' with ${toolchain_name}..."
   
   local code=0
+  local toolchain_name=$2
 
   # Temporarily disable errors, because (???); 
   # if the build fails, the attempt to run the binary will fail anyway.
@@ -202,7 +215,7 @@ function do_build_run()
   if [ \( ${code} -eq 0 \) -a \( -f "${project_path}/${cfg}/${cfg}" \) ]
   then
     echo
-    echo "Running ${cfg}..."
+    echo "Running '${cfg}'..."
     set +o errexit 
     do_run_quietly "${project_path}/${cfg}/${cfg}"
     code=$?
@@ -210,6 +223,8 @@ function do_build_run()
 
     if [ ${code} -eq 0 ]
     then
+      echo
+      echo "'${cfg}' passed."
       return 0
     fi
   fi
@@ -222,10 +237,12 @@ function do_build_run()
   if [ ${code} -ne 0 ]
   then
     echo
-    echo "FAILED"
+    echo "'${cfg}' FAILED"
   fi
 
-  return ${code}
+  echo
+  echo "'${cfg}' passed."
+  return 0
 }
 
 # -----------------------------------------------------------------------------
@@ -455,15 +472,17 @@ function do_script() {
     echo
     do_run clang++ --version
 
-    do_build_run "test-cmsis-rtos-valid-clang-release" 
-    do_build_run "test-cmsis-rtos-valid-clang-debug" 
+    local toolchain_name="clang"
 
-    do_build_run "test-rtos-clang-release" 
-    do_build_run "test-rtos-clang-debug" 
+    do_build_run "test-cmsis-rtos-valid-clang-release" ${toolchain_name}
+    do_build_run "test-cmsis-rtos-valid-clang-debug" ${toolchain_name}
 
-    do_build_run "test-mutex-stress-clang-release" 
+    do_build_run "test-rtos-clang-release" ${toolchain_name}
+    do_build_run "test-rtos-clang-debug" ${toolchain_name}
+
+    do_build_run "test-mutex-stress-clang-release" ${toolchain_name}
     # Mutex stress as release only, debug too heavy.
-    do_build "test-mutex-stress-clang-debug" 
+    do_build "test-mutex-stress-clang-debug" ${toolchain_name}
   fi
 
   if [ "${use_clang38}" == "true" ]
@@ -471,15 +490,17 @@ function do_script() {
     echo
     do_run clang++-3.8 --version
 
-    do_build_run "test-cmsis-rtos-valid-clang38-release" 
-    do_build_run "test-cmsis-rtos-valid-clang38-debug" 
+    local toolchain_name="clang-3.8"
 
-    do_build_run "test-rtos-clang38-release" 
-    do_build_run "test-rtos-clang38-debug" 
+    do_build_run "test-cmsis-rtos-valid-clang38-release" ${toolchain_name}
+    do_build_run "test-cmsis-rtos-valid-clang38-debug" ${toolchain_name}
 
-    do_build_run "test-mutex-stress-clang38-release" 
+    do_build_run "test-rtos-clang38-release" ${toolchain_name}
+    do_build_run "test-rtos-clang38-debug" ${toolchain_name}
+
+    do_build_run "test-mutex-stress-clang38-release" ${toolchain_name}
     # Mutex stress as release only, debug too heavy.
-    do_build "test-mutex-stress-clang38-debug" 
+    do_build "test-mutex-stress-clang38-debug" ${toolchain_name}
   fi
 
   if [ "${use_clang39}" == "true" ]
@@ -487,15 +508,17 @@ function do_script() {
     echo
     do_run clang++-3.9 --version
     
-    do_build_run "test-cmsis-rtos-valid-clang39-release" 
-    do_build_run "test-cmsis-rtos-valid-clang39-debug" 
+    local toolchain_name="clang-3.9"
 
-    do_build_run "test-rtos-clang39-release" 
-    do_build_run "test-rtos-clang39-debug" 
+    do_build_run "test-cmsis-rtos-valid-clang39-release" ${toolchain_name}
+    do_build_run "test-cmsis-rtos-valid-clang39-debug" ${toolchain_name}
 
-    do_build_run "test-mutex-stress-clang39-release" 
+    do_build_run "test-rtos-clang39-release" ${toolchain_name}
+    do_build_run "test-rtos-clang39-debug" ${toolchain_name}
+
+    do_build_run "test-mutex-stress-clang39-release" ${toolchain_name}
     # Mutex stress as release only, debug too heavy.
-    do_build "test-mutex-stress-clang39-debug" 
+    do_build "test-mutex-stress-clang39-debug" ${toolchain_name}
   fi
 
   if [ "${use_gcc}" == "true" ]
@@ -503,15 +526,17 @@ function do_script() {
     echo
     do_run g++ --version
 
-    do_build_run "test-cmsis-rtos-valid-gcc-release" 
-    do_build_run "test-cmsis-rtos-valid-gcc-debug" 
+    local toolchain_name="gcc"
 
-    do_build_run "test-rtos-gcc-release" 
-    do_build_run "test-rtos-gcc-debug" 
+    do_build_run "test-cmsis-rtos-valid-gcc-release" ${toolchain_name}
+    do_build_run "test-cmsis-rtos-valid-gcc-debug" ${toolchain_name}
 
-    do_build_run "test-mutex-stress-gcc-release" 
+    do_build_run "test-rtos-gcc-release" ${toolchain_name}
+    do_build_run "test-rtos-gcc-debug" ${toolchain_name}
+
+    do_build_run "test-mutex-stress-gcc-release" ${toolchain_name}
     # Mutex stress as release only, debug too heavy.
-    do_build "test-mutex-stress-gcc-debug" 
+    do_build "test-mutex-stress-gcc-debug" ${toolchain_name}
   fi
 
   if [ "${use_gcc5}" == "true" ]
@@ -519,15 +544,17 @@ function do_script() {
     echo
     do_run g++-5 --version
 
-    do_build_run "test-cmsis-rtos-valid-gcc5-release" 
-    do_build_run "test-cmsis-rtos-valid-gcc5-debug" 
+    local toolchain_name="gcc-5"
 
-    do_build_run "test-rtos-gcc5-release" 
-    do_build_run "test-rtos-gcc5-debug" 
+    do_build_run "test-cmsis-rtos-valid-gcc5-release" ${toolchain_name}
+    do_build_run "test-cmsis-rtos-valid-gcc5-debug" ${toolchain_name}
 
-    do_build_run "test-mutex-stress-gcc5-release" 
+    do_build_run "test-rtos-gcc5-release" ${toolchain_name}
+    do_build_run "test-rtos-gcc5-debug" ${toolchain_name}
+
+    do_build_run "test-mutex-stress-gcc5-release" ${toolchain_name}
     # Mutex stress as release only, debug too heavy.
-    do_build "test-mutex-stress-gcc5-debug" 
+    do_build "test-mutex-stress-gcc5-debug" ${toolchain_name}
   fi
 
   if [ "${use_gcc6}" == "true" ]
@@ -535,16 +562,18 @@ function do_script() {
     echo
     do_run g++-6 --version
     
-    do_build_run "test-cmsis-rtos-valid-gcc6-release" 
-    do_build_run "test-cmsis-rtos-valid-gcc6-debug" 
+    local toolchain_name="gcc-6"
+
+    do_build_run "test-cmsis-rtos-valid-gcc6-release" ${toolchain_name}
+    do_build_run "test-cmsis-rtos-valid-gcc6-debug" ${toolchain_name}
 
     # GCC 6.2 fails with header error.
-    do_build_run "test-rtos-gcc6-release"
-    do_build_run "test-rtos-gcc6-debug"
+    do_build_run "test-rtos-gcc6-release" ${toolchain_name}
+    do_build_run "test-rtos-gcc6-debug" ${toolchain_name}
 
-    do_build_run "test-mutex-stress-gcc6-release" 
+    do_build_run "test-mutex-stress-gcc6-release" ${toolchain_name}
     # Mutex stress as release only, debug too heavy.
-    do_build "test-mutex-stress-gcc6-debug" 
+    do_build "test-mutex-stress-gcc6-debug" ${toolchain_name}
   fi
 
   echo

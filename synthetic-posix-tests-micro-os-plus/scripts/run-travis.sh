@@ -51,5 +51,5 @@ then
 fi
 
 bash "${parent}/travis.sh" before_install
-bash "${parent}/travis.sh" before_script
+bash "${parent}/travis.sh" before_script --develop
 bash "${parent}/travis.sh" script
