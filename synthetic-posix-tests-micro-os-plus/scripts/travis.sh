@@ -460,7 +460,7 @@ function do_before_script() {
 function do_script() {
 
   echo
-  echo "Finally performing the tests..."
+  echo "Performing the synthetic POSIX tests..."
 
   cd "${slug}"
 

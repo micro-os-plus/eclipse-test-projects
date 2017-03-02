@@ -324,7 +324,7 @@ function do_before_install() {
       gcc6_url="${gcc6_url_base}/${gcc6_archive_name}"
       mkdir -p "${cache}"
       echo
-      echo "Downloading arm-none-eabi-gcc v6"
+      echo "Downloading arm-none-eabi-gcc v6..."
       do_run curl -L ${gcc6_url} -o "${cache}/${gcc6_archive_name}"
     fi
 
