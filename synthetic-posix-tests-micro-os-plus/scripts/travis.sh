@@ -115,6 +115,8 @@ else
   
 fi
 
+eclipse_workspace_path="${work}/workspace-${project_name}"
+
 cdt_release="8.8.1"
 cdt_folder_name="cdt-${cdt_release}"
 cdt_folder_path="${work}/${cdt_folder_name}"
@@ -159,7 +161,7 @@ function do_build()
     --launcher.suppressErrors \
     -nosplash \
     -application org.eclipse.cdt.managedbuilder.core.headlessbuild \
-    -data "${work}/workspace" \
+    -data "${eclipse_workspace_path}" \
     -cleanBuild synthetic-posix-tests-micro-os-plus/${cfg} 
       
   code=$?
@@ -205,7 +207,7 @@ function do_build_run()
     --launcher.suppressErrors \
     -nosplash \
     -application org.eclipse.cdt.managedbuilder.core.headlessbuild \
-    -data "${work}/workspace" \
+    -data "${eclipse_workspace_path}" \
     -cleanBuild synthetic-posix-tests-micro-os-plus/${cfg} 
   
   code=$?
@@ -443,14 +445,14 @@ function do_before_script() {
   do_run bash scripts/generate.sh "$@"
 
   # The project is now complete. Import it into the Eclipse workspace.
-  # do_run rm -rf "${work}/workspace"
+  # do_run rm -rf "${eclipse_workspace_path}"
   echo
   echo "Importing Eclipse project '${project_name}' into workspace..."
   do_run "${eclipse}" \
     --launcher.suppressErrors \
     -nosplash \
     -application org.eclipse.cdt.managedbuilder.core.headlessbuild \
-    -data "${work}/workspace" \
+    -data "${eclipse_workspace_path}" \
     -import "${project_path}"
 
   return 0

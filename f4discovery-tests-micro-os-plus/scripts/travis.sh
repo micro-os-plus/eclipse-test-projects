@@ -131,6 +131,8 @@ else
   
 fi
 
+eclipse_workspace_path="${work}/workspace-${project_name}"
+
 gcc5_folder_name="gcc-arm-none-eabi-5_4-2016q3"
 gcc5_folder_path="${work}/${gcc5_folder_name}"
 
@@ -183,7 +185,7 @@ function do_build()
     --launcher.suppressErrors \
     -nosplash \
     -application org.eclipse.cdt.managedbuilder.core.headlessbuild \
-    -data "${work}/workspace" \
+    -data "${eclipse_workspace_path}" \
     -cleanBuild "${project_name}/${cfg}" 
       
   code=$?
@@ -230,7 +232,7 @@ function do_build_run()
     --launcher.suppressErrors \
     -nosplash \
     -application org.eclipse.cdt.managedbuilder.core.headlessbuild \
-    -data "${work}/workspace" \
+    -data "${eclipse_workspace_path}" \
     -cleanBuild "${project_name}/${cfg}" 
   
   code=$?
@@ -454,14 +456,14 @@ function do_before_script() {
   do_run bash scripts/generate.sh "$@"
 
   # The project is now complete. Import it into the Eclipse workspace.
-  # do_run rm -rf "${work}/workspace"
+  # do_run rm -rf "${eclipse_workspace_path}"
   echo
   echo "Importing Eclipse project '${project_name}' into workspace..."
   do_run "${eclipse}" \
     --launcher.suppressErrors \
     -nosplash \
     -application org.eclipse.cdt.managedbuilder.core.headlessbuild \
-    -data "${work}/workspace" \
+    -data "${eclipse_workspace_path}" \
     -import "${project_path}"
 
   return 0
