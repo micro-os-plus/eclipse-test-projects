@@ -9,45 +9,17 @@ IFS=$'\n\t'
 
 # Prefer the environment location XPACKS_REPO_FOLDER, if defined.
 
-xpacks_paths_helper="${HOME}/Downloads/xpacks-paths.sh"
+xpacks_paths_helper_path="${HOME}/Downloads/xpacks-paths.sh"
 
 # Check if the helper is present.
-if [ ! -f "${xpacks_paths_helper}" ]
+if [ ! -f "${xpacks_paths_helper_path}" ]
 then
   mkdir -p "${HOME}/Downloads"
   echo "Downloading xpacks-paths.sh..."
-  curl -L https://github.com/xpacks/scripts/raw/master/xpacks-paths.sh -o "${xpacks_paths_helper}"
+  curl -L https://github.com/xpacks/scripts/raw/master/xpacks-paths.sh -o "${xpacks_paths_helper_path}"
 fi
 
-source  "${xpacks_paths_helper}"
-
-# -----------------------------------------------------------------------------
-
-# Check if the helper is present.
-if [ ! -f "${xpacks_repo_folder}/ilg/scripts.git/xpacks-helper.sh" ]
-then
-  mkdir -p "${HOME}/Downloads"
-  echo "Downloading bootstrap.sh..."
-  curl -L https://github.com/xpacks/scripts/raw/master/bootstrap.sh -o "${HOME}/Downloads/bootstrap.sh"
-  bash  "${HOME}/Downloads/bootstrap.sh"
-fi
-
-# -----------------------------------------------------------------------------
-
-helper_script="${xpacks_repo_folder}/ilg/scripts.git/xpacks-helper.sh"
-
-# Include common definitions from helper script.
-source "${helper_script}"
-
-# -----------------------------------------------------------------------------
-
-# Get the full absolute path of the current script.
-script=$0
-if [[ "${script}" != /* ]]
-then
-  # Make relative path absolute.
-  script=$(pwd)/$0
-fi
+source  "${xpacks_paths_helper_path}"
 
 # -----------------------------------------------------------------------------
 
