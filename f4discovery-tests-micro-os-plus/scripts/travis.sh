@@ -75,7 +75,7 @@ then
 
   # https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads
   gcc6_archive_name="gcc-arm-none-eabi-6-2017-q1-update-mac.tar.bz2"
-  gcc6_url_base="https://developer.arm.com/-/media/Files/downloads/gnu-rm/6-2017q1"
+  gcc6_url_base="https://developer.arm.com/-/media/Files/downloads/gnu-rm/6_1-2017q1"
 
   # https://github.com/gnuarmeclipse/qemu/releases
   # https://github.com/gnuarmeclipse/qemu/releases/download/gae-2.8.0-20170301/gnuarmeclipse-qemu-osx-2.8.0-201703012029-head.tgz
