@@ -17,4 +17,4 @@ export PATH=$HOME/Work/qemu/build/osx/qemu/gnuarmeclipse-softmmu:$PATH
 # export PATH=/Applications/SEGGER/JLink_V510s:$PATH
 export PATH=$HOME/opt/homebrew/gcc/bin:$PATH
 
-bash "$parent/run-all.sh" --all
+bash "$parent/run-all.sh"

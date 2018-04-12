@@ -21,7 +21,23 @@ fi
 parent="$(dirname ${script})/.."
 echo $parent
 
+list_short=( \
+"test-cmsis-rtos-valid-release" \
+"test-cmsis-rtos-valid-debug" \
+)
+
+list_all=( \
+"test-cmsis-rtos-valid-release" \
+"test-rtos-release" \
+# "test-mutex-stress-release" \
+"test-cmsis-rtos-valid-debug" \
+"test-rtos-debug" \
+)
+
+
 loops=1
+
+list=("${list_short[@]}")
 
 while [ $# -gt 0 ]
 do
@@ -35,7 +51,10 @@ do
          shift
       fi
       ;;
-
+    --all)
+    shift
+      list=("${list_all[@]}")
+      ;;
     *)
       echo "Unknown option $1"
       exit 1
@@ -48,14 +67,6 @@ tmp="${HOME}/tmp/cmsis-plus-tests"
 
 cd "${parent}"
 name="$(basename $(pwd))".txt
-
-list=( \
-"test-cmsis-rtos-valid-release" \
-"test-rtos-release" \
-"test-mutex-stress-release" \
-"test-cmsis-rtos-valid-debug" \
-"test-rtos-debug" \
-)
 
 for f in "${list[@]}"
 do

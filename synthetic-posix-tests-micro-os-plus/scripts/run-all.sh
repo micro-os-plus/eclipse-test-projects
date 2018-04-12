@@ -2,26 +2,43 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-list=( \
+list_short=( \
 "test-cmsis-rtos-valid-clang-release" \
-"test-cmsis-rtos-valid-gcc-release" \
-"test-cmsis-rtos-valid-gcc5-release" \
-"test-cmsis-rtos-valid-gcc6-release" \
+"test-cmsis-rtos-valid-gcc7-release" \
 "test-rtos-clang-release" \
-"test-rtos-gcc-release" \
-"test-rtos-gcc5-release" \
+"test-rtos-gcc7-release" \
 "test-mutex-stress-clang-release" \
-"test-mutex-stress-gcc-release" \
-"test-mutex-stress-gcc5-release" \
+"test-mutex-stress-gcc7-release" \
+\
 "test-cmsis-rtos-valid-clang-debug" \
-"test-cmsis-rtos-valid-gcc-debug" \
-"test-cmsis-rtos-valid-gcc5-debug" \
-"test-cmsis-rtos-valid-gcc6-debug" \
+"test-cmsis-rtos-valid-gcc7-debug" \
 "test-rtos-clang-debug" \
-"test-rtos-gcc-debug" \
-"test-rtos-gcc5-debug" \
+"test-rtos-gcc7-debug" \
 )
 
+list_all=( \
+"test-cmsis-rtos-valid-clang-release" \
+"test-cmsis-rtos-valid-gcc-release" \
+"test-cmsis-rtos-valid-gcc6-release" \
+"test-cmsis-rtos-valid-gcc7-release" \
+"test-rtos-clang-release" \
+"test-rtos-gcc-release" \
+"test-rtos-gcc6-release" \
+"test-rtos-gcc7-release" \
+"test-mutex-stress-clang-release" \
+"test-mutex-stress-gcc-release" \
+"test-mutex-stress-gcc6-release" \
+"test-mutex-stress-gcc7-release" \
+\
+"test-cmsis-rtos-valid-clang-debug" \
+"test-cmsis-rtos-valid-gcc-debug" \
+"test-cmsis-rtos-valid-gcc6-debug" \
+"test-cmsis-rtos-valid-gcc7-debug" \
+"test-rtos-clang-debug" \
+"test-rtos-gcc-debug" \
+"test-rtos-gcc6-debug" \
+"test-rtos-gcc7-debug" \
+)
 
 script=$0
 if [[ "${script}" != /* ]]
@@ -35,6 +52,8 @@ echo $parent
 
 loops=1
 
+list=("${list_short[@]}")
+
 while [ $# -gt 0 ]
 do
   case "$1" in
@@ -47,7 +66,10 @@ do
          shift
       fi
       ;;
-
+    --all)
+      shift
+      list=("${list_all[@]}")
+      ;;
     *)
       echo "Unknown option $1"
       exit 1
@@ -77,7 +99,7 @@ do
   do
     echo
     echo run $f
-	# run executable
+	  # run executable
     $f/$f
   done
 

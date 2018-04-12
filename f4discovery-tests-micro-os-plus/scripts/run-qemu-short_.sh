@@ -49,7 +49,7 @@ tmp="${HOME}/tmp/cmsis-plus-tests"
 cd "${parent}"
 name="$(basename $(pwd))".txt
 
-list=( \
+list_short=( \
 "test-cmsis-rtos-valid-release" \
 "test-cmsis-rtos-valid-debug" \
 )
