@@ -38,6 +38,7 @@ do_install_xpack "stm32f4-cmsis" "ilg" "https://github.com/xpacks/stm32f4-cmsis.
 do_install_xpack "stm32f4-hal" "ilg" "https://github.com/xpacks/stm32f4-hal.git"
 do_install_xpack "arm-cmsis-rtos-validator" "ilg" "https://github.com/xpacks/arm-cmsis-rtos-validator.git"
 
+do_install_xpack "chan-fatfs" "ilg" "https://github.com/xpacks/chan-fatfs.git"
 
 # Recreate the destination folder.
 do_remove_dest
@@ -47,7 +48,7 @@ do_create_dest
 do_add_arm_cmsis_xpack driver
 
 # Add the 'micro-os-plus-iii' xPack.
-do_add_micro_os_plus_iii_xpack 
+do_add_micro_os_plus_iii_xpack posix-io
 do_add_micro_os_plus_iii_tests_xpack rtos mutex-stress sema-stress
 
 # Add the 'micro-os-plus-iii-cortexm' xPack.
@@ -61,6 +62,8 @@ do_add_stm32_hal_xpack "f4"
 
 # Add the 'arm-cmsis-rtos-validator' xPack
 do_add_arm_cmsis_rtos_validator_xpack
+
+do_add_chan_fatfs_xpack
 
 # Change file modes to read/only.
 do_protect

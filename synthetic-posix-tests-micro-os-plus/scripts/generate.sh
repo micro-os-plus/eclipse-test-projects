@@ -30,22 +30,23 @@ do_process_args $@
 do_greet
 
 # Check dependencies; clone if not found.
-do_install_xpack "arm-cmsis" "ilg" "https://github.com/xpacks/arm-cmsis.git"
+# do_install_xpack "arm-cmsis" "ilg" "https://github.com/xpacks/arm-cmsis.git"
 do_install_xpack "micro-os-plus-iii" "ilg" "https://github.com/micro-os-plus/micro-os-plus-iii.git"
 do_install_xpack "micro-os-plus-iii-cortexm" "ilg" "https://github.com/micro-os-plus/micro-os-plus-iii-cortexm.git"
 do_install_xpack "arm-cmsis-rtos-validator" "ilg" "https://github.com/xpacks/arm-cmsis-rtos-validator.git"
 do_install_xpack "posix-arch" "ilg" "https://github.com/micro-os-plus/posix-arch.git"
 
+do_install_xpack "chan-fatfs" "ilg" "https://github.com/xpacks/chan-fatfs.git"
 
 # Recreate the destination folder.
 do_remove_dest
 do_create_dest
 
 # Add the 'arm-cmsis' xPack.
-do_add_arm_cmsis_xpack driver
+# do_add_arm_cmsis_xpack driver
 
 # Add the 'micro-os-plus-iii' xPack.
-do_add_micro_os_plus_iii_xpack 
+do_add_micro_os_plus_iii_xpack posix-io
 do_add_micro_os_plus_iii_tests_xpack rtos mutex-stress sema-stress
 
 # Add the 'posix-arch' xPack.
@@ -53,6 +54,8 @@ do_add_posix_arch_xpack
 
 # Add the 'arm-cmsis-rtos-validator' xPack
 do_add_arm_cmsis_rtos_validator_xpack
+
+do_add_chan_fatfs_xpack
 
 # Change file modes to read/only.
 do_protect
