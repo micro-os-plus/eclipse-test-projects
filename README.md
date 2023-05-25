@@ -4,11 +4,11 @@
 
 ## Projects
 
-### os-f4discovery-tests
+### f4discovery-tests-micro-os-plus
 
 These tests run on the STM32F4DISCOVERY board (or the QEMU emulator).
 
-### os-synthetic-posix-tests
+### synthetic-posix-tests-micro-os-plus
 
 These tests run on the synthetic POSIX platform, on top of macOS.
 
@@ -28,8 +28,8 @@ The scripts were also tested on several GNU/Linux distributions, and should be f
 
 On Ubuntu be sure you have `git` and `curl` available:
 
-```
-suso apt-get git curl
+```bash
+sudo apt-get git curl
 ```
 
 For other distributions, similar commands must be issued.
@@ -46,32 +46,29 @@ For those who insist on native Windows, separate PowerShell scripts would be req
 
 To use any of these projects, you need to:
 
-
 * clone this project locally
-```
-$ git clone https://github.com/micro-os-plus/eclipse-test-projects.git eclipse-test-projects.git
-```
+    ```bash
+    $ git clone https://github.com/micro-os-plus/eclipse-test-projects.git eclipse-test-projects.git
+    ```
 * in each project, generate the code required to satisfy the dependencies; on macOS, double click the `scripts/generate.mac.command` in Finder; on other platforms, go to the project folder and run the `generate.sh` script
-```
-$ bash scripts/generate.sh
-```
+    ```
+    $ bash scripts/generate.sh
+    ```
 * in Eclipse, import the projects into your workspace, **without copying**
 * build all configurations
 
-
 ## Paths
 
-```
+```bash
 export PATH=/usr/local/gcc-arm-none-eabi-5_4-2016q3/bin:$PATH
 export PATH=/Users/ilg/Work/qemu/build/osx/qemu/gnuarmeclipse-softmmu:$PATH
 export PATH=/Applications/SEGGER/JLink_V60g:$PATH
 export PATH=/opt/homebrew/bin:$PATH
-
 ```
 
 ## Warnings
 
-```
+```text
 All:
 -Wall -Wextra
 -Wunused -Wuninitialized -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Wfloat-equal
@@ -80,3 +77,5 @@ C:
 C++:
 -Wabi -Wctor-dtor-privacy -Wnoexcept -Wnon-virtual-dtor -Wstrict-null-sentinel -Wsign-promo
 ```
+
+GCC 12: `elf has a LOAD segment with RWX permissions` -> `-Wl,--no-warn-rwx-segments`
