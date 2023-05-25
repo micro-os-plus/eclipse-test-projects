@@ -84,7 +84,7 @@ do
     echo
     echo run $f
 	# run executable
-    qemu-system-gnuarmeclipse \
+    `which qemu-system-gnuarmeclipse` \
     --verbose --board STM32F4-Discovery --image $f/$f.elf --nographic \
     -d unimp,guest_errors --semihosting-config enable=on,target=native --semihosting-cmdline test
   done
