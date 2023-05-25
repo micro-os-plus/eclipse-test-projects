@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="ilg.gnumcueclipse.debug.gdbjtag.qemu.launchConfigurationType">
+    <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.architecture" value=""/>
     <booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.disableGraphics" value="true"/>
     <booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.doContinue" value="true"/>
-    <booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.doDebugInRam" value="false"/>
+    <booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.doDebugInRam" value="true"/>
     <booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.doFirstReset" value="true"/>
     <booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.doGdbServerAllocateConsole" value="true"/>
     <booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.doGdbServerPreferXpacksBin" value="false"/>
@@ -20,7 +21,7 @@
     <booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.isGdbServerVerbose" value="false"/>
     <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.otherInitCommands" value=""/>
     <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.otherRunCommands" value=""/>
-    <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.semihosting.cmdline" value="test"/>
+    <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.semihosting.cmdline" value="f4discovery-tests-micro-os-plus"/>
     <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.svdPath" value=""/>
     <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageFileName" value=""/>
     <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageOffset" value=""/>
@@ -45,11 +46,10 @@
     <booleanAttribute key="org.eclipse.cdt.dsf.gdb.UPDATE_THREADLIST_ON_SUSPEND" value="false"/>
     <intAttribute key="org.eclipse.cdt.launch.ATTR_BUILD_BEFORE_LAUNCH_ATTR" value="2"/>
     <stringAttribute key="org.eclipse.cdt.launch.COREFILE_PATH" value=""/>
-    <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_REGISTER_GROUPS" value=""/>
-    <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="test-printf-debug/test-printf-debug.elf"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="test-sema-stress-debug/test-sema-stress-debug.elf"/>
     <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="f4discovery-tests-micro-os-plus"/>
     <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
-    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.94517381.328754879.1553375008.933055668.799933640"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.94517381.328754879"/>
     <booleanAttribute key="org.eclipse.debug.core.ATTR_FORCE_SYSTEM_CONSOLE_ENCODING" value="false"/>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
         <listEntry value="/f4discovery-tests-micro-os-plus"/>
@@ -57,6 +57,6 @@
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
         <listEntry value="4"/>
     </listAttribute>
-    <stringAttribute key="org.eclipse.dsf.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;memoryBlockExpressionList context=&quot;Context string&quot;&gt;&#10;&lt;memoryBlockExpression address=&quot;536998688&quot; label=&quot;0x2001f320&quot;/&gt;&#10;&lt;/memoryBlockExpressionList&gt;&#10;"/>
+    <stringAttribute key="org.eclipse.dsf.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;memoryBlockExpressionList context=&quot;Context string&quot;&gt;&#10;    &lt;memoryBlockExpression address=&quot;536987392&quot; label=&quot;0x2001c700&quot;/&gt;&#10;&lt;/memoryBlockExpressionList&gt;&#10;"/>
     <stringAttribute key="process_factory_id" value="org.eclipse.cdt.dsf.gdb.GdbProcessFactory"/>
 </launchConfiguration>

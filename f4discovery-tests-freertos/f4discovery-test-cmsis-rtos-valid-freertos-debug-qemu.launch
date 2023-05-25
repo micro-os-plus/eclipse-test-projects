@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<launchConfiguration type="ilg.gnuarmeclipse.debug.gdbjtag.qemu.launchConfigurationType">
-<booleanAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.disableGraphics" value="true"/>
-<booleanAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.doContinue" value="true"/>
-<booleanAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.doDebugInRam" value="false"/>
-<booleanAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.doFirstReset" value="true"/>
-<booleanAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.doGdbServerAllocateConsole" value="true"/>
-<booleanAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.doSecondReset" value="true"/>
-<booleanAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.doStartGdbServer" value="true"/>
-<booleanAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.enableSemihosting" value="true"/>
-<stringAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.gdbClientOtherCommands" value="set mem inaccessible-by-default off"/>
-<stringAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.gdbClientOtherOptions" value=""/>
-<stringAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.gdbServerBoardName" value="STM32F4-Discovery"/>
-<stringAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.gdbServerDeviceName" value="STM32F407VG"/>
-<stringAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.gdbServerExecutable" value="${qemu_path}/${qemu_executable}"/>
-<intAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.gdbServerGdbPortNumber" value="1234"/>
-<stringAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.gdbServerOther" value="-d unimp,guest_errors"/>
-<booleanAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.isGdbServerVerbose" value="false"/>
-<stringAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.otherInitCommands" value=""/>
-<stringAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.otherRunCommands" value=""/>
-<stringAttribute key="ilg.gnuarmeclipse.debug.gdbjtag.qemu.semihosting.cmdline" value="f4discovery-tests-freertos"/>
+<launchConfiguration type="ilg.gnumcueclipse.debug.gdbjtag.qemu.launchConfigurationType">
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.disableGraphics" value="true"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.doContinue" value="true"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.doDebugInRam" value="false"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.doFirstReset" value="true"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.doGdbServerAllocateConsole" value="true"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.doSecondReset" value="true"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.doStartGdbServer" value="true"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.enableSemihosting" value="true"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.gdbClientOtherCommands" value="set mem inaccessible-by-default off"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.gdbClientOtherOptions" value=""/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.gdbServerBoardName" value="STM32F4-Discovery"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.gdbServerDeviceName" value="STM32F407VG"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.gdbServerExecutable" value="${qemu_path}/${qemu_executable}"/>
+<intAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.gdbServerGdbPortNumber" value="1234"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.gdbServerOther" value="-d unimp,guest_errors"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.isGdbServerVerbose" value="false"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.otherInitCommands" value=""/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.otherRunCommands" value=""/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.qemu.semihosting.cmdline" value="f4discovery-tests-freertos"/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageFileName" value=""/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageOffset" value=""/>
 <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.ipAddress" value="localhost"/>
@@ -46,7 +46,7 @@
 <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="test-cmsis-rtos-valid-debug/test-cmsis-rtos-valid-debug.elf"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="f4discovery-tests-freertos"/>
 <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
-<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.94517381"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="ilg.gnumcueclipse.managedbuild.cross.config.elf.debug.94517381"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/f4discovery-tests-freertos"/>
 </listAttribute>
